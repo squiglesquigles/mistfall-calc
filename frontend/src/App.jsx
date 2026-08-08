@@ -1,12 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { classes, affixes, meta, generateBuild } from './lib/engine';
 
+// ---- Icon assets (copied from the repo-root /icons folder) ----
+import AmethystIcon from './assets/icons/Amethyst.png';
+import BootsIcon from './assets/icons/Boots.png';
+import ChestIcon from './assets/icons/Chest.png';
+import GlovesIcon from './assets/icons/Gloves.png';
+import HeadIcon from './assets/icons/Head.png';
+import MoonstoneIcon from './assets/icons/Moonstone.png';
+import NecklaceIcon from './assets/icons/Necklace.png';
+import OnyxIcon from './assets/icons/Onyx.png';
+import PantsIcon from './assets/icons/Pants.png';
+import PeridotIcon from './assets/icons/Peridot.png';
+import RingIcon from './assets/icons/Ring.png';
+import WeaponIcon from './assets/icons/Weapon.png';
+
 // ----------------------------------------------------------------
 //  CONFIG — fill in your Twitch channel and Ko-fi username/page
 // ----------------------------------------------------------------
 const SITE = {
   twitchChannel: 'squigle8', // just the channel name — no https://, no www, no .tv
   kofi: 'squigle'            // just the username -> ko-fi.com/<this>
+};
+
+// Feedback goes to your Discord channel via a webhook.
+// Create one: Server Settings -> Integrations -> Webhooks -> New Webhook -> Copy URL.
+const FEEDBACK = {
+  discordWebhook: 'https://discord.com/api/webhooks/1535730379770564691/8CVliAd6wLMxxXbJzLIhjUvA_k89T_OtvYGm6h1BDEEfEofrMW1qCj0xi5FDA0uQpLM2'
 };
 
 const COLORS = {
@@ -22,6 +42,26 @@ const RARITY_COLORS = {
   'Common': '#9ca3af', 'Rare': '#3b82f6', 'Excellent': '#a855f7', 'Epic': '#ec4899', 'Legendary': '#f59e0b', 'Holy': '#ef4444'
 };
 
+// Gem shape -> player-facing gem name. The data keeps the real shape names
+// (Octagon/Rectangle/...); we only translate them for display.
+const GEM_NAMES = {
+  Octagon: 'Peridot', Rectangle: 'Onyx', Triangle: 'Amethyst',
+  Square: 'Moonstone', Circle: 'All Gems', 'Circle/Swirl': 'All Gems'
+};
+const GEM_ICONS = {
+  Peridot: PeridotIcon, Onyx: OnyxIcon, Amethyst: AmethystIcon, Moonstone: MoonstoneIcon
+};
+// Every slot now has an icon; all weapon slots share the Weapon icon.
+const SLOT_ICONS = {
+  Head: HeadIcon, Chest: ChestIcon, Gloves: GlovesIcon, Pants: PantsIcon, Boots: BootsIcon,
+  Ring: RingIcon, Necklace: NecklaceIcon,
+  Weapon: WeaponIcon, Mace: WeaponIcon, Catalyst: WeaponIcon
+};
+
+function gemName(shape) { return GEM_NAMES[shape] || shape || '?'; }
+function gemIcon(shape) { return GEM_ICONS[gemName(shape)] || null; }
+function slotIcon(slot) { return SLOT_ICONS[slot] || null; }
+
 function App() {
   const [selectedClass, setSelectedClass] = useState(null);
   const [weapon, setWeapon] = useState('Mace');
@@ -31,6 +71,76 @@ function App() {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState('');
   const [groupFilter, setGroupFilter] = useState('All');
+
+  // Feedback report (per gear slot -> Discord webhook)
+  const [feedbackCtx, setFeedbackCtx] = useState(null); // null = closed
+  const [fType, setFType] = useState('Wrong gear');
+  const [fNote, setFNote] = useState('');
+  const [fHp, setFHp] = useState('');                 // honeypot (anti-spam)
+  const [fStatus, setFStatus] = useState(null);      // 'sending' | 'ok' | 'error' | 'config'
+
+  const openFeedback = (b, p, i) => {
+    setFeedbackCtx({
+      className: builds.className, weapon: builds.weapon,
+      option: i === 0 ? 'Cheapest Build' : 'Option ' + (i + 1),
+      slot: p.slot, gear: p.gear, rarity: p.rarity, builtIn: p.built_in_affix,
+      sockets: p.sockets || [], gems: p.gems || [],
+      affixes: builds.targetAffixes || [], cost: b.cost
+    });
+    setFType('Wrong gear'); setFNote(''); setFStatus(null);
+  };
+
+  const openGenericFeedback = () => {
+    setFeedbackCtx({
+      className: builds ? builds.className : null, weapon: builds ? builds.weapon : null,
+      option: null, slot: 'General', gear: null, rarity: null, builtIn: null,
+      sockets: [], gems: [], affixes: builds ? builds.targetAffixes : [], cost: null
+    });
+    setFType('Other'); setFNote(''); setFStatus(null);
+  };
+
+  const closeFeedback = () => setFeedbackCtx(null);
+
+  async function submitFeedback(e) {
+    e.preventDefault();
+    if (fHp) { setFStatus('ok'); return; } // bot trap: pretend it worked, send nothing
+    const url = FEEDBACK.discordWebhook;
+    if (!url || url === 'YOUR_DISCORD_WEBHOOK_URL') { setFStatus('config'); return; }
+    setFStatus('sending');
+    const c = feedbackCtx || {};
+    const gemsTxt = (c.sockets || []).map((s, i) => {
+      const g = (c.gems || [])[i];
+      return gemName(s.shape) + (s.tier === 2 ? ' T2' : '') + (g ? ': ' + [g.affix1, g.affix2].filter(Boolean).join(' + ') : ' (empty)');
+    }).join(', ') || 'None';
+    const embed = {
+      title: '⚠️ Build Issue Report',
+      color: 16733525,
+      fields: [
+        { name: 'Class / Weapon', value: `${c.className || '—'} · ${c.weapon || '—'}`, inline: true },
+        { name: 'Option', value: `${c.option || '—'}`, inline: true },
+        { name: 'Slot', value: `${c.slot || '—'}`, inline: true },
+        { name: 'Gear', value: (c.gear || '—') + (c.rarity ? ` [${c.rarity}]` : ''), inline: true },
+        { name: 'Built-in affix', value: c.builtIn || '—', inline: true },
+        { name: 'Sockets / Gems', value: (gemsTxt || '—').slice(0, 1024) },
+        { name: 'Target affixes', value: ((c.affixes || []).map(a => a.affix + ' Lv' + a.level).join(', ') || '—').slice(0, 1024) },
+        { name: 'Recommended cost', value: (c.cost != null ? c.cost + 'g' : '—'), inline: true },
+        { name: 'Issue type', value: fType, inline: true },
+        { name: 'Note from user', value: (fNote || '—').slice(0, 1024) }
+      ],
+      footer: { text: 'mistfallcalc.com · ' + new Date().toISOString() }
+    };
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: 'Mistfall Build Feedback', embeds: [embed] })
+      });
+      if (res.ok) {
+        setFStatus('ok');
+        setTimeout(closeFeedback, 1600);
+      } else setFStatus('error');
+    } catch (err) { setFStatus('error'); }
+  }
 
   // The engine runs fully in the browser — no server calls.
   const weaponOptions = (meta.weaponsByClass && selectedClass && meta.weaponsByClass[selectedClass.name]) || [];
@@ -102,16 +212,32 @@ function App() {
     if (!gem) return null;
     const afx = [gem.affix1, gem.affix2].filter(Boolean).join(' + ');
     const tier = slot.tier === 2 ? ' T2' : '';
-    return slot.shape + tier + ': ' + afx;
+    const name = gemName(slot.shape);
+    const icon = gemIcon(slot.shape);
+    return (
+      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', backgroundColor: COLORS.bgAlt, borderRadius: '4px', padding: '1px 6px', fontSize: '12px', margin: '1px 2px' }}>
+        {icon && <img src={icon} alt={name} style={{ width: 16, height: 16 }} />}
+        {name + tier + ': ' + afx}
+      </span>
+    );
   }
 
   function slotLabel(p) {
     const built = p.built_in_affix ? ' (' + p.built_in_affix + ')' : '';
     const gems = (p.sockets || []).map((s, i) => gemLabel(s, (p.gems || [])[i])).filter(Boolean);
-    return [
-      p.slot + ': ' + p.gear + ' [' + p.rarity + ']' + built,
-      gems.length ? ' => ' + gems.join(' | ') : ''
-    ].join('');
+    const icon = slotIcon(p.slot);
+    return (
+      <span style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '2px 8px' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+          {icon && <img src={icon} alt={p.slot} style={{ width: 18, height: 18 }} />}
+          <span>
+            {p.slot}: <strong>{p.gear}</strong>{' '}
+            <span style={{ color: RARITY_COLORS[p.rarity] || COLORS.textMuted }}>[{p.rarity}]</span>{built}
+          </span>
+        </span>
+        {gems.length > 0 && <span style={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap' }}>{gems}</span>}
+      </span>
+    );
   }
 
   // Twitch embed parent must match the deployed hostname; localhost works locally.
@@ -269,8 +395,12 @@ function App() {
                     )}
                     <div style={{ padding: '6px 16px' }}>
                       {b.slots.map((p, j) => (
-                        <div key={j} style={{ padding: '5px 0', fontSize: '13px', borderBottom: j < b.slots.length - 1 ? '1px solid ' + COLORS.border : 'none' }}>
-                          {slotLabel(p)}
+                        <div key={j} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '10px', padding: '5px 0', fontSize: '13px', borderBottom: j < b.slots.length - 1 ? '1px solid ' + COLORS.border : 'none' }}>
+                          <span style={{ flex: '1 1 auto', minWidth: '0' }}>{slotLabel(p)}</span>
+                          <button onClick={() => openFeedback(b, p, i)} title="Report an issue with this gear slot"
+                            style={{ flex: '0 0 auto', background: 'transparent', border: '1px solid ' + COLORS.border, borderRadius: '6px', color: COLORS.textMuted, fontSize: '11px', padding: '3px 8px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                            ⚠️ Report
+                          </button>
                         </div>
                       ))}
                     </div>
@@ -295,17 +425,11 @@ function App() {
                 Set <code>twitchChannel</code> in <code>App.jsx</code> (SITE config) to show the live embed.
               </div>
             )}
-            <div style={{ padding: '10px 14px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <div style={{ padding: '6px 12px' }}>
               {SITE.twitchChannel && SITE.twitchChannel !== 'YOUR_TWITCH_CHANNEL' && (
                 <a href={`https://twitch.tv/${SITE.twitchChannel}`} target="_blank" rel="noopener noreferrer"
-                  style={{ flex: '1', textAlign: 'center', background: '#9146ff', color: '#fff', padding: '10px 12px', borderRadius: '6px', fontWeight: 'bold', textDecoration: 'none' }}>
+                  style={{ display: 'block', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', background: '#9146ff', color: '#fff', padding: '12px 0', borderRadius: '6px', fontWeight: 'bold', fontSize: '16px', textDecoration: 'none' }}>
                   Open on Twitch
-                </a>
-              )}
-              {kofiHref && (
-                <a href={kofiHref} target="_blank" rel="noopener noreferrer"
-                  style={{ flex: '1', textAlign: 'center', background: '#29abe0', color: '#fff', padding: '10px 12px', borderRadius: '6px', fontWeight: 'bold', textDecoration: 'none' }}>
-                  ☕ Support on Ko-fi
                 </a>
               )}
             </div>
@@ -316,9 +440,13 @@ function App() {
               <strong style={{ color: COLORS.primary, fontSize: '14px' }}>☕ Tip the build</strong>
               <p style={{ color: COLORS.textMuted, fontSize: '12px', marginTop: '6px', paddingBottom: '8px' }}>
                 Love the calculator? A Ko-fi keeps this fan tool running and helps the stream.</p>
+              <a href={kofiHref} target="_blank" rel="noopener noreferrer"
+                style={{ display: 'block', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', background: '#29abe0', color: '#fff', padding: '12px 0', borderRadius: '6px', fontWeight: 'bold', fontSize: '16px', textDecoration: 'none' }}>
+                ☕ Support on Ko-fi
+              </a>
               <iframe title="Ko-fi donation widget" id="kofiframe"
                 src={`https://ko-fi.com/${SITE.kofi}/?hidefeed=true&widget=true&embed=true&preview=true`}
-                height="712" style={{ border: 'none', width: '100%', padding: '4px', background: '#f9f9f9' }} />
+                height="712" style={{ border: 'none', width: '100%', padding: '4px', background: '#f9f9f9', marginTop: '8px' }} />
             </div>
           )}
         </aside>
@@ -327,7 +455,77 @@ function App() {
       <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '16px 24px', color: COLORS.textMuted, fontSize: '12px', textAlign: 'center' }}>
         Mistfall Hunter Build Calculator — Unofficial fan tool. Not affiliated with Bellring Games. · Helpful?{' '}
         {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
+        {' '}·{' '}
+        <a href="#" onClick={(e) => { e.preventDefault(); openGenericFeedback(); }} style={{ color: COLORS.primary }}>Report an issue</a>
       </footer>
+
+      {feedbackCtx && (
+        <div onClick={closeFeedback} style={{ position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: '20px' }}>
+          <div onClick={(e) => e.stopPropagation()}
+            style={{ background: COLORS.card, border: '1px solid ' + COLORS.border, borderRadius: '10px', width: '100%', maxWidth: '520px', padding: '20px', color: COLORS.text }}>
+            <h3 style={{ color: COLORS.primary, fontSize: '17px', marginBottom: '6px' }}>⚠️ Report an issue</h3>
+            <p style={{ color: COLORS.textMuted, fontSize: '12px', marginBottom: '14px' }}>
+              Found something wrong? This report is sent to the build team automatically. Explain what's off in your own words — thanks for helping!
+            </p>
+
+            <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, padding: '10px 12px', marginBottom: '12px', fontSize: '12px' }}>
+              <div style={{ color: COLORS.textMuted, marginBottom: '4px' }}>REPORTING</div>
+              <div style={{ fontWeight: 'bold', marginBottom: '2px' }}>
+                {feedbackCtx.slot !== 'General' ? (feedbackCtx.slot + ': ' + feedbackCtx.gear + (feedbackCtx.rarity ? ' [' + feedbackCtx.rarity + ']' : '')) : 'General feedback'}
+              </div>
+              <div style={{ color: COLORS.textMuted }}>
+                {[feedbackCtx.className, feedbackCtx.weapon, feedbackCtx.option].filter(Boolean).join(' · ') || '—'} · cost: {feedbackCtx.cost != null ? feedbackCtx.cost + 'g' : '—'}
+              </div>
+              {feedbackCtx.sockets && feedbackCtx.sockets.length > 0 && (
+                <div style={{ color: COLORS.textMuted, marginTop: '4px' }}>
+                  sockets/gems: {(feedbackCtx.sockets || []).map((s, i) => {
+                    const g = (feedbackCtx.gems || [])[i];
+                    return gemName(s.shape) + (s.tier === 2 ? ' T2' : '') + (g ? ' → ' + [g.affix1, g.affix2].filter(Boolean).join(' + ') : '');
+                  }).join(' · ')}
+                </div>
+              )}
+            </div>
+
+            <form onSubmit={submitFeedback}>
+              <input type="text" value={fHp} onChange={(e) => setFHp(e.target.value)} name="website" tabIndex={-1} autoComplete="off"
+                style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, opacity: 0 }} aria-hidden="true" />
+
+              <label style={{ display: 'block', fontSize: '12px', color: COLORS.textMuted, marginBottom: '4px' }}>What's the issue?</label>
+              <select value={fType} onChange={(e) => setFType(e.target.value)}
+                style={{ width: '100%', padding: '9px', borderRadius: '6px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, marginBottom: '12px' }}>
+                <option>Wrong gear</option>
+                <option>Wrong rarity</option>
+                <option>Wrong socket</option>
+                <option>Wrong gem</option>
+                <option>Wrong price</option>
+                <option>Other</option>
+              </select>
+
+              <label style={{ display: 'block', fontSize: '12px', color: COLORS.textMuted, marginBottom: '4px' }}>Your note (what should it be?)</label>
+              <textarea value={fNote} onChange={(e) => setFNote(e.target.value)} rows={4} placeholder="e.g. This slot should recommend Ardent Hood instead — the socket is wrong for this class."
+                maxLength={1000}
+                style={{ width: '100%', padding: '9px', borderRadius: '6px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, resize: 'vertical', marginBottom: '12px' }}></textarea>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
+                <span style={{ fontSize: '12px', color: COLORS.textMuted }}>
+                  {fStatus === 'sending' && 'Sending…'}
+                  {fStatus === 'ok' && '✅ Sent, thank you!'}
+                  {fStatus === 'error' && '⚠️ Could not send — please try again.'}
+                  {fStatus === 'config' && '⚠️ Feedback isn’t configured yet (webhook URL missing).'}
+                </span>
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <button type="button" onClick={closeFeedback}
+                    style={{ padding: '9px 16px', borderRadius: '6px', border: '1px solid ' + COLORS.border, background: COLORS.bgAlt, color: COLORS.textMuted, fontSize: '13px', cursor: 'pointer' }}>Cancel</button>
+                  <button type="submit" disabled={fStatus === 'sending'}
+                    style={{ padding: '9px 18px', borderRadius: '6px', border: 'none', background: COLORS.primary, color: '#000', fontWeight: 'bold', fontSize: '13px', cursor: 'pointer', opacity: fStatus === 'sending' ? 0.6 : 1 }}>
+                    {fStatus === 'sending' ? 'Sending…' : 'Send report'}
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
