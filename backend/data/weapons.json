@@ -1,0 +1,1531 @@
+[
+  {
+    "slug": "insatiable-heart-cornered-beast-bow",
+    "name": "Insatiable Heart - Cornered Beast Bow",
+    "icon": "/icons/1212011.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "insatiable-heart-demolisher",
+    "name": "Insatiable Heart - Demolisher",
+    "icon": "/icons/1211011.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "insatiable-heart-everburn",
+    "name": "Insatiable Heart - Everburn",
+    "icon": "/icons/1219007.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 24,
+      "defence": 70,
+      "blockRate": 0.7,
+      "combatValue": 700,
+      "physicalReduction": 0.072
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "insatiable-heart-soulseeker-bow",
+    "name": "Insatiable Heart - Soulseeker Bow",
+    "icon": "/icons/1212011.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "javelin-scout-unique",
+    "name": "Javelin Scout (Unique)",
+    "icon": "",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Javelin",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 60
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "moon-deity-convergence-staff",
+    "name": "Moon Deity - Convergence Staff",
+    "icon": "/icons/1214013.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-deity-crescent-dagger",
+    "name": "Moon Deity - Crescent Dagger",
+    "icon": "/icons/1213013.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-deity-invocation-catalyst",
+    "name": "Moon Deity - Invocation Catalyst",
+    "icon": "/icons/1216010.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-deity-myriad-soul-staff",
+    "name": "Moon Deity - Myriad Soul Staff",
+    "icon": "/icons/1214013.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-deity-souleater-catalyst",
+    "name": "Moon Deity - Souleater Catalyst",
+    "icon": "/icons/1216010.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "wulfen-einherjar-blade-of-inquisition",
+    "name": "Wulfen Einherjar - Blade of Inquisition",
+    "icon": "/icons/1218009.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "wulfen-einherjar-oathkeeper",
+    "name": "Wulfen Einherjar - Oathkeeper",
+    "icon": "/icons/1210012.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 24,
+      "defence": 70,
+      "blockRate": 0.7,
+      "combatValue": 700,
+      "physicalReduction": 0.072
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "wulfen-einherjar-splitclaw",
+    "name": "Wulfen Einherjar - Splitclaw",
+    "icon": "/icons/1215009.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "wulfen-einherjar-warcry-spike",
+    "name": "Wulfen Einherjar - Warcry Spike",
+    "icon": "/icons/1217009.webp",
+    "rarity": "Holy",
+    "rarityTier": 7,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1600,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 700
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "absolution",
+    "name": "Absolution",
+    "icon": "/icons/1217006.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "blind-eye-staff",
+    "name": "Blind Eye Staff",
+    "icon": "/icons/1214009.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "bond-of-friendship",
+    "name": "Bond of Friendship",
+    "icon": "/icons/1210009.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 24,
+      "defence": 70,
+      "blockRate": 0.7,
+      "combatValue": 600,
+      "physicalReduction": 0.072
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "byrness-ash-urn",
+    "name": "Byrnes's Ash Urn",
+    "icon": "/icons/1216006.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "deathclaw-hunter",
+    "name": "Deathclaw Hunter",
+    "icon": "/icons/1212009.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "mercy",
+    "name": "Mercy",
+    "icon": "/icons/1218006.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rose-proclamation",
+    "name": "Rose Proclamation",
+    "icon": "/icons/1219006.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 24,
+      "defence": 70,
+      "blockRate": 0.7,
+      "combatValue": 600,
+      "physicalReduction": 0.072
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "serpents-whisper",
+    "name": "Serpent's Whisper",
+    "icon": "/icons/1213009.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "skullcrusher",
+    "name": "Skullcrusher",
+    "icon": "/icons/1211009.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "venomfang",
+    "name": "Venomfang",
+    "icon": "/icons/1215006.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1500,
+    "attributes": {
+      "attack": 40,
+      "combatValue": 600
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "blade-of-destined-death",
+    "name": "Blade of Destined Death",
+    "icon": "/icons/1215005.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "commander-sword-and-shield",
+    "name": "Commander Sword and Shield",
+    "icon": "/icons/1210008.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 21,
+      "defence": 60,
+      "blockRate": 0.7,
+      "combatValue": 500,
+      "physicalReduction": 0.06
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusader-strongbow",
+    "name": "Crusader Strongbow",
+    "icon": "/icons/1212008.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "empyrean-rain-staff",
+    "name": "Empyrean Rain Staff",
+    "icon": "/icons/1214008.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "gem-lizard-dagger",
+    "name": "Gem Lizard Dagger",
+    "icon": "/icons/1213008.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "night-vigil-polearm-and-shield",
+    "name": "Night Vigil Polearm and Shield",
+    "icon": "/icons/1219005.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 21,
+      "defence": 60,
+      "blockRate": 0.7,
+      "combatValue": 500,
+      "physicalReduction": 0.06
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "obsidian-sledgehammer",
+    "name": "Obsidian Sledgehammer",
+    "icon": "/icons/1211008.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "purple-training-bot-great-hammer",
+    "name": "Purple Training Bot Great Hammer",
+    "icon": "/icons/1211008.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 35
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "purple-training-bot-sword-shield",
+    "name": "Purple Training Bot Sword & Shield",
+    "icon": "/icons/1210008.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 21,
+      "defence": 77,
+      "blockRate": 0.7,
+      "physicalReduction": 0.06
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "sacred-heart-greatsword",
+    "name": "Sacred Heart Greatsword",
+    "icon": "/icons/1218005.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "spiritwood-drumstick",
+    "name": "Spiritwood Drumstick",
+    "icon": "/icons/1217005.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "true-intent-catalyst",
+    "name": "True Intent Catalyst",
+    "icon": "/icons/1216005.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1400,
+    "attributes": {
+      "attack": 35,
+      "combatValue": 500
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "antique-mace",
+    "name": "Antique Mace",
+    "icon": "/icons/1217004.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "arcane-elixir-catalyst",
+    "name": "Arcane Elixir Catalyst",
+    "icon": "/icons/1216004.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "convergence-staff",
+    "name": "Convergence Staff",
+    "icon": "/icons/1214007.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "exile-greatsword",
+    "name": "Exile Greatsword",
+    "icon": "/icons/1218004.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "magica-hammer",
+    "name": "Magica Hammer",
+    "icon": "/icons/1211007.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "studded-sword-and-shield",
+    "name": "Studded Sword and Shield",
+    "icon": "/icons/1210007.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 17,
+      "defence": 46,
+      "blockRate": 0.7,
+      "combatValue": 400,
+      "physicalReduction": 0.04
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "thorn-polearm-and-shield",
+    "name": "Thorn Polearm and Shield",
+    "icon": "/icons/1219004.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 17,
+      "defence": 46,
+      "blockRate": 0.7,
+      "combatValue": 400,
+      "physicalReduction": 0.04
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "veil-dual-blades",
+    "name": "Veil Dual Blades",
+    "icon": "/icons/1215004.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "venomfang-dagger",
+    "name": "Venomfang Dagger",
+    "icon": "/icons/1213007.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "yew-longbow",
+    "name": "Yew Longbow",
+    "icon": "/icons/1212007.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1300,
+    "attributes": {
+      "attack": 29,
+      "combatValue": 400
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "beast-spirit-catalyst",
+    "name": "Beast Spirit Catalyst",
+    "icon": "/icons/1216003.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "executioner-greatsword",
+    "name": "Executioner Greatsword",
+    "icon": "/icons/1218003.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "fang-piercer-dagger",
+    "name": "Fang-Piercer Dagger",
+    "icon": "/icons/1213006.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "fine-iron-sword-and-shield",
+    "name": "Fine Iron Sword and Shield",
+    "icon": "/icons/1210006.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 14,
+      "defence": 33,
+      "blockRate": 0.7,
+      "combatValue": 300,
+      "physicalReduction": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "focus-staff",
+    "name": "Focus Staff",
+    "icon": "/icons/1214006.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "guard-polearm-and-shield",
+    "name": "Guard Polearm and Shield",
+    "icon": "/icons/1219003.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 14,
+      "defence": 33,
+      "blockRate": 0.7,
+      "combatValue": 300,
+      "physicalReduction": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "military-hammer",
+    "name": "Military Hammer",
+    "icon": "/icons/1211006.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "morningstar-mace",
+    "name": "Morningstar Mace",
+    "icon": "/icons/1217003.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "oil-soaked-wooden-bow",
+    "name": "Oil-soaked Wooden Bow",
+    "icon": "/icons/1212006.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "spirit-feline-dual-blades",
+    "name": "Spirit Feline Dual Blades",
+    "icon": "/icons/1215003.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1200,
+    "attributes": {
+      "attack": 23,
+      "combatValue": 300
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "apprentice-staff",
+    "name": "Apprentice Staff",
+    "icon": "/icons/1214005.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "carved-dagger",
+    "name": "Carved Dagger",
+    "icon": "/icons/1213005.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "crude-hammer",
+    "name": "Crude Hammer",
+    "icon": "/icons/1211005.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "crude-heavy-hammer",
+    "name": "Crude Heavy Hammer",
+    "icon": "/icons/1200016.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Barehanded",
+    "classes": [],
+    "durability": 0,
+    "attributes": {},
+    "variantCount": 1
+  },
+  {
+    "slug": "handcrafted-longbow",
+    "name": "Handcrafted Longbow",
+    "icon": "/icons/1212005.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "magical-knot-catalyst",
+    "name": "Magical Knot Catalyst",
+    "icon": "/icons/1216002.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "recruit-sword-and-shield",
+    "name": "Recruit Sword and Shield",
+    "icon": "/icons/1210005.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 12,
+      "defence": 22,
+      "blockRate": 0.7,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "spiked-mace",
+    "name": "Spiked Mace",
+    "icon": "/icons/1217002.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "squire-greatsword",
+    "name": "Squire Greatsword",
+    "icon": "/icons/1218002.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "squire-polearm-and-shield",
+    "name": "Squire Polearm and Shield",
+    "icon": "/icons/1219002.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 12,
+      "defence": 22,
+      "blockRate": 0.7,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "wooden-handled-dual-blades",
+    "name": "Wooden-Handled Dual Blades",
+    "icon": "/icons/1215002.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1100,
+    "attributes": {
+      "attack": 20,
+      "combatValue": 200
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "character-creation-bow",
+    "name": "Character Creation Bow",
+    "icon": "/icons/1200015.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Bow",
+    "classes": [],
+    "durability": 1000,
+    "attributes": {
+      "attack": 15
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "faded-apprentice-staff",
+    "name": "Faded Apprentice Staff",
+    "icon": "/icons/1214004.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "rough-handcrafted-longbow",
+    "name": "Rough Handcrafted Longbow",
+    "icon": "/icons/1212004.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "rusty-crude-hammer",
+    "name": "Rusty Crude Hammer",
+    "icon": "/icons/1211004.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "rusty-recruit-sword-and-shield",
+    "name": "Rusty Recruit Sword and Shield",
+    "icon": "/icons/1210004.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 10,
+      "defence": 10,
+      "blockRate": 0.7,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "rusty-spiked-mace",
+    "name": "Rusty Spiked Mace",
+    "icon": "/icons/1217001.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "rusty-squire-greatsword",
+    "name": "Rusty Squire Greatsword",
+    "icon": "/icons/1218001.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "rusty-squire-polearm-and-shield",
+    "name": "Rusty Squire Polearm and Shield",
+    "icon": "/icons/1219001.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 10,
+      "defence": 10,
+      "blockRate": 0.7,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "rusty-wooden-handled-dual-blades",
+    "name": "Rusty Wooden-Handled Dual Blades",
+    "icon": "/icons/1215001.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "ttk-bow",
+    "name": "TTK Bow",
+    "icon": "/icons/1212003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Bow",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 3
+  },
+  {
+    "slug": "ttk-dagger",
+    "name": "TTK Dagger",
+    "icon": "/icons/1213003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 2
+  },
+  {
+    "slug": "ttk-dual-blades",
+    "name": "TTK Dual Blades",
+    "icon": "/icons/1213003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Dual Blades",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 2
+  },
+  {
+    "slug": "ttk-javelin",
+    "name": "TTK Javelin",
+    "icon": "/icons/1210003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Javelin",
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 1
+  },
+  {
+    "slug": "ttk-mace",
+    "name": "TTK Mace",
+    "icon": "/icons/1211003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Mace",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 2
+  },
+  {
+    "slug": "ttk-medium",
+    "name": "TTK Medium",
+    "icon": "/icons/1214003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 3
+  },
+  {
+    "slug": "ttk-spear-shield",
+    "name": "TTK Spear & Shield",
+    "icon": "/icons/1210003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Polearm and Shield",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "blockRate": 0.7
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "ttk-spellbook",
+    "name": "TTK Spellbook",
+    "icon": "/icons/1214003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 1
+  },
+  {
+    "slug": "ttk-staff",
+    "name": "TTK Staff",
+    "icon": "/icons/1214003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Staff",
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 3
+  },
+  {
+    "slug": "ttk-sword-and-shield",
+    "name": "TTK Sword and Shield",
+    "icon": "/icons/1210003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Sword and Shield",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "blockRate": 0.7
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "ttk-two-handed-sword",
+    "name": "TTK Two-Handed Sword",
+    "icon": "/icons/1211003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Greatsword",
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 2
+  },
+  {
+    "slug": "ttk-warhammer",
+    "name": "TTK Warhammer",
+    "icon": "/icons/1211003.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Hammer",
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "attributes": {},
+    "variantCount": 2
+  },
+  {
+    "slug": "twilight-knot-catalyst",
+    "name": "Twilight Knot Catalyst",
+    "icon": "/icons/1216001.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Catalyst",
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "worn-carved-dagger",
+    "name": "Worn Carved Dagger",
+    "icon": "/icons/1213004.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "weaponType": "Dagger",
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "attributes": {
+      "attack": 16,
+      "combatValue": 100
+    },
+    "variantCount": 2
+  }
+]

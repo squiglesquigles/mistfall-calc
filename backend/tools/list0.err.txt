@@ -1,0 +1,15 @@
+Error: 
+trying version V11 failed: pak is encrypted but no key was provided
+trying version V10 failed: pak is encrypted but no key was provided
+trying version V9 failed: got 183, which is not a boolean
+trying version V8B failed: pak is encrypted but no key was provided
+trying version V8A failed: got 58, which is not a boolean
+trying version V7 failed: found magic of 0x0 instead of 0x5a6f12e1
+trying version V6 failed: found magic of 0x0 instead of 0x5a6f12e1
+trying version V5 failed: found magic of 0x0 instead of 0x5a6f12e1
+trying version V4 failed: found magic of 0x0 instead of 0x5a6f12e1
+trying version V3 failed: found magic of 0x0 instead of 0x5a6f12e1
+trying version V2 failed: found magic of 0x0 instead of 0x5a6f12e1
+trying version V1 failed: found magic of 0x0 instead of 0x5a6f12e1
+trying version V0 failed: found magic of 0x0 instead of 0x5a6f12e1
+version unsupported or is encrypted (possibly missing --aes-key?)

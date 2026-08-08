@@ -1,0 +1,38 @@
+{
+  "name": "mistfall-calc",
+  "version": "1.0.0",
+  "description": "Mistfall Hunter Build Calculator - Find the cheapest gear combinations for your build",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "concurrently \"node backend/server.js\" \"vite\"",
+    "build": "node scripts/encode-data.mjs && vite build",
+    "preview": "vite preview",
+    "predev": "node scripts/encode-data.mjs",
+    "scrape": "node backend/data-scraper.js",
+    "scrape:prices": "node backend/scrape-prices.js"
+  },
+  "keywords": [
+    "mistfall",
+    "hunter",
+    "build",
+    "calculator",
+    "arpg"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "javascript-lp-solver": "^1.0.3",
+    "node-fetch": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.2.4",
+    "vite": "^6.0.5"
+  }
+}

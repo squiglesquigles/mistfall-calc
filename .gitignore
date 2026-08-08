@@ -1,0 +1,6 @@
+node_modules/
+frontend/dist/
+frontend/src/lib/data.enc.js
+*.log
+.DS_Store
+nul

@@ -1,0 +1,6655 @@
+[
+  {
+    "slug": "ace-assassin-boots",
+    "name": "Ace Assassin Boots",
+    "icon": "/icons/1200132.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "maxHealth": 55,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ace-assassin-bracers",
+    "name": "Ace Assassin Bracers",
+    "icon": "/icons/1200130.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ace-assassin-garb",
+    "name": "Ace Assassin Garb",
+    "icon": "/icons/1200129.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ace-assassin-mask",
+    "name": "Ace Assassin Mask",
+    "icon": "/icons/1200128.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ace-assassin-pants",
+    "name": "Ace Assassin Pants",
+    "icon": "/icons/1200131.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 92
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "agility-12-orange",
+    "name": "Agility 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176,
+      "physicalIncrease": 0.18
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "ancestral-blessing-ring",
+    "name": "Ancestral Blessing Ring",
+    "icon": "/icons/1220018.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 34
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "archer-12-orange",
+    "name": "Archer 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176,
+      "physicalIncrease": 0.18
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "champions-armor",
+    "name": "Champion's Armor",
+    "icon": "/icons/1200162.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "champions-boots",
+    "name": "Champion's Boots",
+    "icon": "/icons/1200161.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "maxHealth": 55,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "champions-bracers",
+    "name": "Champion's Bracers",
+    "icon": "/icons/1200158.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "champions-helmet",
+    "name": "Champion's Helmet",
+    "icon": "/icons/1200160.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "champions-pants",
+    "name": "Champion's Pants",
+    "icon": "/icons/1200159.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 92
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "charge-12-orange",
+    "name": "Charge 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 44,
+      "maxHealth": 243,
+      "physicalIncrease": 0.144
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "defeat-12-orange",
+    "name": "Defeat 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 52,
+      "maxHealth": 209,
+      "physicalIncrease": 0.162
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "dps-12-orange",
+    "name": "DPS 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "einherjars-blessing-necklace",
+    "name": "Einherjar's Blessing Necklace",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 34
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "element-12-orange",
+    "name": "Element 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "eye-of-the-sea-giant",
+    "name": "Eye of the Sea Giant",
+    "icon": "/icons/1220017.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 8
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "flurry-12-orange",
+    "name": "Flurry 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176,
+      "physicalIncrease": 0.18
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "frostspeaker-pendant",
+    "name": "Frostspeaker Pendant",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 8,
+      "physicalIncrease": 0.018
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "haste-12-orange",
+    "name": "Haste 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176,
+      "physicalIncrease": 0.072
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "holy-saints-bracers",
+    "name": "Holy Saint's Bracers",
+    "icon": "/icons/1200124.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "holy-saints-greaves",
+    "name": "Holy Saint's Greaves",
+    "icon": "/icons/1200126.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "maxHealth": 55
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "holy-saints-miter",
+    "name": "Holy Saint's Miter",
+    "icon": "/icons/1200127.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "holy-saints-pants",
+    "name": "Holy Saint's Pants",
+    "icon": "/icons/1200125.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 92
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "holy-saints-vestment",
+    "name": "Holy Saint's Vestment",
+    "icon": "/icons/1200123.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "hunter-12-orange",
+    "name": "Hunter 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176,
+      "physicalIncrease": 0.18
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-orange",
+    "name": "Infect 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 52,
+      "maxHealth": 209,
+      "physicalIncrease": 0.162
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "moon-priestess-boots",
+    "name": "Moon Priestess Boots",
+    "icon": "/icons/1200156.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "maxHealth": 55
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-priestess-bracers",
+    "name": "Moon Priestess Bracers",
+    "icon": "/icons/1200153.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-priestess-mask",
+    "name": "Moon Priestess Mask",
+    "icon": "/icons/1200155.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-priestess-pants",
+    "name": "Moon Priestess Pants",
+    "icon": "/icons/1200154.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 92
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "moon-priestess-robe",
+    "name": "Moon Priestess Robe",
+    "icon": "/icons/1200157.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "raven-war-pendant",
+    "name": "Raven War Pendant",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 8
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "red-shield-12-orange",
+    "name": "Red Shield 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 34,
+      "maxHealth": 243,
+      "physicalIncrease": 0.072
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-orange",
+    "name": "Red Sword 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 42,
+      "maxHealth": 209,
+      "physicalIncrease": 0.09
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "rosen-oath-boots",
+    "name": "Rosen Oath Boots",
+    "icon": "/icons/1200166.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "maxHealth": 55,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rosen-oath-bracers",
+    "name": "Rosen Oath Bracers",
+    "icon": "/icons/1200163.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rosen-oath-breastplate",
+    "name": "Rosen Oath Breastplate",
+    "icon": "/icons/1200167.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rosen-oath-helmet",
+    "name": "Rosen Oath Helmet",
+    "icon": "/icons/1200165.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rosen-oath-pants",
+    "name": "Rosen Oath Pants",
+    "icon": "/icons/1200164.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 92
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "scaleclaw-armor",
+    "name": "Scaleclaw Armor",
+    "icon": "/icons/1200152.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "scaleclaw-bracers",
+    "name": "Scaleclaw Bracers",
+    "icon": "/icons/1200148.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "scaleclaw-leather-boots",
+    "name": "Scaleclaw Leather Boots",
+    "icon": "/icons/1200151.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 12,
+      "maxHealth": 55,
+      "physicalIncrease": 0.036
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "scaleclaw-pants",
+    "name": "Scaleclaw Pants",
+    "icon": "/icons/1200149.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 92
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "scaleclaw-winged-helm",
+    "name": "Scaleclaw Winged Helm",
+    "icon": "/icons/1200150.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1500,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 74
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadow-amberflux-ring",
+    "name": "Shadow Amberflux Ring",
+    "icon": "/icons/1220016.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "attack": 8,
+      "physicalIncrease": 0.018
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "shadow-shroud-12-orange",
+    "name": "Shadow Shroud 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176,
+      "physicalIncrease": 0.18
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "sirius-ring",
+    "name": "Sirius Ring",
+    "icon": "/icons/1220015.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 34
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "stealth-12-orange",
+    "name": "Stealth 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176,
+      "physicalIncrease": 0.18
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stellar-12-orange",
+    "name": "Stellar 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-orange",
+    "name": "Stun 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 52,
+      "maxHealth": 209,
+      "physicalIncrease": 0.162
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-orange",
+    "name": "Super Armor 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 44,
+      "maxHealth": 243,
+      "physicalIncrease": 0.072
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-orange",
+    "name": "Support 12 Orange",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4400,
+      "attack": 59,
+      "maxHealth": 176
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "tri-phase-knot-pendant",
+    "name": "Tri-phase Knot Pendant",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Legendary",
+    "rarityTier": 6,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 1500,
+    "attributes": {
+      "combatValue": 600,
+      "maxHealth": 34
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "agility-12-purple",
+    "name": "Agility 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147,
+      "physicalIncrease": 0.15
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "agility-12-purple-orange",
+    "name": "Agility 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161,
+      "physicalIncrease": 0.165
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-purple",
+    "name": "Archer 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147,
+      "physicalIncrease": 0.15
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-purple-orange",
+    "name": "Archer 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161,
+      "physicalIncrease": 0.165
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "black-iris-bracers",
+    "name": "Black Iris Bracers",
+    "icon": "/icons/1200143.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "black-iris-breastplate",
+    "name": "Black Iris Breastplate",
+    "icon": "/icons/1200147.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 630,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "black-iris-breeches",
+    "name": "Black Iris Breeches",
+    "icon": "/icons/1200144.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 83
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "black-iris-helmet",
+    "name": "Black Iris Helmet",
+    "icon": "/icons/1200145.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "black-iris-sabatons",
+    "name": "Black Iris Sabatons",
+    "icon": "/icons/1200146.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "maxHealth": 50,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "bloodwrath-general-armor",
+    "name": "Bloodwrath General Armor",
+    "icon": "/icons/1200094.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 630,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "bloodwrath-general-bracers",
+    "name": "Bloodwrath General Bracers",
+    "icon": "/icons/1200095.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "bloodwrath-general-greaves",
+    "name": "Bloodwrath General Greaves",
+    "icon": "/icons/1200097.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "maxHealth": 50,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "bloodwrath-general-helmet",
+    "name": "Bloodwrath General Helmet",
+    "icon": "/icons/1200093.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "bloodwrath-general-pants",
+    "name": "Bloodwrath General Pants",
+    "icon": "/icons/1200096.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 83
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "break-12-purple",
+    "name": "Break 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 42,
+      "maxHealth": 180,
+      "physicalIncrease": 0.135
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "break-12-purple-orange",
+    "name": "Break 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 47,
+      "maxHealth": 195,
+      "physicalIncrease": 0.149
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "charge-12-purple",
+    "name": "Charge 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 35,
+      "maxHealth": 213,
+      "physicalIncrease": 0.12
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "charge-12-purple-orange",
+    "name": "Charge 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 40,
+      "maxHealth": 228,
+      "physicalIncrease": 0.132
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "commander-seal-ring",
+    "name": "Commander Seal Ring",
+    "icon": "/icons/1220016.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 7,
+      "physicalIncrease": 0.015
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "dps-12-purple",
+    "name": "DPS 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "dps-12-purple-orange",
+    "name": "DPS 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "dragon-slumber-necklace",
+    "name": "Dragon Slumber Necklace",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 33
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "dragonbreath-ring",
+    "name": "Dragonbreath Ring",
+    "icon": "/icons/1220015.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 33
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "eagle-god-armor",
+    "name": "Eagle God Armor",
+    "icon": "/icons/1200084.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 630,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "eagle-god-bracers",
+    "name": "Eagle God Bracers",
+    "icon": "/icons/1200085.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "eagle-god-leather-boots",
+    "name": "Eagle God Leather Boots",
+    "icon": "/icons/1200087.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "maxHealth": 50,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "eagle-god-pants",
+    "name": "Eagle God Pants",
+    "icon": "/icons/1200086.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 83
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "eagle-god-winged-helm",
+    "name": "Eagle God Winged Helm",
+    "icon": "/icons/1200083.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "element-12-purple",
+    "name": "Element 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "element-12-purple-orange",
+    "name": "Element 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "flurry-12-purple",
+    "name": "Flurry 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147,
+      "physicalIncrease": 0.15
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "flurry-12-purple-orange",
+    "name": "Flurry 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161,
+      "physicalIncrease": 0.165
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-purple",
+    "name": "Haste 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147,
+      "physicalIncrease": 0.06
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-purple-orange",
+    "name": "Haste 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161,
+      "physicalIncrease": 0.066
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-purple",
+    "name": "Hunter 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147,
+      "physicalIncrease": 0.15
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-purple-orange",
+    "name": "Hunter 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161,
+      "physicalIncrease": 0.165
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-purple",
+    "name": "Infect 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 42,
+      "maxHealth": 180,
+      "physicalIncrease": 0.135
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-purple-orange",
+    "name": "Infect 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 47,
+      "maxHealth": 195,
+      "physicalIncrease": 0.149
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "jungle-emissary-necklace",
+    "name": "Jungle Emissary Necklace",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 7,
+      "physicalIncrease": 0.015
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "mysteria-elder-boots",
+    "name": "Mysteria Elder Boots",
+    "icon": "/icons/1200107.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "mysteria-elder-bracers",
+    "name": "Mysteria Elder Bracers",
+    "icon": "/icons/1200105.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "mysteria-elder-mask",
+    "name": "Mysteria Elder Mask",
+    "icon": "/icons/1200103.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "mysteria-elder-pants",
+    "name": "Mysteria Elder Pants",
+    "icon": "/icons/1200106.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 83
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "mysteria-elder-robe",
+    "name": "Mysteria Elder Robe",
+    "icon": "/icons/1200104.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 630,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "purple-training-bot-life-necklace",
+    "name": "Purple Training Bot Life Necklace",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 1000,
+    "recommendedPrice": 400,
+    "attributes": {
+      "maxHealth": 66
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "purple-training-bot-warrior-boots",
+    "name": "Purple Training Bot Warrior Boots",
+    "icon": "/icons/1200097.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 260,
+    "attributes": {
+      "attack": 7,
+      "maxHealth": 65,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "purple-training-bot-warrior-chestplate",
+    "name": "Purple Training Bot Warrior Chestplate",
+    "icon": "/icons/1200094.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 360,
+    "attributes": {
+      "maxHealth": 86
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "purple-training-bot-warrior-gloves",
+    "name": "Purple Training Bot Warrior Gloves",
+    "icon": "/icons/1200095.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 260,
+    "attributes": {
+      "attack": 7,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "purple-training-bot-warrior-helmet",
+    "name": "Purple Training Bot Warrior Helmet",
+    "icon": "/icons/1200093.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 320,
+    "attributes": {
+      "maxHealth": 43
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "purple-training-bot-warrior-pants",
+    "name": "Purple Training Bot Warrior Pants",
+    "icon": "/icons/1200096.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 320,
+    "attributes": {
+      "maxHealth": 108
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "ragons-pendant",
+    "name": "Ragon's Pendant",
+    "icon": "/icons/1221014.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 33
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "ragons-ring",
+    "name": "Ragon's Ring",
+    "icon": "/icons/1220018.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 33
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "red-shield-12-purple",
+    "name": "Red Shield 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 28,
+      "maxHealth": 213,
+      "physicalIncrease": 0.06
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-shield-12-purple-orange",
+    "name": "Red Shield 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 31,
+      "maxHealth": 228,
+      "physicalIncrease": 0.066
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-purple",
+    "name": "Red Sword 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 35,
+      "maxHealth": 180,
+      "physicalIncrease": 0.075
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-purple-orange",
+    "name": "Red Sword 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 38,
+      "maxHealth": 195,
+      "physicalIncrease": 0.083
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-shroud-12-purple",
+    "name": "Shadow Shroud 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147,
+      "physicalIncrease": 0.15
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-shroud-12-purple-orange",
+    "name": "Shadow Shroud 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161,
+      "physicalIncrease": 0.165
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadowstrix-bracers",
+    "name": "Shadowstrix Bracers",
+    "icon": "/icons/1200090.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadowstrix-leather-boots",
+    "name": "Shadowstrix Leather Boots",
+    "icon": "/icons/1200092.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "maxHealth": 50,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadowstrix-mask",
+    "name": "Shadowstrix Mask",
+    "icon": "/icons/1200088.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadowstrix-pants",
+    "name": "Shadowstrix Pants",
+    "icon": "/icons/1200091.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 83
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadowstrix-vigor",
+    "name": "Shadowstrix Vigor",
+    "icon": "/icons/1200089.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 630,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "soulbane-necklace",
+    "name": "Soulbane Necklace",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 7
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "stargazing-ring",
+    "name": "Stargazing Ring",
+    "icon": "/icons/1220017.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 650,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 7
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "stealth-12-purple",
+    "name": "Stealth 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147,
+      "physicalIncrease": 0.15
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stealth-12-purple-orange",
+    "name": "Stealth 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161,
+      "physicalIncrease": 0.165
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stellar-12-purple",
+    "name": "Stellar 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stellar-12-purple-orange",
+    "name": "Stellar 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-purple",
+    "name": "Stun 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 42,
+      "maxHealth": 180,
+      "physicalIncrease": 0.135
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-purple-orange",
+    "name": "Stun 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 47,
+      "maxHealth": 195,
+      "physicalIncrease": 0.149
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-purple",
+    "name": "Super Armor 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 35,
+      "maxHealth": 213,
+      "physicalIncrease": 0.06
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-purple-orange",
+    "name": "Super Armor 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 40,
+      "maxHealth": 228,
+      "physicalIncrease": 0.066
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-purple",
+    "name": "Support 12 Purple",
+    "icon": "/icons/1221012.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3600,
+      "attack": 49,
+      "maxHealth": 147
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-purple-orange",
+    "name": "Support 12 Purple-Orange",
+    "icon": "/icons/1221013.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 4000,
+      "attack": 54,
+      "maxHealth": 161
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "training-ground-bot-purple-life-ring",
+    "name": "Training Ground Bot Purple Life Ring",
+    "icon": "/icons/1220015.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [],
+    "durability": 1000,
+    "recommendedPrice": 300,
+    "attributes": {
+      "maxHealth": 33
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "true-prayer-bracers",
+    "name": "True Prayer Bracers",
+    "icon": "/icons/1200115.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "true-prayer-greaves",
+    "name": "True Prayer Greaves",
+    "icon": "/icons/1200117.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 550,
+    "attributes": {
+      "combatValue": 500,
+      "attack": 10,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "true-prayer-miter",
+    "name": "True Prayer Miter",
+    "icon": "/icons/1200113.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "true-prayer-pants",
+    "name": "True Prayer Pants",
+    "icon": "/icons/1200116.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 600,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 83
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "true-prayer-vestment",
+    "name": "True Prayer Vestment",
+    "icon": "/icons/1200114.webp",
+    "rarity": "Epic",
+    "rarityTier": 5,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1400,
+    "recommendedPrice": 630,
+    "attributes": {
+      "combatValue": 500,
+      "maxHealth": 66
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "agility-12-blue",
+    "name": "Agility 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121,
+      "physicalIncrease": 0.1
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "agility-12-blue-purple",
+    "name": "Agility 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134,
+      "physicalIncrease": 0.125
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-blue",
+    "name": "Archer 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121,
+      "physicalIncrease": 0.1
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-blue-purple",
+    "name": "Archer 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134,
+      "physicalIncrease": 0.125
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "astral-12-blue",
+    "name": "Astral 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "astral-12-blue-purple",
+    "name": "Astral 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "benediction-amulet",
+    "name": "Benediction Amulet",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 30
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "bloodborn-amulet",
+    "name": "Bloodborn Amulet",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 30
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "break-12-blue",
+    "name": "Break 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 31,
+      "maxHealth": 151,
+      "physicalIncrease": 0.09
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "break-12-blue-purple",
+    "name": "Break 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 37,
+      "maxHealth": 166,
+      "physicalIncrease": 0.113
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "charge-12-blue",
+    "name": "Charge 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 26,
+      "maxHealth": 181,
+      "physicalIncrease": 0.08
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "charge-12-blue-purple",
+    "name": "Charge 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 30,
+      "maxHealth": 197,
+      "physicalIncrease": 0.1
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "crusade-bracers",
+    "name": "Crusade Bracers",
+    "icon": "/icons/1200138.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusade-breastplate",
+    "name": "Crusade Breastplate",
+    "icon": "/icons/1200142.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 290,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusade-breeches",
+    "name": "Crusade Breeches",
+    "icon": "/icons/1200139.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 75
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusade-helmet",
+    "name": "Crusade Helmet",
+    "icon": "/icons/1200140.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusade-sabatons",
+    "name": "Crusade Sabatons",
+    "icon": "/icons/1200141.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "maxHealth": 45,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusader-gauntlets",
+    "name": "Crusader Gauntlets",
+    "icon": "/icons/1200080.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusader-hood",
+    "name": "Crusader Hood",
+    "icon": "/icons/1200078.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusader-leather-armor",
+    "name": "Crusader Leather Armor",
+    "icon": "/icons/1200079.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 290,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusader-long-boots",
+    "name": "Crusader Long Boots",
+    "icon": "/icons/1200082.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "maxHealth": 45,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "crusader-pants",
+    "name": "Crusader Pants",
+    "icon": "/icons/1200081.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 75
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "demonbane-ring",
+    "name": "Demonbane Ring",
+    "icon": "/icons/1220012.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 30
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "dominance-amulet",
+    "name": "Dominance Amulet",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 6,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "dps-12-blue",
+    "name": "DPS 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "dps-12-blue-purple",
+    "name": "DPS 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "dreamweaver-necklace",
+    "name": "Dreamweaver Necklace",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 6
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "element-12-blue",
+    "name": "Element 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "element-12-blue-purple",
+    "name": "Element 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "emissary-gauntlets",
+    "name": "Emissary Gauntlets",
+    "icon": "/icons/1200019.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "emissary-leather-armor",
+    "name": "Emissary Leather Armor",
+    "icon": "/icons/1200018.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 290,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "emissary-long-boots",
+    "name": "Emissary Long Boots",
+    "icon": "/icons/1200021.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "maxHealth": 45,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "emissary-mask",
+    "name": "Emissary Mask",
+    "icon": "/icons/1200017.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "emissary-tights",
+    "name": "Emissary Tights",
+    "icon": "/icons/1200020.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 75
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "enlightenment-bracers",
+    "name": "Enlightenment Bracers",
+    "icon": "/icons/1200120.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "enlightenment-crown",
+    "name": "Enlightenment Crown",
+    "icon": "/icons/1200118.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "enlightenment-greaves",
+    "name": "Enlightenment Greaves",
+    "icon": "/icons/1200122.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "maxHealth": 45
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "enlightenment-pants",
+    "name": "Enlightenment Pants",
+    "icon": "/icons/1200121.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 75
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "enlightenment-vestment",
+    "name": "Enlightenment Vestment",
+    "icon": "/icons/1200119.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 290,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "fearless-boots",
+    "name": "Fearless Boots",
+    "icon": "/icons/1200102.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "maxHealth": 45,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "fearless-bracers",
+    "name": "Fearless Bracers",
+    "icon": "/icons/1200100.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "fearless-breastplate",
+    "name": "Fearless Breastplate",
+    "icon": "/icons/1200099.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 290,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "fearless-helmet",
+    "name": "Fearless Helmet",
+    "icon": "/icons/1200098.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "fearless-pants",
+    "name": "Fearless Pants",
+    "icon": "/icons/1200101.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 75
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "flurry-12-blue",
+    "name": "Flurry 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121,
+      "physicalIncrease": 0.1
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "flurry-12-blue-purple",
+    "name": "Flurry 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134,
+      "physicalIncrease": 0.125
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-blue",
+    "name": "Haste 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121,
+      "physicalIncrease": 0.04
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-blue-purple",
+    "name": "Haste 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-blue",
+    "name": "Hunter 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121,
+      "physicalIncrease": 0.1
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-blue-purple",
+    "name": "Hunter 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134,
+      "physicalIncrease": 0.125
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-blue",
+    "name": "Infect 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 31,
+      "maxHealth": 151,
+      "physicalIncrease": 0.09
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-blue-purple",
+    "name": "Infect 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 37,
+      "maxHealth": 166,
+      "physicalIncrease": 0.113
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "mandrake-silver-ring",
+    "name": "Mandrake Silver Ring",
+    "icon": "/icons/1220014.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 6
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "raven-priest-bracers",
+    "name": "Raven Priest Bracers",
+    "icon": "/icons/1200025.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "raven-priest-greaves",
+    "name": "Raven Priest Greaves",
+    "icon": "/icons/1200027.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 230,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 9,
+      "maxHealth": 45
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "raven-priest-hood",
+    "name": "Raven Priest Hood",
+    "icon": "/icons/1200023.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "raven-priest-pants",
+    "name": "Raven Priest Pants",
+    "icon": "/icons/1200026.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 265,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 75
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "raven-priest-robe",
+    "name": "Raven Priest Robe",
+    "icon": "/icons/1200024.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1300,
+    "recommendedPrice": 290,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 60
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "red-shield-12-blue",
+    "name": "Red Shield 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 20,
+      "maxHealth": 181,
+      "physicalIncrease": 0.04
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-shield-12-blue-purple",
+    "name": "Red Shield 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 24,
+      "maxHealth": 197,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-blue",
+    "name": "Red Sword 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 26,
+      "maxHealth": 151,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-blue-purple",
+    "name": "Red Sword 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 30,
+      "maxHealth": 166,
+      "physicalIncrease": 0.063
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "retribution-ring",
+    "name": "Retribution Ring",
+    "icon": "/icons/1220011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "attack": 6,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "shadow-shroud-12-blue",
+    "name": "Shadow Shroud 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121,
+      "physicalIncrease": 0.1
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-shroud-12-blue-purple",
+    "name": "Shadow Shroud 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134,
+      "physicalIncrease": 0.125
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stealth-12-blue",
+    "name": "Stealth 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121,
+      "physicalIncrease": 0.1
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stealth-12-blue-purple",
+    "name": "Stealth 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134,
+      "physicalIncrease": 0.125
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-blue",
+    "name": "Stun 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 31,
+      "maxHealth": 151,
+      "physicalIncrease": 0.09
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-blue-purple",
+    "name": "Stun 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 37,
+      "maxHealth": 166,
+      "physicalIncrease": 0.113
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-blue",
+    "name": "Super Armor 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 26,
+      "maxHealth": 181,
+      "physicalIncrease": 0.04
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-blue-purple",
+    "name": "Super Armor 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 30,
+      "maxHealth": 197,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-blue",
+    "name": "Support 12 Blue",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2800,
+      "attack": 37,
+      "maxHealth": 121
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-blue-purple",
+    "name": "Support 12 Blue-Purple",
+    "icon": "/icons/1221011.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 3200,
+      "attack": 43,
+      "maxHealth": 134
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "woodling-guardian-ring",
+    "name": "Woodling Guardian Ring",
+    "icon": "/icons/1220013.webp",
+    "rarity": "Excellent",
+    "rarityTier": 4,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 260,
+    "attributes": {
+      "combatValue": 400,
+      "maxHealth": 30
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "agility-12-green",
+    "name": "Agility 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "agility-12-green-blue",
+    "name": "Agility 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102,
+      "physicalIncrease": 0.075
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-green",
+    "name": "Archer 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-green-blue",
+    "name": "Archer 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102,
+      "physicalIncrease": 0.075
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "astral-12-green",
+    "name": "Astral 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "astral-12-green-blue",
+    "name": "Astral 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "beak-necklace",
+    "name": "Beak Necklace",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 25
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "break-12-green",
+    "name": "Break 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 21,
+      "maxHealth": 108,
+      "physicalIncrease": 0.045
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "break-12-green-blue",
+    "name": "Break 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 26,
+      "maxHealth": 130,
+      "physicalIncrease": 0.068
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "ceremonial-bracers",
+    "name": "Ceremonial Bracers",
+    "icon": "/icons/1200133.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ceremonial-breastplate",
+    "name": "Ceremonial Breastplate",
+    "icon": "/icons/1200137.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 100,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ceremonial-breeches",
+    "name": "Ceremonial Breeches",
+    "icon": "/icons/1200134.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 63
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ceremonial-helmet",
+    "name": "Ceremonial Helmet",
+    "icon": "/icons/1200135.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "ceremonial-sabatons",
+    "name": "Ceremonial Sabatons",
+    "icon": "/icons/1200136.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "maxHealth": 38,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "charge-12-green",
+    "name": "Charge 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 16,
+      "maxHealth": 133,
+      "physicalIncrease": 0.04
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "charge-12-green-blue",
+    "name": "Charge 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 21,
+      "maxHealth": 157,
+      "physicalIncrease": 0.06
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "discipline-pendant",
+    "name": "Discipline Pendant",
+    "icon": "/icons/1221010.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 25
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "dps-12-green",
+    "name": "DPS 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "dps-12-green-blue",
+    "name": "DPS 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "element-12-green",
+    "name": "Element 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "element-12-green-blue",
+    "name": "Element 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "flurry-12-green",
+    "name": "Flurry 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "flurry-12-green-blue",
+    "name": "Flurry 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102,
+      "physicalIncrease": 0.075
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-green",
+    "name": "Haste 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-green-blue",
+    "name": "Haste 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-green",
+    "name": "Hunter 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-green-blue",
+    "name": "Hunter 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102,
+      "physicalIncrease": 0.075
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunters-ring",
+    "name": "Hunter's Ring",
+    "icon": "/icons/1220011.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 5,
+      "physicalIncrease": 0.005
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "infect-12-green",
+    "name": "Infect 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 21,
+      "maxHealth": 108,
+      "physicalIncrease": 0.045
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-green-blue",
+    "name": "Infect 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 26,
+      "maxHealth": 130,
+      "physicalIncrease": 0.068
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "lovers-ring",
+    "name": "Lover's Ring",
+    "icon": "/icons/1220013.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 25
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "martyrs-bracers",
+    "name": "Martyr's Bracers",
+    "icon": "/icons/1200110.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "martyrs-greaves",
+    "name": "Martyr's Greaves",
+    "icon": "/icons/1200112.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "maxHealth": 38
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "martyrs-hood",
+    "name": "Martyr's Hood",
+    "icon": "/icons/1200108.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "martyrs-pants",
+    "name": "Martyr's Pants",
+    "icon": "/icons/1200111.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 63
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "martyrs-vestment",
+    "name": "Martyr's Vestment",
+    "icon": "/icons/1200109.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 100,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "mithril-ring",
+    "name": "Mithril Ring",
+    "icon": "/icons/1220014.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 5
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "practitioner-bracers",
+    "name": "Practitioner Bracers",
+    "icon": "/icons/1200045.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "practitioner-hood",
+    "name": "Practitioner Hood",
+    "icon": "/icons/1200043.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "practitioner-pants",
+    "name": "Practitioner Pants",
+    "icon": "/icons/1200046.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 63
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "practitioner-robe",
+    "name": "Practitioner Robe",
+    "icon": "/icons/1200044.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 100,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "practitioner-shoes",
+    "name": "Practitioner Shoes",
+    "icon": "/icons/1200047.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "maxHealth": 38
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "red-shield-12-green",
+    "name": "Red Shield 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 13,
+      "maxHealth": 133,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-shield-12-green-blue",
+    "name": "Red Shield 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 17,
+      "maxHealth": 157,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-green",
+    "name": "Red Sword 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 18,
+      "maxHealth": 108,
+      "physicalIncrease": 0.025
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-green-blue",
+    "name": "Red Sword 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 22,
+      "maxHealth": 130,
+      "physicalIncrease": 0.038
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "rover-bracers",
+    "name": "Rover Bracers",
+    "icon": "/icons/1200030.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rover-hood",
+    "name": "Rover Hood",
+    "icon": "/icons/1200028.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rover-long-boots",
+    "name": "Rover Long Boots",
+    "icon": "/icons/1200032.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "maxHealth": 38,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rover-pants",
+    "name": "Rover Pants",
+    "icon": "/icons/1200031.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 63
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "rover-top",
+    "name": "Rover Top",
+    "icon": "/icons/1200029.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 100,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadow-shroud-12-green",
+    "name": "Shadow Shroud 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-shroud-12-green-blue",
+    "name": "Shadow Shroud 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102,
+      "physicalIncrease": 0.075
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-skull-boots",
+    "name": "Shadow Skull Boots",
+    "icon": "/icons/1200062.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "maxHealth": 38,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadow-skull-gauntlets",
+    "name": "Shadow Skull Gauntlets",
+    "icon": "/icons/1200060.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadow-skull-mask",
+    "name": "Shadow Skull Mask",
+    "icon": "/icons/1200058.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadow-skull-tights",
+    "name": "Shadow Skull Tights",
+    "icon": "/icons/1200061.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 63
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "shadow-skull-top",
+    "name": "Shadow Skull Top",
+    "icon": "/icons/1200059.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 100,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "sorcery-collar",
+    "name": "Sorcery Collar",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 5
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "stealth-12-green",
+    "name": "Stealth 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83,
+      "physicalIncrease": 0.05
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stealth-12-green-blue",
+    "name": "Stealth 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102,
+      "physicalIncrease": 0.075
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-green",
+    "name": "Stun 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 21,
+      "maxHealth": 108,
+      "physicalIncrease": 0.045
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-green-blue",
+    "name": "Stun 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 26,
+      "maxHealth": 130,
+      "physicalIncrease": 0.068
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-green",
+    "name": "Super Armor 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 16,
+      "maxHealth": 133,
+      "physicalIncrease": 0.02
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-green-blue",
+    "name": "Super Armor 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 21,
+      "maxHealth": 157,
+      "physicalIncrease": 0.03
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-green",
+    "name": "Support 12 Green",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2000,
+      "attack": 25,
+      "maxHealth": 83
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-green-blue",
+    "name": "Support 12 Green-Blue",
+    "icon": "/icons/1221009.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 2400,
+      "attack": 31,
+      "maxHealth": 102
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "travelers-ring",
+    "name": "Traveler's Ring",
+    "icon": "/icons/1220012.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 25
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "veteran-armor",
+    "name": "Veteran Armor",
+    "icon": "/icons/1200049.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 100,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "veteran-boots",
+    "name": "Veteran Boots",
+    "icon": "/icons/1200052.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "maxHealth": 38,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "veteran-bracers",
+    "name": "Veteran Bracers",
+    "icon": "/icons/1200050.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 70,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 7,
+      "physicalIncrease": 0.01
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "veteran-helmet",
+    "name": "Veteran Helmet",
+    "icon": "/icons/1200048.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 50
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "veteran-pants",
+    "name": "Veteran Pants",
+    "icon": "/icons/1200051.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 1200,
+    "recommendedPrice": 90,
+    "attributes": {
+      "combatValue": 300,
+      "maxHealth": 63
+    },
+    "variantCount": 10
+  },
+  {
+    "slug": "warrior-pendant",
+    "name": "Warrior Pendant",
+    "icon": "/icons/1221008.webp",
+    "rarity": "Rare",
+    "rarityTier": 3,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 85,
+    "attributes": {
+      "combatValue": 300,
+      "attack": 5,
+      "physicalIncrease": 0.005
+    },
+    "variantCount": 4
+  },
+  {
+    "slug": "agility-12-white",
+    "name": "Agility 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "agility-12-white-no-jewelry",
+    "name": "Agility 12 White (No Jewelry)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "apprentice-boots",
+    "name": "Apprentice Boots",
+    "icon": "/icons/1200042.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 6,
+      "maxHealth": 35
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "apprentice-bracers",
+    "name": "Apprentice Bracers",
+    "icon": "/icons/1200040.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 6
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "apprentice-hood",
+    "name": "Apprentice Hood",
+    "icon": "/icons/1200038.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 45,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 47
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "apprentice-pants",
+    "name": "Apprentice Pants",
+    "icon": "/icons/1200041.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 45,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 58
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "apprentice-robe",
+    "name": "Apprentice Robe",
+    "icon": "/icons/1200039.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 50,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 47
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "archer-12-white",
+    "name": "Archer 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-white-no-accessories",
+    "name": "Archer 12 White (No Accessories)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "artisans-bracers",
+    "name": "Artisan's Bracers",
+    "icon": "/icons/1200035.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 6
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "artisans-eyepatch",
+    "name": "Artisan's Eyepatch",
+    "icon": "/icons/1200033.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 45,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 47
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "artisans-leather-boots",
+    "name": "Artisan's Leather Boots",
+    "icon": "/icons/1200037.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 6,
+      "maxHealth": 35
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "artisans-pants",
+    "name": "Artisan's Pants",
+    "icon": "/icons/1200036.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 45,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 58
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "artisans-vest",
+    "name": "Artisan's Vest",
+    "icon": "/icons/1200034.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 50,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 47
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "astral-12-white",
+    "name": "Astral 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "astral-12-white-no-jewelry",
+    "name": "Astral 12 White (No Jewelry)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "brass-necklace",
+    "name": "Brass Necklace",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 4
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "break-12-white",
+    "name": "Break 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 15,
+      "maxHealth": 92
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "break-12-white-no-accessories",
+    "name": "Break 12 White No Accessories",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "carved-amulet",
+    "name": "Carved Amulet",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 23
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "charge-12-white",
+    "name": "Charge 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 11,
+      "maxHealth": 115
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "charge-12-white-no-accessories",
+    "name": "Charge 12 White, No Accessories",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "decorative-ring",
+    "name": "Decorative Ring",
+    "icon": "/icons/1220010.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 4
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "dps-12-white",
+    "name": "DPS 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "dps-12-white-no-accessories",
+    "name": "DPS 12 White (No Accessories)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "element-12-white",
+    "name": "Element 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "element-12-white-no-jewelry",
+    "name": "Element 12 White (No Jewelry)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "engraved-ring",
+    "name": "Engraved Ring",
+    "icon": "/icons/1220009.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [],
+    "durability": 0,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 23
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "flurry-12-white",
+    "name": "Flurry 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "flurry-12-white-no-jewelry",
+    "name": "Flurry 12 White No Jewelry",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "guard-armor",
+    "name": "Guard Armor",
+    "icon": "/icons/1200002.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 50,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 47
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "guard-boots",
+    "name": "Guard Boots",
+    "icon": "/icons/1200005.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 6,
+      "maxHealth": 35
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "guard-bracers",
+    "name": "Guard Bracers",
+    "icon": "/icons/1200003.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 40,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 6
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "guard-helmet",
+    "name": "Guard Helmet",
+    "icon": "/icons/1200001.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 45,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 47
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "guard-pants",
+    "name": "Guard Pants",
+    "icon": "/icons/1200004.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1100,
+    "recommendedPrice": 45,
+    "attributes": {
+      "combatValue": 200,
+      "maxHealth": 58
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "haste-12-white",
+    "name": "Haste 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-white-no-accessories",
+    "name": "Haste 12 White (No Accessories)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-white",
+    "name": "Hunter 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-white-no-accessories",
+    "name": "Hunter 12 White (No Accessories)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-white",
+    "name": "Infect 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 15,
+      "maxHealth": 92
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-white-no-accessories",
+    "name": "Infect 12 White No Accessories",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-shield-12-white",
+    "name": "Red Shield 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 10,
+      "maxHealth": 115
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-shield-12-white-no-accessories",
+    "name": "Red Shield 12 White, No Accessories",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 10,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-white",
+    "name": "Red Sword 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 14,
+      "maxHealth": 92
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-white-no-jewelry",
+    "name": "Red Sword 12 White (No Jewelry)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 10,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-shroud-12-white",
+    "name": "Shadow Shroud 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-shroud-12-white-no-jewelry",
+    "name": "Shadow Shroud 12 White No Jewelry",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stealth-12-white",
+    "name": "Stealth 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stealth-12-white-no-accessories",
+    "name": "Stealth 12 White (No Accessories)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-white",
+    "name": "Stun 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 15,
+      "maxHealth": 92
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-white-no-accessory",
+    "name": "Stun 12 White No Accessory",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-white",
+    "name": "Super Armor 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 11,
+      "maxHealth": 115
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-white-no-accessories",
+    "name": "Super Armor 12 White (No Accessories)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-white",
+    "name": "Support 12 White",
+    "icon": "/icons/1221007.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 1200,
+      "attack": 19,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-white-no-accessories",
+    "name": "Support 12 White (No Accessories)",
+    "icon": "/icons/1221006.webp",
+    "rarity": "Common",
+    "rarityTier": 2,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 800,
+      "attack": 11,
+      "maxHealth": 68
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "agility-12-gray",
+    "name": "Agility 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "archer-12-gray",
+    "name": "Archer 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "astral-12-gray",
+    "name": "Astral 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "break-12-gray",
+    "name": "Break 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "charge-12-gray",
+    "name": "Charge 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "crude-recruit-armor",
+    "name": "Crude Recruit Armor",
+    "icon": "/icons/1200074.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 40
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "crude-recruit-boots",
+    "name": "Crude Recruit Boots",
+    "icon": "/icons/1200077.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "attack": 5,
+      "maxHealth": 30
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "crude-recruit-bracers",
+    "name": "Crude Recruit Bracers",
+    "icon": "/icons/1200075.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "attack": 5
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "crude-recruit-helmet",
+    "name": "Crude Recruit Helmet",
+    "icon": "/icons/1200073.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 40
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "crude-recruit-pants",
+    "name": "Crude Recruit Pants",
+    "icon": "/icons/1200076.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 50
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "element-12-gray",
+    "name": "Element 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Sorcerer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "false-god-boss-spirit-mask",
+    "name": "False God BOSS Spirit Mask",
+    "icon": "/icons/1200063.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "flurry-12-gray",
+    "name": "Flurry 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "haste-12-gray",
+    "name": "Haste 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "hunter-12-gray",
+    "name": "Hunter 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Blackarrow"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "infect-12-gray",
+    "name": "Infect 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Withered Knight"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "offense-12-gray",
+    "name": "Offense 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-shield-12-gray",
+    "name": "Red Shield 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "red-sword-12-grey",
+    "name": "Red Sword 12 Grey",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "shadow-shroud-12-gray",
+    "name": "Shadow Shroud 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "simple-leather-boots",
+    "name": "Simple Leather Boots",
+    "icon": "/icons/1200067.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "attack": 5,
+      "maxHealth": 30
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "simple-leather-bracers",
+    "name": "Simple Leather Bracers",
+    "icon": "/icons/1200065.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "attack": 5
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "simple-leather-eyepatch",
+    "name": "Simple Leather Eyepatch",
+    "icon": "/icons/1200063.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 40
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "simple-leather-pants",
+    "name": "Simple Leather Pants",
+    "icon": "/icons/1200066.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 50
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "simple-leather-vest",
+    "name": "Simple Leather Vest",
+    "icon": "/icons/1200064.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 40
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "stealth-12-gray",
+    "name": "Stealth 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Shadowstrix"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "stun-12-gray",
+    "name": "Stun 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Mercenary"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "super-armor-12-gray",
+    "name": "Super Armor 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "support-12-gray",
+    "name": "Support 12 Gray",
+    "icon": "/icons/1221005.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Seer"
+    ],
+    "durability": 0,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 200,
+      "attack": 5,
+      "maxHealth": 40
+    },
+    "variantCount": 1
+  },
+  {
+    "slug": "training-apprentice-boots",
+    "name": "Training Apprentice Boots",
+    "icon": "/icons/1200072.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "attack": 5,
+      "maxHealth": 30
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "training-apprentice-bracers",
+    "name": "Training Apprentice Bracers",
+    "icon": "/icons/1200070.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "attack": 5
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "training-apprentice-hood",
+    "name": "Training Apprentice Hood",
+    "icon": "/icons/1200068.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 40
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "training-apprentice-pants",
+    "name": "Training Apprentice Pants",
+    "icon": "/icons/1200071.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 50
+    },
+    "variantCount": 2
+  },
+  {
+    "slug": "training-apprentice-robe",
+    "name": "Training Apprentice Robe",
+    "icon": "/icons/1200069.webp",
+    "rarity": "Damaged",
+    "rarityTier": 1,
+    "classes": [
+      "Sorcerer",
+      "Seer"
+    ],
+    "durability": 1000,
+    "recommendedPrice": 0,
+    "attributes": {
+      "combatValue": 100,
+      "maxHealth": 40
+    },
+    "variantCount": 2
+  }
+]

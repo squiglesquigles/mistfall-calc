@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mercenary",
+    "slug": "mercenary",
+    "name": "Mercenary",
+    "icon": "/icons/104001.webp",
+    "role": "Bruiser",
+    "weapon": "Sword & Shield / Hammer",
+    "tier": "A",
+    "blurb": "The archetypal frontline Hunter — a durable melee bruiser built around sword-and-board and blunt weapons, trading sustained pressure for survivability."
+  },
+  {
+    "id": "sorcerer",
+    "slug": "sorcerer",
+    "name": "Sorcerer",
+    "icon": "/icons/104002.webp",
+    "role": "Mage",
+    "weapon": "Staff",
+    "tier": "S",
+    "blurb": "A ranged spellcaster that scales with Magical Increase, leaning on the staff to deal burst magical damage from a distance."
+  },
+  {
+    "id": "blackarrow",
+    "slug": "blackarrow",
+    "name": "Blackarrow",
+    "icon": "/icons/104003.webp",
+    "role": "Ranged",
+    "weapon": "Bow",
+    "tier": "A",
+    "blurb": "A dedicated archer that controls space from afar with the bow, converting positioning and physical damage into safe, sustained DPS."
+  },
+  {
+    "id": "shadowstrix",
+    "slug": "shadowstrix",
+    "name": "Shadowstrix",
+    "icon": "/icons/104004.webp",
+    "role": "Assassin",
+    "weapon": "Dagger / Dual Blades",
+    "tier": "S",
+    "blurb": "A high-mobility assassin built for daggers and dual blades — closes distance, opens with critical strikes, and disengages before retaliation lands."
+  },
+  {
+    "id": "seer",
+    "slug": "seer",
+    "name": "Seer",
+    "icon": "/icons/104005.webp",
+    "role": "Support",
+    "weapon": "Catalyst / Mace",
+    "tier": "B",
+    "blurb": "A utility caster oriented around the catalyst and Healing Bonus, supporting the team through sustain and control rather than raw damage."
+  },
+  {
+    "id": "withered-knight",
+    "slug": "withered-knight",
+    "name": "Withered Knight",
+    "icon": "/icons/104006.webp",
+    "role": "Heavy",
+    "weapon": "Greatsword",
+    "tier": "A",
+    "blurb": "A heavy two-handed greatsword specialist that trades speed for reach and poise, excelling at toughness-break and parry against tough targets."
+  }
+]

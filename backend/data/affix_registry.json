@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Bulwark",
+    "source": "Built-in / Gem",
+    "visual": "Round Shield Icon",
+    "gem_socket": "Red / Green",
+    "effect": "Increases Block / Shielding"
+  },
+  {
+    "name": "Ethereal",
+    "source": "Built-in",
+    "visual": "Ghostly Figure Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Evasion / Movement Buff"
+  },
+  {
+    "name": "Brotherhood",
+    "source": "Built-in / Gem",
+    "visual": "Two Figures Icon",
+    "gem_socket": "Red",
+    "effect": "Group / Ally Stat Buff"
+  },
+  {
+    "name": "Unyielding",
+    "source": "Built-in / Gem",
+    "visual": "Star Shield Icon",
+    "gem_socket": "Purple / Blue",
+    "effect": "CC Resistance / Stagger Defense"
+  },
+  {
+    "name": "Resilience",
+    "source": "Built-in / Gem",
+    "visual": "Four-leaf Clover Icon",
+    "gem_socket": "Purple",
+    "effect": "Status Resistance"
+  },
+  {
+    "name": "Wrath",
+    "source": "Built-in / Gem",
+    "visual": "Crossed Swords Icon",
+    "gem_socket": "Purple / Blue",
+    "effect": "Increases Damage / Crit"
+  },
+  {
+    "name": "Fervid",
+    "source": "Built-in",
+    "visual": "Flames / Blade Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Attack Speed / Flame Damage"
+  },
+  {
+    "name": "Ranged",
+    "source": "Built-in / Gem",
+    "visual": "Bow / Arrow Wings Icon",
+    "gem_socket": "Green / Red",
+    "effect": "Ranged Attack Damage"
+  },
+  {
+    "name": "Smiting",
+    "source": "Built-in / Gem",
+    "visual": "Skull & Mace Icon",
+    "gem_socket": "Green / Red",
+    "effect": "Bonus Damage vs Offended / Stunned"
+  },
+  {
+    "name": "Strife",
+    "source": "Built-in",
+    "visual": "Axe & Hammer Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Combat Power / Aggro"
+  },
+  {
+    "name": "Seamless",
+    "source": "Built-in / Gem",
+    "visual": "Hourglass Icon",
+    "gem_socket": "Blue",
+    "effect": "Cooldown Reduction"
+  },
+  {
+    "name": "Swift",
+    "source": "Built-in",
+    "visual": "Boots Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Increases Movement Speed"
+  },
+  {
+    "name": "Deft",
+    "source": "Built-in / Gem",
+    "visual": "Padlock / Lock Icon",
+    "gem_socket": "Green",
+    "effect": "Precision / Lock Manipulation"
+  },
+  {
+    "name": "Curse",
+    "source": "Built-in / Gem",
+    "visual": "Potion Bottle Icon",
+    "gem_socket": "Blue / Purple",
+    "effect": "Debuff Resistance / Curse Damage"
+  },
+  {
+    "name": "Focused",
+    "source": "Built-in",
+    "visual": "Target / Crosshair Icon",
+    "gem_socket": "Red",
+    "effect": "Accuracy / Critical Chance"
+  },
+  {
+    "name": "Tenacious",
+    "source": "Built-in / Gem",
+    "visual": "Cross Shield Icon",
+    "gem_socket": "Green / Red",
+    "effect": "Increases Max Health / Defense"
+  },
+  {
+    "name": "Iron Helmet",
+    "source": "Built-in / Gem",
+    "visual": "Helmet Icon",
+    "gem_socket": "Red",
+    "effect": "Head Armor / Stun Defense"
+  },
+  {
+    "name": "Stoic",
+    "source": "Built-in",
+    "visual": "Neck / Collar Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Knockback Resistance"
+  },
+  {
+    "name": "Spirit Shield",
+    "source": "Built-in",
+    "visual": "Glowing Shield Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Magic Shielding"
+  },
+  {
+    "name": "Distant Ward",
+    "source": "Built-in / Gem",
+    "visual": "Shield with Star Icon",
+    "gem_socket": "Red / Green",
+    "effect": "Ranged Defense"
+  },
+  {
+    "name": "Valor",
+    "source": "Built-in",
+    "visual": "Sword Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Increases Attack Power"
+  },
+  {
+    "name": "Sky Piercer",
+    "source": "Built-in",
+    "visual": "Runner / Spear Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Penetration / Dash Attack"
+  },
+  {
+    "name": "Seeker",
+    "source": "Built-in",
+    "visual": "Boot Dash Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Loot Detection / Speed"
+  },
+  {
+    "name": "Fervor",
+    "source": "Built-in / Gem",
+    "visual": "Fist Icon",
+    "gem_socket": "Red / Blue / Purple",
+    "effect": "Attack Speed / Fury Generation"
+  },
+  {
+    "name": "Burst",
+    "source": "Built-in / Gem",
+    "visual": "Exploding Skull Icon",
+    "gem_socket": "Blue",
+    "effect": "Area Damage / Burst Damage"
+  },
+  {
+    "name": "Eloquence",
+    "source": "Built-in",
+    "visual": "Open Book / Hands Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Trading / Vendor Buff"
+  },
+  {
+    "name": "Vitality",
+    "source": "Built-in / Gem",
+    "visual": "Heart Icon",
+    "gem_socket": "Green / Purple",
+    "effect": "Increases Health Pool"
+  },
+  {
+    "name": "Elusive",
+    "source": "Built-in",
+    "visual": "Stealth / Boot Icon",
+    "gem_socket": "Gear Built-in",
+    "effect": "Threat Reduction / Dodge"
+  },
+  {
+    "name": "Blessing",
+    "source": "Built-in / Gem",
+    "visual": "Potion / Flask Icon",
+    "gem_socket": "Green",
+    "effect": "Healing Effectiveness / Buffs"
+  },
+  {
+    "name": "Wealth",
+    "source": "Built-in / Gem",
+    "visual": "Gold Coin Icon",
+    "gem_socket": "Green / Red",
+    "effect": "Increases Gold Drop Rate"
+  },
+  {
+    "name": "Creation",
+    "source": "Built-in / Gem",
+    "visual": "Sparkle Hand Icon",
+    "gem_socket": "Blue",
+    "effect": "Crafting Quality / Resource Gain"
+  }
+]

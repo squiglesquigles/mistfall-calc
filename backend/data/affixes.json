@@ -1,0 +1,953 @@
+[
+  {
+    "id": 101,
+    "slug": "aegis",
+    "name": "Aegis",
+    "icon": "/icons/1720900.webp",
+    "desc": "Increase Defense. Upon reaching a certain level, increase Physical Resistance.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 80,
+    "armorCount": 75,
+    "weaponCount": 5,
+    "types": [
+      "Chest",
+      "Feet",
+      "Hands",
+      "Head",
+      "Legs",
+      "Necklace",
+      "Sword and Shield"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 311,
+    "slug": "blessing",
+    "name": "Blessing",
+    "icon": "/icons/1733100.webp",
+    "desc": "Increase the duration of Buffs granted by you.",
+    "level": [
+      5
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 44,
+    "armorCount": 34,
+    "weaponCount": 10,
+    "types": [
+      "Chest",
+      "Dagger",
+      "Hands",
+      "Head",
+      "Mace",
+      "Necklace"
+    ],
+    "classes": [
+      "Mercenary",
+      "Seer",
+      "Shadowstrix"
+    ]
+  },
+  {
+    "id": 110,
+    "slug": "brotherhood",
+    "name": "Brotherhood",
+    "icon": "/icons/1721502.webp",
+    "desc": "While alive, grants increased Defense to yourself and allies. If multiple team members have this affix, only the highest-level affix takes effect. Upon reaching a certain level, grants increased Attack to yourself and allies.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 40,
+    "armorCount": 29,
+    "weaponCount": 11,
+    "types": [
+      "Catalyst",
+      "Hands",
+      "Head",
+      "Legs",
+      "Necklace",
+      "Polearm and Shield"
+    ],
+    "classes": [
+      "Mercenary",
+      "Seer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 103,
+    "slug": "bulwark",
+    "name": "Bulwark",
+    "icon": "/icons/1721200.webp",
+    "desc": "Increase Block Damage Reduction Rate. Upon reaching the required level, reduce Block Energy Cost.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 33,
+    "armorCount": 23,
+    "weaponCount": 10,
+    "types": [
+      "Chest",
+      "Head",
+      "Legs",
+      "Necklace",
+      "Polearm and Shield",
+      "Sword and Shield"
+    ],
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 214,
+    "slug": "burst",
+    "name": "Burst",
+    "icon": "/icons/1710507.webp",
+    "desc": "Increases the damage of Withered Knight's Wither Execution.",
+    "level": [
+      5
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 8,
+    "armorCount": 8,
+    "weaponCount": 0,
+    "types": [
+      "Feet",
+      "Hands"
+    ],
+    "classes": [
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 315,
+    "slug": "creation",
+    "name": "Creation",
+    "icon": "/icons/1732900.webp",
+    "desc": "Increases the duration of Constructs. Upon reaching a certain level, successfully summoning a Construct increases Physical Damage and Magic Damage for a period of time.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 20,
+    "armorCount": 14,
+    "weaponCount": 6,
+    "types": [
+      "Catalyst",
+      "Hands",
+      "Head",
+      "Necklace"
+    ],
+    "classes": [
+      "Seer"
+    ]
+  },
+  {
+    "id": 312,
+    "slug": "curse",
+    "name": "Curse",
+    "icon": "/icons/1733200.webp",
+    "desc": "Increase the duration of Debuffs inflicted by you.",
+    "level": [
+      5
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 65,
+    "armorCount": 49,
+    "weaponCount": 16,
+    "types": [
+      "Bow",
+      "Chest",
+      "Dual Blades",
+      "Feet",
+      "Greatsword",
+      "Hands",
+      "Head",
+      "Legs",
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 309,
+    "slug": "deft",
+    "name": "Deft",
+    "icon": "/icons/1732500.webp",
+    "desc": "Increases Interaction Speed. Interactions cannot be interrupted by minor Impacts; once triggered, this effect has a cooldown of Xs.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 33,
+    "armorCount": 28,
+    "weaponCount": 5,
+    "types": [
+      "Dagger",
+      "Feet",
+      "Hands"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 113,
+    "slug": "distant-ward",
+    "name": "Distant Ward",
+    "icon": "/icons/1720911.webp",
+    "desc": "If the distance between you and the attacker is greater than X meters when hit, temporarily increases your Physical Resistance and Magic Resistance.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 17,
+    "armorCount": 12,
+    "weaponCount": 5,
+    "types": [
+      "Chest",
+      "Head",
+      "Legs",
+      "Polearm and Shield"
+    ],
+    "classes": [
+      "Mercenary",
+      "Seer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 301,
+    "slug": "eloquence",
+    "name": "Eloquence",
+    "icon": "/icons/1732910.webp",
+    "desc": "Increases Chanting Speed. Upon reaching a certain level, chanting cannot be interrupted by minor Impact.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 57,
+    "armorCount": 45,
+    "weaponCount": 12,
+    "types": [
+      "Catalyst",
+      "Chest",
+      "Feet",
+      "Hands",
+      "Head",
+      "Legs",
+      "Necklace",
+      "Staff"
+    ],
+    "classes": [
+      "Seer",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 305,
+    "slug": "elusive",
+    "name": "Elusive",
+    "icon": "/icons/1731700.webp",
+    "desc": "Reduces Dodge Energy Cost.",
+    "level": [
+      5
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 97,
+    "armorCount": 82,
+    "weaponCount": 15,
+    "types": [
+      "Chest",
+      "Dual Blades",
+      "Feet",
+      "Hammer",
+      "Hands",
+      "Head",
+      "Legs",
+      "Mace",
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 108,
+    "slug": "ethereal",
+    "name": "Ethereal",
+    "icon": "/icons/1731711.webp",
+    "desc": "Increase Fall Damage Resistance. Upon reaching the required level, falling no longer causes stagger.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 28,
+    "armorCount": 28,
+    "weaponCount": 0,
+    "types": [
+      "Chest",
+      "Feet"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 208,
+    "slug": "fervid",
+    "name": "Fervid",
+    "icon": "/icons/1710101.webp",
+    "desc": "When Health is above X%, increase Physical Damage and Magic Damage. Upon reaching a certain level, when Health is above X%, reduce Skill Energy Cost.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 112,
+    "armorCount": 79,
+    "weaponCount": 33,
+    "types": [
+      "Bow",
+      "Catalyst",
+      "Chest",
+      "Dagger",
+      "Feet",
+      "Greatsword",
+      "Hands",
+      "Legs",
+      "Mace",
+      "Necklace",
+      "Staff"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 212,
+    "slug": "fervor",
+    "name": "Fervor",
+    "icon": "/icons/1710201.webp",
+    "desc": "After hitting an enemy, increase Physical Damage and Magic Damage for Xs, stacking up to 5 times. Upon reaching the required level, when the number of stacks is greater than or equal to 3, increase Defense Penetration.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 109,
+    "armorCount": 83,
+    "weaponCount": 26,
+    "types": [
+      "Chest",
+      "Dagger",
+      "Dual Blades",
+      "Feet",
+      "Hands",
+      "Head",
+      "Legs",
+      "Mace",
+      "Necklace",
+      "Polearm and Shield",
+      "Staff"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 314,
+    "slug": "focused",
+    "name": "Focused",
+    "icon": "/icons/1721500.webp",
+    "desc": "Increases Charging Speed. Upon reaching a certain level, increases Movement Speed while charging.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 43,
+    "armorCount": 32,
+    "weaponCount": 11,
+    "types": [
+      "Bow",
+      "Chest",
+      "Feet",
+      "Hammer",
+      "Hands",
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary"
+    ]
+  },
+  {
+    "id": 105,
+    "slug": "iron-helmet",
+    "name": "Iron Helmet",
+    "icon": "/icons/1721300.webp",
+    "desc": "Increase Critical Damage Resistance. Upon reaching the required level, reduce the impact of Critical Hits received.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 76,
+    "armorCount": 76,
+    "weaponCount": 0,
+    "types": [
+      "Chest",
+      "Head",
+      "Legs",
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 211,
+    "slug": "ranged",
+    "name": "Ranged",
+    "icon": "/icons/1710407.webp",
+    "desc": "If the distance between you and the target is greater than X meters when hit, temporarily increase Physical Damage and Magic Damage.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 81,
+    "armorCount": 63,
+    "weaponCount": 18,
+    "types": [
+      "Bow",
+      "Catalyst",
+      "Chest",
+      "Feet",
+      "Hands",
+      "Head",
+      "Necklace",
+      "Staff"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Seer",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 114,
+    "slug": "resilience",
+    "name": "Resilience",
+    "icon": "/icons/1732200.webp",
+    "desc": "Reduces the duration of debuffs received. Upon reaching a certain level, suffering a crowd control debuff temporarily increases your Physical Resistance and Magic Resistance.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 16,
+    "armorCount": 16,
+    "weaponCount": 0,
+    "types": [
+      "Chest",
+      "Hands",
+      "Head"
+    ],
+    "classes": [
+      "Mercenary",
+      "Shadowstrix",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 302,
+    "slug": "seamless",
+    "name": "Seamless",
+    "icon": "/icons/1733000.webp",
+    "desc": "Increases Skill Cooldown Speed. Upon reaching a certain level, knocking down a Gyldhunter reduces skill cooldowns currently in progress.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 37,
+    "armorCount": 37,
+    "weaponCount": 0,
+    "types": [
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 209,
+    "slug": "seeker",
+    "name": "Seeker",
+    "icon": "/icons/1732800.webp",
+    "desc": "Hitting an enemy increases Movement Speed for Xs. Upon reaching a certain level, the Speed Boost can stack.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 111,
+    "armorCount": 78,
+    "weaponCount": 33,
+    "types": [
+      "Bow",
+      "Catalyst",
+      "Dagger",
+      "Dual Blades",
+      "Feet",
+      "Hands",
+      "Head",
+      "Legs",
+      "Mace",
+      "Necklace",
+      "Staff"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 207,
+    "slug": "sky-piercer",
+    "name": "Sky Piercer",
+    "icon": "/icons/1731901.webp",
+    "desc": "Casting skills in the-air increases Physical Damage and Magic Damage. Upon reaching a certain level, aerial casting also reduces Skill Energy Cost.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 53,
+    "armorCount": 47,
+    "weaponCount": 6,
+    "types": [
+      "Bow",
+      "Feet",
+      "Hands",
+      "Head",
+      "Legs",
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Seer",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 213,
+    "slug": "smiting",
+    "name": "Smiting",
+    "icon": "/icons/1710500.webp",
+    "desc": "On a Critical Hit, recover Energy. Cooldown: Xs. Upon reaching a certain level, on a Critical Hit, reduce the cooldown of all skills.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 87,
+    "armorCount": 62,
+    "weaponCount": 25,
+    "types": [
+      "Chest",
+      "Dagger",
+      "Dual Blades",
+      "Feet",
+      "Greatsword",
+      "Hammer",
+      "Hands",
+      "Head",
+      "Legs",
+      "Mace",
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 111,
+    "slug": "spirit-shield",
+    "name": "Spirit Shield",
+    "icon": "/icons/1720902.webp",
+    "desc": "Increases shield strength. Upon reaching a certain level, the shields you apply grant Magic Resistance to shielded units while active.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 26,
+    "armorCount": 15,
+    "weaponCount": 11,
+    "types": [
+      "Catalyst",
+      "Chest",
+      "Feet",
+      "Necklace",
+      "Polearm and Shield"
+    ],
+    "classes": [
+      "Seer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 109,
+    "slug": "stoic",
+    "name": "Stoic",
+    "icon": "/icons/1721402.webp",
+    "desc": "When Health is below X%, increase Physical Resistance and Magic Resistance. Upon reaching a certain level, when Health is below X%, restore Health.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 86,
+    "armorCount": 76,
+    "weaponCount": 10,
+    "types": [
+      "Chest",
+      "Feet",
+      "Greatsword",
+      "Head",
+      "Legs",
+      "Necklace",
+      "Sword and Shield"
+    ],
+    "classes": [
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 215,
+    "slug": "strife",
+    "name": "Strife",
+    "icon": "/icons/1710600.webp",
+    "desc": "Increases Melee Weapon Damage. Upon reaching a certain level, increases Melee Weapon Damage for each nearby enemy, up to 3 stacks.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 20,
+    "armorCount": 0,
+    "weaponCount": 20,
+    "types": [
+      "Greatsword",
+      "Hammer",
+      "Mace",
+      "Sword and Shield"
+    ],
+    "classes": [
+      "Mercenary",
+      "Seer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 304,
+    "slug": "swift",
+    "name": "Swift",
+    "icon": "/icons/1732804.webp",
+    "desc": "Increases Movement Speed while Crouching, Silent-Walking, Aiming and Chanting.",
+    "level": [
+      5
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 18,
+    "armorCount": 12,
+    "weaponCount": 6,
+    "types": [
+      "Feet",
+      "Head",
+      "Legs",
+      "Staff"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 102,
+    "slug": "tenacious",
+    "name": "Tenacious",
+    "icon": "/icons/1720800.webp",
+    "desc": "Increases Maximum Health. Upon reaching a certain level, increases Healing.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 89,
+    "armorCount": 79,
+    "weaponCount": 10,
+    "types": [
+      "Chest",
+      "Feet",
+      "Head",
+      "Legs",
+      "Necklace",
+      "Polearm and Shield",
+      "Sword and Shield"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 112,
+    "slug": "unyielding",
+    "name": "Unyielding",
+    "icon": "/icons/1721111.webp",
+    "desc": "Each time you take damage from a different enemy, you gain Physical Resistance and Magic Resistance for Xs. Entering combat refreshes this duration. Stacks up to 2 times.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Defensive",
+    "color": "blue",
+    "itemCount": 14,
+    "armorCount": 4,
+    "weaponCount": 10,
+    "types": [
+      "Feet",
+      "Hammer",
+      "Polearm and Shield"
+    ],
+    "classes": [
+      "Mercenary",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 201,
+    "slug": "valor",
+    "name": "Valor",
+    "icon": "/icons/1710100.webp",
+    "desc": "Increases Attack. Upon reaching a certain level, also increases Defense Penetration.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 86,
+    "armorCount": 86,
+    "weaponCount": 0,
+    "types": [
+      "Necklace"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 303,
+    "slug": "vitality",
+    "name": "Vitality",
+    "icon": "/icons/1731600.webp",
+    "desc": "Increases Maximum Energy. Upon reaching a certain level, when entering a state of Energy Overdraft, you become immune to that specific instance of Energy Overdraft.",
+    "level": [
+      4,
+      5
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 96,
+    "armorCount": 64,
+    "weaponCount": 32,
+    "types": [
+      "Bow",
+      "Chest",
+      "Dagger",
+      "Dual Blades",
+      "Feet",
+      "Greatsword",
+      "Hands",
+      "Legs",
+      "Necklace",
+      "Staff",
+      "Sword and Shield"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 313,
+    "slug": "wealth",
+    "name": "Wealth",
+    "icon": "/icons/1732300.webp",
+    "desc": "Increase the amount of Gyldenblod from PvE in dungeons.",
+    "level": [
+      5
+    ],
+    "group": "Utility",
+    "color": "yellow",
+    "itemCount": 53,
+    "armorCount": 48,
+    "weaponCount": 5,
+    "types": [
+      "Chest",
+      "Hammer",
+      "Hands",
+      "Head"
+    ],
+    "classes": [
+      "Blackarrow",
+      "Mercenary",
+      "Seer",
+      "Shadowstrix",
+      "Sorcerer",
+      "Withered Knight"
+    ]
+  },
+  {
+    "id": 206,
+    "slug": "wrath",
+    "name": "Wrath",
+    "icon": "/icons/1710102.webp",
+    "desc": "When Health is below X%, increase Physical Damage and Magic Damage. Upon reaching a certain level, when Health is below X%, increase Attack.",
+    "level": [
+      5,
+      7
+    ],
+    "group": "Offensive",
+    "color": "red",
+    "itemCount": 86,
+    "armorCount": 66,
+    "weaponCount": 20,
+    "types": [
+      "Chest",
+      "Dual Blades",
+      "Feet",
+      "Greatsword",
+      "Hammer",
+      "Hands",
+      "Head",
+      "Necklace",
+      "Sword and Shield"
+    ],
+    "classes": [
+      "Mercenary",
+      "Shadowstrix",
+      "Withered Knight"
+    ]
+  }
+]

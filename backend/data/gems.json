@@ -1,0 +1,7994 @@
+[
+  {
+    "id": 223230,
+    "slug": "aegis-creation-moonstone",
+    "name": "Aegis Creation Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223229,
+    "slug": "aegis-curseward-moonstone",
+    "name": "Aegis Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223226,
+    "slug": "aegis-fervor-moonstone",
+    "name": "Aegis Fervor Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223227,
+    "slug": "aegis-flawless-moonstone",
+    "name": "Aegis Flawless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223225,
+    "slug": "aegis-fury-moonstone",
+    "name": "Aegis Fury Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223228,
+    "slug": "aegis-haste-moonstone",
+    "name": "Aegis Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221203,
+    "slug": "aegis-ironhelm-agate",
+    "name": "Aegis: Ironhelm Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221204,
+    "slug": "aegis-stalwart-agate",
+    "name": "Aegis: Stalwart Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221202,
+    "slug": "aegis-steelwall-agate",
+    "name": "Aegis: Steelwall Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221201,
+    "slug": "aegis-tenacious-agate",
+    "name": "Aegis: Tenacious Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224107,
+    "slug": "agile-peridot",
+    "name": "Agile Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224241,
+    "slug": "agility-blessing-peridot",
+    "name": "Agility Blessing Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224240,
+    "slug": "agility-dexterity-peridot",
+    "name": "Agility Dexterity Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224242,
+    "slug": "agility-fortune-peridot",
+    "name": "Agility Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223251,
+    "slug": "allied-burst-moonstone",
+    "name": "Allied Burst Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223250,
+    "slug": "allied-unyielding-moonstone",
+    "name": "Allied Unyielding Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223110,
+    "slug": "artifice-moonstone",
+    "name": "Artifice Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222215,
+    "slug": "battle-spirit-battle-will-purple-rhomb-gem",
+    "name": "Battle Spirit: Battle Will Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222217,
+    "slug": "battle-spirit-curse-resist-purple-rhomb-gem",
+    "name": "Battle Spirit: Curse Resist Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222212,
+    "slug": "battle-spirit-fervor-purple-rhomb-gem",
+    "name": "Battle Spirit: Fervor Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222211,
+    "slug": "battle-spirit-pierce-purple-rhomb-gem",
+    "name": "Battle Spirit: Pierce Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222213,
+    "slug": "battle-spirit-pursuit-purple-rhomb-gem",
+    "name": "Battle Spirit: Pursuit Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222210,
+    "slug": "battle-spirit-rage-purple-rhomb-gem",
+    "name": "Battle Spirit: Rage Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222214,
+    "slug": "battle-spirit-ranged-purple-rhomb-gem",
+    "name": "Battle Spirit: Ranged Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222216,
+    "slug": "battle-spirit-vitality-purple-rhomb-gem",
+    "name": "Battle Spirit: Vitality Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221236,
+    "slug": "battlebond-fighting-spirit-agate",
+    "name": "Battlebond · Fighting Spirit Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221241,
+    "slug": "battlewill-fervor-agate",
+    "name": "Battlewill·Fervor Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221242,
+    "slug": "battlewill-focus-agate",
+    "name": "Battlewill·Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221240,
+    "slug": "battlewill-skysunder-agate",
+    "name": "Battlewill·Skysunder Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223112,
+    "slug": "blast-moonstone",
+    "name": "Blast Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224109,
+    "slug": "blessed-peridot",
+    "name": "Blessed Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224245,
+    "slug": "blessing-fortune-peridot",
+    "name": "Blessing Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221266,
+    "slug": "brawl-focus-agate",
+    "name": "Brawl · Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224112,
+    "slug": "brawling-peridot",
+    "name": "Brawling Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221106,
+    "slug": "brotherhood-onyx",
+    "name": "Brotherhood Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221238,
+    "slug": "brotherhood-fervor-agate",
+    "name": "Brotherhood·Fervor Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221239,
+    "slug": "brotherhood-focus-agate",
+    "name": "Brotherhood·Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221237,
+    "slug": "brotherhood-skysunder-agate",
+    "name": "Brotherhood·Skysunder Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224221,
+    "slug": "brutal-alacrity-peridot",
+    "name": "Brutal Alacrity Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224223,
+    "slug": "brutal-blessed-peridot",
+    "name": "Brutal Blessed Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224218,
+    "slug": "brutal-cunning-peridot",
+    "name": "Brutal Cunning Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224219,
+    "slug": "brutal-flawless-peridot",
+    "name": "Brutal Flawless Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224224,
+    "slug": "brutal-fortune-peridot",
+    "name": "Brutal Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224222,
+    "slug": "brutal-sleight-peridot",
+    "name": "Brutal Sleight Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224220,
+    "slug": "brutal-vitality-peridot",
+    "name": "Brutal Vitality Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221220,
+    "slug": "bulwark-brotherhood-agate",
+    "name": "Bulwark·Brotherhood Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221219,
+    "slug": "bulwark-endurance-agate",
+    "name": "Bulwark·Endurance Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221218,
+    "slug": "bulwark-iron-helm-agate",
+    "name": "Bulwark·Iron Helm Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223264,
+    "slug": "burst-haste-moonstone",
+    "name": "Burst Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223263,
+    "slug": "burst-seamless-moonstone",
+    "name": "Burst Seamless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223266,
+    "slug": "bursting-conjuring-moonstone",
+    "name": "Bursting - Conjuring Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223265,
+    "slug": "bursting-cursing-moonstone",
+    "name": "Bursting - Cursing Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221257,
+    "slug": "camaraderie-brawl-agate",
+    "name": "Camaraderie · Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221256,
+    "slug": "camaraderie-ranged-ward-agate",
+    "name": "Camaraderie · Ranged Ward Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221112,
+    "slug": "carnage-onyx",
+    "name": "Carnage Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224259,
+    "slug": "crush-melee-peridot",
+    "name": "Crush · Melee Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224103,
+    "slug": "crushing-peridot",
+    "name": "Crushing Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224227,
+    "slug": "cunning-alacrity-peridot",
+    "name": "Cunning Alacrity Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224229,
+    "slug": "cunning-blessed-peridot",
+    "name": "Cunning Blessed Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224225,
+    "slug": "cunning-flawless-peridot",
+    "name": "Cunning Flawless Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224230,
+    "slug": "cunning-fortune-peridot",
+    "name": "Cunning Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224228,
+    "slug": "cunning-sleight-peridot",
+    "name": "Cunning Sleight Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224226,
+    "slug": "cunning-vitality-peridot",
+    "name": "Cunning Vitality Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223245,
+    "slug": "curseward-craft-moonstone",
+    "name": "Curseward · Craft Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222110,
+    "slug": "curseward-amethyst",
+    "name": "Curseward Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223109,
+    "slug": "curseward-moonstone",
+    "name": "Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224108,
+    "slug": "deft-peridot",
+    "name": "Deft Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224243,
+    "slug": "dexterity-blessing-peridot",
+    "name": "Dexterity Blessing Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224244,
+    "slug": "dexterity-fortune-peridot",
+    "name": "Dexterity Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224111,
+    "slug": "farguard-peridot",
+    "name": "Farguard Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224102,
+    "slug": "farstrike-peridot",
+    "name": "Farstrike Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221265,
+    "slug": "fervor-brawl-agate",
+    "name": "Fervor · Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223239,
+    "slug": "fervor-craft-moonstone",
+    "name": "Fervor · Craft Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223238,
+    "slug": "fervor-curseward-moonstone",
+    "name": "Fervor · Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223237,
+    "slug": "fervor-haste-moonstone",
+    "name": "Fervor · Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223236,
+    "slug": "fervor-seamless-moonstone",
+    "name": "Fervor · Seamless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222105,
+    "slug": "fervor-amethyst",
+    "name": "Fervor Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221109,
+    "slug": "fervor-onyx",
+    "name": "Fervor Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221245,
+    "slug": "fervor-focus-agate",
+    "name": "Fervor·Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224265,
+    "slug": "fierce-battle-blessed-peridot",
+    "name": "Fierce Battle: Blessed Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224264,
+    "slug": "fierce-battle-deft-peridot",
+    "name": "Fierce Battle: Deft Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224263,
+    "slug": "fierce-battle-nimble-peridot",
+    "name": "Fierce Battle: Nimble Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224266,
+    "slug": "fierce-battle-wealth-peridot",
+    "name": "Fierce Battle: Wealth Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221263,
+    "slug": "fighting-spirit-brawl-agate",
+    "name": "Fighting Spirit · Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224232,
+    "slug": "flawless-agility-peridot",
+    "name": "Flawless Agility Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224234,
+    "slug": "flawless-blessing-peridot",
+    "name": "Flawless Blessing Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224233,
+    "slug": "flawless-dexterity-peridot",
+    "name": "Flawless Dexterity Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224235,
+    "slug": "flawless-fortune-peridot",
+    "name": "Flawless Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224105,
+    "slug": "flawless-peridot",
+    "name": "Flawless Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224231,
+    "slug": "flawless-vitality-peridot",
+    "name": "Flawless Vitality Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221110,
+    "slug": "focus-onyx",
+    "name": "Focus Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221231,
+    "slug": "fortitude-battlebond-agate",
+    "name": "Fortitude · Battlebond Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221255,
+    "slug": "fortitude-brawl-agate",
+    "name": "Fortitude · Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221234,
+    "slug": "fortitude-fervor-agate",
+    "name": "Fortitude · Fervor Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221232,
+    "slug": "fortitude-fighting-spirit-agate",
+    "name": "Fortitude · Fighting Spirit Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222201,
+    "slug": "fortitude-fighting-spirit-purple-rhomb-stone",
+    "name": "Fortitude · Fighting Spirit Purple Rhomb Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221235,
+    "slug": "fortitude-focus-agate-221235",
+    "name": "Fortitude · Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222202,
+    "slug": "fortitude-rage-purple-rhomb-stone",
+    "name": "Fortitude · Rage Purple Rhomb Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221254,
+    "slug": "fortitude-ranged-ward-agate",
+    "name": "Fortitude · Ranged Ward Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221233,
+    "slug": "fortitude-skycleave-agate",
+    "name": "Fortitude · Skycleave Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222101,
+    "slug": "fortitude-amethyst",
+    "name": "Fortitude Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221105,
+    "slug": "fortitude-onyx",
+    "name": "Fortitude Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222207,
+    "slug": "fortitude-battle-will-purple-rhomb-gem",
+    "name": "Fortitude: Battle Will Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222209,
+    "slug": "fortitude-curse-resist-purple-rhomb-gem",
+    "name": "Fortitude: Curse Resist Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222204,
+    "slug": "fortitude-fervor-purple-rhomb-gem",
+    "name": "Fortitude: Fervor Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222203,
+    "slug": "fortitude-pierce-purple-rhomb-gem",
+    "name": "Fortitude: Pierce Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222205,
+    "slug": "fortitude-pursuit-purple-rhomb-gem",
+    "name": "Fortitude: Pursuit Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222206,
+    "slug": "fortitude-ranged-purple-rhomb-gem",
+    "name": "Fortitude: Ranged Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222208,
+    "slug": "fortitude-vitality-purple-rhomb-gem",
+    "name": "Fortitude: Vitality Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221213,
+    "slug": "fortitude-brotherhood-agate",
+    "name": "Fortitude·Brotherhood Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221210,
+    "slug": "fortitude-bulwark-agate",
+    "name": "Fortitude·Bulwark Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221212,
+    "slug": "fortitude-endurance-agate",
+    "name": "Fortitude·Endurance Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221217,
+    "slug": "fortitude-focus-agate",
+    "name": "Fortitude·Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221216,
+    "slug": "fortitude-hotblood-agate",
+    "name": "Fortitude·Hotblood Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221211,
+    "slug": "fortitude-iron-helm-agate",
+    "name": "Fortitude·Iron Helm Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222247,
+    "slug": "fortitude-resilience-purple-rhomb-gem",
+    "name": "Fortitude·Resilience Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221215,
+    "slug": "fortitude-skysunder-agate",
+    "name": "Fortitude·Skysunder Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222246,
+    "slug": "fortitude-unyielding-purple-rhomb-gem",
+    "name": "Fortitude·Unyielding Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      },
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221214,
+    "slug": "fortitude-zeal-agate",
+    "name": "Fortitude·Zeal Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224110,
+    "slug": "fortune-peridot",
+    "name": "Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223231,
+    "slug": "fury-fervor-moonstone",
+    "name": "Fury Fervor Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223232,
+    "slug": "fury-flawless-moonstone",
+    "name": "Fury Flawless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223101,
+    "slug": "guardian-moonstone",
+    "name": "Guardian Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223244,
+    "slug": "haste-craft-moonstone",
+    "name": "Haste · Craft Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223243,
+    "slug": "haste-curseward-moonstone",
+    "name": "Haste · Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223108,
+    "slug": "haste-moonstone",
+    "name": "Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222233,
+    "slug": "hotblood-battle-zeal-purple-rhombus-stone",
+    "name": "Hotblood·Battle Zeal Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222235,
+    "slug": "hotblood-curseward-purple-rhomb-gem",
+    "name": "Hotblood·Curseward Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222231,
+    "slug": "hotblood-pursuit-purple-rhombus-stone",
+    "name": "Hotblood·Pursuit Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      },
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222232,
+    "slug": "hotblood-ranged-purple-rhombus-stone",
+    "name": "Hotblood·Ranged Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222234,
+    "slug": "hotblood-vigor-purple-rhombus-stone",
+    "name": "Hotblood·Vigor Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223107,
+    "slug": "impenetrable-moonstone",
+    "name": "Impenetrable Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221226,
+    "slug": "iron-helm-battlebond-agate",
+    "name": "Iron Helm · Battlebond Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221253,
+    "slug": "iron-helm-brawl-agate",
+    "name": "Iron Helm · Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221229,
+    "slug": "iron-helm-fervor-agate",
+    "name": "Iron Helm · Fervor Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221227,
+    "slug": "iron-helm-fighting-spirit-agate",
+    "name": "Iron Helm · Fighting Spirit Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221230,
+    "slug": "iron-helm-focus-agate",
+    "name": "Iron Helm · Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221225,
+    "slug": "iron-helm-fortitude-agate",
+    "name": "Iron Helm · Fortitude Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "stoic",
+        "name": "Stoic",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221228,
+    "slug": "iron-helm-skycleave-agate",
+    "name": "Iron Helm · Skycleave Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221104,
+    "slug": "iron-helm-agate",
+    "name": "Iron Helm Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221252,
+    "slug": "ironhelm-rangeward-agate",
+    "name": "Ironhelm·Rangeward Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "iron-helmet",
+        "name": "Iron Helmet",
+        "level": 1
+      },
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223211,
+    "slug": "light-aegis-moonstone",
+    "name": "Light·Aegis Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223216,
+    "slug": "light-cleansing-moonstone",
+    "name": "Light·Cleansing Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223213,
+    "slug": "light-fervor-moonstone",
+    "name": "Light·Fervor Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223214,
+    "slug": "light-flawless-moonstone",
+    "name": "Light·Flawless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223215,
+    "slug": "light-haste-moonstone",
+    "name": "Light·Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223210,
+    "slug": "light-unity-moonstone",
+    "name": "Light·Unity Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223212,
+    "slug": "light-wrath-moonstone",
+    "name": "Light·Wrath Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223102,
+    "slug": "lightfoot-moonstone",
+    "name": "Lightfoot Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223249,
+    "slug": "lightweight-burst-moonstone",
+    "name": "Lightweight Burst Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223217,
+    "slug": "lightweight-creation-moonstone",
+    "name": "Lightweight Creation Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224261,
+    "slug": "melee-bulwark-peridot",
+    "name": "Melee · Bulwark Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224260,
+    "slug": "melee-persuasion-peridot",
+    "name": "Melee · Persuasion Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224262,
+    "slug": "melee-vitality-peridot",
+    "name": "Melee · Vitality Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223248,
+    "slug": "nimble-unyielding-moonstone",
+    "name": "Nimble · Unyielding Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      },
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224104,
+    "slug": "persuasive-peridot",
+    "name": "Persuasive Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221264,
+    "slug": "pierce-brawl-agate",
+    "name": "Pierce · Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222106,
+    "slug": "pursuit-amethyst",
+    "name": "Pursuit Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222239,
+    "slug": "pursuit-curseward-purple-rhomb-gem",
+    "name": "Pursuit·Curseward Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222236,
+    "slug": "pursuit-ranged-purple-rhomb-gem",
+    "name": "Pursuit·Ranged Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222238,
+    "slug": "pursuit-vitality-purple-rhomb-gem",
+    "name": "Pursuit·Vitality Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222237,
+    "slug": "pursuit-zeal-purple-rhomb-gem",
+    "name": "Pursuit·Zeal Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223235,
+    "slug": "rage-craft-moonstone",
+    "name": "Rage · Craft Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223234,
+    "slug": "rage-curseward-moonstone",
+    "name": "Rage · Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223233,
+    "slug": "rage-haste-moonstone",
+    "name": "Rage · Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222218,
+    "slug": "rage-pierce-purple-rhomb-gem",
+    "name": "Rage: Pierce Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224214,
+    "slug": "ranged-agile-peridot",
+    "name": "Ranged - Agile Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224212,
+    "slug": "ranged-flawless-peridot",
+    "name": "Ranged - Flawless Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224210,
+    "slug": "ranged-smiting-peridot",
+    "name": "Ranged - Smiting Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224213,
+    "slug": "ranged-vigorous-peridot",
+    "name": "Ranged - Vigorous Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224211,
+    "slug": "ranged-wily-peridot",
+    "name": "Ranged - Wily Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224258,
+    "slug": "ranged-melee-peridot",
+    "name": "Ranged · Melee Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224216,
+    "slug": "ranged-blessed-peridot",
+    "name": "Ranged Blessed Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224217,
+    "slug": "ranged-fortune-peridot",
+    "name": "Ranged Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222107,
+    "slug": "ranged-power-amethyst",
+    "name": "Ranged Power Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224215,
+    "slug": "ranged-sleight-peridot",
+    "name": "Ranged Sleight Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224254,
+    "slug": "ranged-ward-agility-peridot",
+    "name": "Ranged Ward · Agility Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224256,
+    "slug": "ranged-ward-blessing-peridot",
+    "name": "Ranged Ward · Blessing Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221261,
+    "slug": "ranged-ward-brawl-agate",
+    "name": "Ranged Ward · Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224252,
+    "slug": "ranged-ward-bulwark-peridot",
+    "name": "Ranged Ward · Bulwark Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224249,
+    "slug": "ranged-ward-crush-peridot",
+    "name": "Ranged Ward · Crush Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224255,
+    "slug": "ranged-ward-dexterity-peridot",
+    "name": "Ranged Ward · Dexterity Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221260,
+    "slug": "ranged-ward-fervor-agate",
+    "name": "Ranged Ward · Fervor Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221258,
+    "slug": "ranged-ward-fighting-spirit-agate",
+    "name": "Ranged Ward · Fighting Spirit Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221262,
+    "slug": "ranged-ward-focus-agate",
+    "name": "Ranged Ward · Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224257,
+    "slug": "ranged-ward-fortune-peridot",
+    "name": "Ranged Ward · Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224250,
+    "slug": "ranged-ward-melee-peridot",
+    "name": "Ranged Ward · Melee Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224251,
+    "slug": "ranged-ward-persuasion-peridot",
+    "name": "Ranged Ward · Persuasion Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221259,
+    "slug": "ranged-ward-pierce-agate",
+    "name": "Ranged Ward · Pierce Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224248,
+    "slug": "ranged-ward-ranged-peridot",
+    "name": "Ranged Ward · Ranged Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224253,
+    "slug": "ranged-ward-vitality-peridot",
+    "name": "Ranged Ward · Vitality Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221111,
+    "slug": "ranged-ward-onyx",
+    "name": "Ranged Ward Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222242,
+    "slug": "ranged-curseward-purple-rhomb-gem",
+    "name": "Ranged·Curseward Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222241,
+    "slug": "ranged-vitality-purple-rhomb-gem",
+    "name": "Ranged·Vitality Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222240,
+    "slug": "ranged-zeal-purple-rhomb-gem",
+    "name": "Ranged·Zeal Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222112,
+    "slug": "resilience-amethyst",
+    "name": "Resilience Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222102,
+    "slug": "resolve-amethyst",
+    "name": "Resolve Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221107,
+    "slug": "resolve-onyx",
+    "name": "Resolve Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223242,
+    "slug": "seamless-craft-moonstone",
+    "name": "Seamless · Craft Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223241,
+    "slug": "seamless-curseward-moonstone",
+    "name": "Seamless · Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223240,
+    "slug": "seamless-haste-moonstone",
+    "name": "Seamless · Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222228,
+    "slug": "skycleave-battle-zeal-purple-rhombus-stone",
+    "name": "Skycleave·Battle Zeal Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222230,
+    "slug": "skycleave-cursebreak-purple-rhombus-stone",
+    "name": "Skycleave·Cursebreak Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222225,
+    "slug": "skycleave-hotblood-purple-rhombus-stone",
+    "name": "Skycleave·Hotblood Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222226,
+    "slug": "skycleave-pursuit-purple-rhombus-stone",
+    "name": "Skycleave·Pursuit Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222227,
+    "slug": "skycleave-ranged-purple-rhombus-stone",
+    "name": "Skycleave·Ranged Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222229,
+    "slug": "skycleave-vigor-purple-rhombus-stone",
+    "name": "Skycleave·Vigor Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222104,
+    "slug": "skyshatter-amethyst",
+    "name": "Skyshatter Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221108,
+    "slug": "skyshatter-onyx",
+    "name": "Skyshatter Onyx",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221243,
+    "slug": "skysunder-fervor-agate",
+    "name": "Skysunder·Fervor Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221244,
+    "slug": "skysunder-focus-agate",
+    "name": "Skysunder·Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223253,
+    "slug": "spellshield-burst-moonstone",
+    "name": "Spellshield Burst Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223104,
+    "slug": "spellshield-moonstone",
+    "name": "Spellshield Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223252,
+    "slug": "spellshield-unyielding-moonstone",
+    "name": "Spellshield Unyielding Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      },
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221223,
+    "slug": "steel-bulwark-fervor-agate",
+    "name": "Steel Bulwark · Fervor Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221221,
+    "slug": "steel-bulwark-fighting-spirit-agate",
+    "name": "Steel Bulwark · Fighting Spirit Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221224,
+    "slug": "steel-bulwark-focus-agate",
+    "name": "Steel Bulwark · Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221222,
+    "slug": "steel-bulwark-skycleave-agate",
+    "name": "Steel Bulwark · Skycleave Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221103,
+    "slug": "steel-bulwark-agate",
+    "name": "Steel Bulwark Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221251,
+    "slug": "steelwall-brawl-agate",
+    "name": "Steelwall·Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221250,
+    "slug": "steelwall-rangeward-agate",
+    "name": "Steelwall·Rangeward Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "bulwark",
+        "name": "Bulwark",
+        "level": 1
+      },
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224206,
+    "slug": "tenacious-agile-peridot",
+    "name": "Tenacious - Agile Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224208,
+    "slug": "tenacious-blessed-peridot",
+    "name": "Tenacious - Blessed Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224207,
+    "slug": "tenacious-dexterous-peridot",
+    "name": "Tenacious - Dexterous Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224204,
+    "slug": "tenacious-flawless-peridot",
+    "name": "Tenacious - Flawless Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224209,
+    "slug": "tenacious-fortunate-peridot",
+    "name": "Tenacious - Fortunate Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224201,
+    "slug": "tenacious-ranged-peridot",
+    "name": "Tenacious - Ranged Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224202,
+    "slug": "tenacious-smiting-peridot",
+    "name": "Tenacious - Smiting Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "smiting",
+        "name": "Smiting",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224205,
+    "slug": "tenacious-vigorous-peridot",
+    "name": "Tenacious - Vigorous Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224203,
+    "slug": "tenacious-wily-peridot",
+    "name": "Tenacious - Wily Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "eloquence",
+        "name": "Eloquence",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224101,
+    "slug": "tenacious-peridot",
+    "name": "Tenacious Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222260,
+    "slug": "tenacity-armor-pierce-purple-rhombus-stone",
+    "name": "Tenacity · Armor Pierce Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222264,
+    "slug": "tenacity-battle-will-purple-rhombus-stone",
+    "name": "Tenacity · Battle Will Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222266,
+    "slug": "tenacity-curse-resistance-purple-rhombus-stone",
+    "name": "Tenacity · Curse Resistance Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222261,
+    "slug": "tenacity-fervor-purple-rhombus-stone",
+    "name": "Tenacity · Fervor Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222258,
+    "slug": "tenacity-fighting-spirit-purple-rhombus-stone",
+    "name": "Tenacity · Fighting Spirit Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222259,
+    "slug": "tenacity-fury-purple-rhombus-stone",
+    "name": "Tenacity · Fury Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224247,
+    "slug": "tenacity-melee-peridot",
+    "name": "Tenacity · Melee Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222262,
+    "slug": "tenacity-pursuit-purple-rhombus-stone",
+    "name": "Tenacity · Pursuit Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222263,
+    "slug": "tenacity-ranged-attack-purple-rhombus-stone",
+    "name": "Tenacity · Ranged Attack Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222265,
+    "slug": "tenacity-vitality-purple-rhombus-stone",
+    "name": "Tenacity · Vitality Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221102,
+    "slug": "tenacity-agate",
+    "name": "Tenacity Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224246,
+    "slug": "tenacity-ranged-ward-peridot",
+    "name": "Tenacity Ranged Ward Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221249,
+    "slug": "tenacity-brawl-agate",
+    "name": "Tenacity·Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221248,
+    "slug": "tenacity-rangeward-agate",
+    "name": "Tenacity·Rangeward Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "tenacious",
+        "name": "Tenacious",
+        "level": 1
+      },
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 220011,
+    "slug": "tier-i-agate",
+    "name": "Tier I Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 220021,
+    "slug": "tier-i-amethyst",
+    "name": "Tier I Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 220031,
+    "slug": "tier-i-moonstone",
+    "name": "Tier I Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 220041,
+    "slug": "tier-i-peridot",
+    "name": "Tier I Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 220012,
+    "slug": "tier-ii-agate",
+    "name": "Tier II Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 220022,
+    "slug": "tier-ii-amethyst",
+    "name": "Tier II Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 220032,
+    "slug": "tier-ii-moonstone",
+    "name": "Tier II Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 220042,
+    "slug": "tier-ii-peridot",
+    "name": "Tier II Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [],
+    "tradable": false,
+    "minPrice": 0,
+    "maxPrice": 0,
+    "recommendedPrice": 0,
+    "combatValue": 0
+  },
+  {
+    "id": 223218,
+    "slug": "unity-aegis-moonstone",
+    "name": "Unity Aegis Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223224,
+    "slug": "unity-creation-moonstone",
+    "name": "Unity Creation Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223223,
+    "slug": "unity-curseward-moonstone",
+    "name": "Unity Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223220,
+    "slug": "unity-fervor-moonstone",
+    "name": "Unity Fervor Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223221,
+    "slug": "unity-flawless-moonstone",
+    "name": "Unity Flawless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223219,
+    "slug": "unity-fury-moonstone",
+    "name": "Unity Fury Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223222,
+    "slug": "unity-haste-moonstone",
+    "name": "Unity Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223103,
+    "slug": "unity-moonstone",
+    "name": "Unity Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222251,
+    "slug": "unyielding-armor-pierce-purple-rhombus-stone",
+    "name": "Unyielding · Armor Pierce Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222255,
+    "slug": "unyielding-battle-will-purple-rhombus-stone",
+    "name": "Unyielding · Battle Will Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222257,
+    "slug": "unyielding-curse-resistance-purple-rhombus-stone",
+    "name": "Unyielding · Curse Resistance Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222252,
+    "slug": "unyielding-fervor-purple-rhombus-stone",
+    "name": "Unyielding · Fervor Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222253,
+    "slug": "unyielding-pursuit-purple-rhombus-stone",
+    "name": "Unyielding · Pursuit Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222254,
+    "slug": "unyielding-ranged-attack-purple-rhombus-stone",
+    "name": "Unyielding · Ranged Attack Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222256,
+    "slug": "unyielding-vitality-purple-rhombus-stone",
+    "name": "Unyielding · Vitality Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222111,
+    "slug": "unyielding-amethyst",
+    "name": "Unyielding Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223256,
+    "slug": "unyielding-burst-moonstone",
+    "name": "Unyielding Burst Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223260,
+    "slug": "unyielding-creation-moonstone",
+    "name": "Unyielding Creation Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223259,
+    "slug": "unyielding-curseward-moonstone",
+    "name": "Unyielding Curseward Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223258,
+    "slug": "unyielding-haste-moonstone",
+    "name": "Unyielding Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223111,
+    "slug": "unyielding-moonstone",
+    "name": "Unyielding Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223257,
+    "slug": "unyielding-seamless-moonstone",
+    "name": "Unyielding Seamless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223254,
+    "slug": "unyielding-wrath-moonstone",
+    "name": "Unyielding Wrath Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223255,
+    "slug": "unyielding-zeal-moonstone",
+    "name": "Unyielding Zeal Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222250,
+    "slug": "unyielding-rage-purple-rhomb-gem",
+    "name": "Unyielding·Rage Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222248,
+    "slug": "unyielding-resilience-purple-rhomb-gem",
+    "name": "Unyielding·Resilience Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "resilience",
+        "name": "Resilience",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222249,
+    "slug": "unyielding-resolve-purple-rhomb-gem",
+    "name": "Unyielding·Resolve Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224106,
+    "slug": "vital-peridot",
+    "name": "Vital Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224236,
+    "slug": "vitality-agility-peridot",
+    "name": "Vitality Agility Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      },
+      {
+        "slug": "elusive",
+        "name": "Elusive",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222109,
+    "slug": "vitality-amethyst",
+    "name": "Vitality Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 224238,
+    "slug": "vitality-blessing-peridot",
+    "name": "Vitality Blessing Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      },
+      {
+        "slug": "blessing",
+        "name": "Blessing",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224237,
+    "slug": "vitality-dexterity-peridot",
+    "name": "Vitality Dexterity Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      },
+      {
+        "slug": "deft",
+        "name": "Deft",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 224239,
+    "slug": "vitality-fortune-peridot",
+    "name": "Vitality Fortune Peridot",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      },
+      {
+        "slug": "wealth",
+        "name": "Wealth",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222245,
+    "slug": "vitality-curseward-purple-rhomb-gem",
+    "name": "Vitality·Curseward Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223203,
+    "slug": "ward-aegis-moonstone",
+    "name": "Ward·Aegis Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "spirit-shield",
+        "name": "Spirit Shield",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221247,
+    "slug": "ward-brawl-agate",
+    "name": "Ward·Brawl Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "strife",
+        "name": "Strife",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223208,
+    "slug": "ward-cleansing-moonstone",
+    "name": "Ward·Cleansing Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223209,
+    "slug": "ward-craft-moonstone",
+    "name": "Ward·Craft Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "creation",
+        "name": "Creation",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223205,
+    "slug": "ward-fervor-moonstone",
+    "name": "Ward·Fervor Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223206,
+    "slug": "ward-flawless-moonstone",
+    "name": "Ward·Flawless Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "seamless",
+        "name": "Seamless",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223207,
+    "slug": "ward-haste-moonstone",
+    "name": "Ward·Haste Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "swift",
+        "name": "Swift",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223201,
+    "slug": "ward-light-moonstone",
+    "name": "Ward·Light Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "ethereal",
+        "name": "Ethereal",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221246,
+    "slug": "ward-rangeward-agate",
+    "name": "Ward·Rangeward Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "distant-ward",
+        "name": "Distant Ward",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223202,
+    "slug": "ward-unity-moonstone",
+    "name": "Ward·Unity Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223204,
+    "slug": "ward-wrath-moonstone",
+    "name": "Ward·Wrath Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223247,
+    "slug": "warding-burst-moonstone",
+    "name": "Warding · Burst Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223246,
+    "slug": "warding-unyielding-moonstone",
+    "name": "Warding · Unyielding Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "unyielding",
+        "name": "Unyielding",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221101,
+    "slug": "warding-agate",
+    "name": "Warding Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 221205,
+    "slug": "warding-brotherhood-agate",
+    "name": "Warding·Brotherhood Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "brotherhood",
+        "name": "Brotherhood",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221209,
+    "slug": "warding-focus-agate",
+    "name": "Warding·Focus Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "focused",
+        "name": "Focused",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221208,
+    "slug": "warding-hotblood-agate",
+    "name": "Warding·Hotblood Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221207,
+    "slug": "warding-skysunder-agate",
+    "name": "Warding·Skysunder Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "sky-piercer",
+        "name": "Sky Piercer",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 221206,
+    "slug": "warding-zeal-agate",
+    "name": "Warding·Zeal Agate",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "aegis",
+        "name": "Aegis",
+        "level": 1
+      },
+      {
+        "slug": "valor",
+        "name": "Valor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222108,
+    "slug": "warspirit-amethyst",
+    "name": "Warspirit Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223106,
+    "slug": "warspirit-moonstone",
+    "name": "Warspirit Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222103,
+    "slug": "wrath-amethyst",
+    "name": "Wrath Amethyst",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 223261,
+    "slug": "wrath-burst-moonstone",
+    "name": "Wrath Burst Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223105,
+    "slug": "wrath-moonstone",
+    "name": "Wrath Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 1,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 45,
+    "maxPrice": 500,
+    "recommendedPrice": 75,
+    "combatValue": 25
+  },
+  {
+    "id": 222222,
+    "slug": "wrath-battle-zeal-purple-rhombus-stone",
+    "name": "Wrath·Battle Zeal Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222224,
+    "slug": "wrath-cursebreak-purple-rhombus-stone",
+    "name": "Wrath·Cursebreak Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222219,
+    "slug": "wrath-hotblood-purple-rhombus-stone",
+    "name": "Wrath·Hotblood Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "fervid",
+        "name": "Fervid",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222220,
+    "slug": "wrath-pursuit-purple-rhombus-stone",
+    "name": "Wrath·Pursuit Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "seeker",
+        "name": "Seeker",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222221,
+    "slug": "wrath-ranged-purple-rhombus-stone",
+    "name": "Wrath·Ranged Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "ranged",
+        "name": "Ranged",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222223,
+    "slug": "wrath-vigor-purple-rhombus-stone",
+    "name": "Wrath·Vigor Purple Rhombus Stone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "wrath",
+        "name": "Wrath",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 223262,
+    "slug": "zeal-burst-moonstone",
+    "name": "Zeal Burst Moonstone",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      },
+      {
+        "slug": "burst",
+        "name": "Burst",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222244,
+    "slug": "zeal-curseward-purple-rhomb-gem",
+    "name": "Zeal·Curseward Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      },
+      {
+        "slug": "curse",
+        "name": "Curse",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  },
+  {
+    "id": 222243,
+    "slug": "zeal-vitality-purple-rhomb-gem",
+    "name": "Zeal·Vitality Purple Rhomb Gem",
+    "icon": "",
+    "rarity": "",
+    "rarityTier": 0,
+    "gemLevel": 2,
+    "affixes": [
+      {
+        "slug": "fervor",
+        "name": "Fervor",
+        "level": 1
+      },
+      {
+        "slug": "vitality",
+        "name": "Vitality",
+        "level": 1
+      }
+    ],
+    "tradable": true,
+    "minPrice": 100,
+    "maxPrice": 1500,
+    "recommendedPrice": 150,
+    "combatValue": 50
+  }
+]

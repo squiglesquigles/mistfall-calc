@@ -1,0 +1,2810 @@
+[
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Sky Piercer",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Distant Ward",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Fervid",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Strife",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Stoic",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Focused",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Red",
+    "affix1": "Valor",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Sky Piercer",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Seeker",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Fervor",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Curse",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Ranged",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Fervid",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Vitality",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Swift",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Wrath",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Creation",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Curse",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Burst",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Seamless",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Fervor",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Square",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Deft",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Blessing",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Wealth",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Seamless",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Vitality",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Eloquence",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Green",
+    "affix1": "Elusive",
+    "affix2": null,
+    "note": "All Gear Slots"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Stoic",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Stoic",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Distant Ward",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Stoic",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Brotherhood",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Distant Ward",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Distant Ward",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Sky Piercer",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Iron Helmet",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Sky Piercer",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Distant Ward",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Distant Ward",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Brotherhood",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Iron Helmet",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Brotherhood",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Iron Helmet",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Stoic",
+    "affix2": "Brotherhood",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Sky Piercer",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Distant Ward",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Distant Ward",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Distant Ward",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "stoic",
+    "affix2": "Distant Ward",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Brotherhood",
+    "affix2": "Distant Ward",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Strife",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Stoic",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Brotherhood",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Bulwark",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Brotherhood",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Brotherhood",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Fervid",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Stoic",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Valor",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Stoic",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Valor",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Valor",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Valor",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Bulwark",
+    "affix2": "Brotherhood",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Fervid",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Bulwark",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Brotherhood",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Distant Ward",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Iron Helmet",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Focused",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Stoic",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Brotherhood",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Aegis",
+    "affix2": "Tenacious",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Stoic",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Rectangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Red",
+    "affix1": "Tenacious",
+    "affix2": "Stoic",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Blessing",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Eloquence",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Deft",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Eloquence",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Vitality",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Elusive",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Smiting",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Vitality",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Smiting",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Vitality",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Eloquence",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": "Eloquence",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Seamless",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Eloquence",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Deft",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": "Wealth",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Elusive",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Elusive",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Distant Ward",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Seamless",
+    "affix2": "Blessing",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Eloquence",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Smiting",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Seamless",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Seamless",
+    "affix2": "Deft",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Smiting",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Distant Ward",
+    "affix2": "Eloquence",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Strife",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Eloquence",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Ranged",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Strife",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Eloquence",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Seamless",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Eloquence",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Vitality",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Elusive",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Octagon",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Green",
+    "affix1": "Tenacious",
+    "affix2": "Eloquence",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Sky Piercer",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Seeker",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": "Seeker",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Sky Piercer",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Fervor",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Seeker",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Unyielding",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Sky Piercer",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Ranged",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Sky Piercer",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Seeker",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Seeker",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Sky Piercer",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Fervid",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Fervor",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Fervid",
+    "affix2": "Seeker",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Fervid",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Seeker",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Resilience",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Seeker",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Resilience",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Fervid",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Stoic",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Fervid",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Ranged",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Seeker",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Valor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Vitality",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Resilience",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Fervid",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Unyielding",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Wrath",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Sky Piercer",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Seeker",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Sky Piercer",
+    "affix2": "Seeker",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Ranged",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Valor",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Triangle",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Purple",
+    "affix1": "Ranged",
+    "affix2": "Vitality",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Burst",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Unyielding",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Burst",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Burst",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Wrath",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Burst",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Wrath",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Burst",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Burst",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Wrath",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Brotherhood",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Wrath",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "Unyielding",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Curse",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Spirit Shield",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Swift",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Seamless",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Fervor",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Fervor",
+    "affix2": "Burst",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Swift",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Ethereal",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Seamless",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Ethereal",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Unyielding",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Seamless",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Wrath",
+    "affix2": "Burst",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Spirit Shield",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Wrath",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Burst",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Swift",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Unyielding",
+    "affix2": "Burst",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Fervor",
+    "affix2": "Creation",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Brotherhood",
+    "affix2": "Spirit Shield",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Fervor",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Brotherhood",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "Burst",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Fervor",
+    "affix2": "Curse",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Fervor",
+    "affix2": "Seamless",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Spirit Shield",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Unyielding",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Square",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Blue",
+    "affix1": "Aegis",
+    "affix2": "Wrath",
+    "note": "T2 Gold Socket Required"
+  },
+  {
+    "shape": "Circle/Swirl",
+    "border": "Standard (Silver)",
+    "tier": 1,
+    "color": "Any Color",
+    "affix1": null,
+    "affix2": null,
+    "note": "Rings & Necklaces Only"
+  },
+  {
+    "shape": "Circle/Swirl",
+    "border": "Gold Outline",
+    "tier": 2,
+    "color": "Any Color",
+    "affix1": null,
+    "affix2": null,
+    "note": "Rings & Necklaces Only (T2 Gold Socket Required)"
+  }
+]
