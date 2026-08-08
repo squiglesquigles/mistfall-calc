@@ -114,8 +114,8 @@ const WINE_OPTIONS = [
   { key: 'Wine 4', name: "God's Brew", label: "Lv 4: God's Brew", cap: 8, maxStack: 2, cost: 530 }
 ];
 
-const SOL_LIMIT = 15;
-const RANK_BUDGET = 1000;
+const SOL_LIMIT = 25;
+const RANK_BUDGET = 1500;
 const MAX_COMBINED_LEVEL = 40;
 
 function poolFor(gear, className, slot) {
@@ -205,13 +205,28 @@ function generateBuild(className, weapon, wine, targets) {
 
   const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, best.opt);
   const ranked = solveRanked(winnerBase, info, RANK_BUDGET);
+  // Add legendary/holy swap-out alternatives (stock-friendly variety), merged in,
+  // deduped by gear set, and re-sorted by cost.
+  const knownKeys = new Set(ranked.map(sol => JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear))));
+  const extras = ranked.length ? legendaryVariants(winnerBase, info, ranked[0], knownKeys, 18, 2000) : [];
+  // Full-legendary case: sweep ALL distinct legendary gear combinations.
+  const isFullLegend = ranked.length > 0 && ranked[0].slots.every(s => !s.gear || s.rarity === 'Legendary' || s.rarity === 'Holy');
+  const enumSols = isFullLegend ? legendaryEnumeration(winnerBase, info, ranked[0].slots, knownKeys, 60, 4000) : [];
+  // Merge + dedupe by gear set (each gear set appears once; gems auto-optimized).
+  const dedup = new Map();
+  for (const sol of ranked.concat(extras, enumSols)) {
+    const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
+    if (!dedup.has(key)) dedup.set(key, sol);
+  }
+  const allSols = [...dedup.values()].sort((a, b) => a.cost - b.cost).slice(0, isFullLegend ? 60 : SOL_LIMIT);
+
   const rankWin = best.opt;
   const wineLabel = rankWin.label;
   const wineName = rankWin.name;
   const wineKey = rankWin.key;
   const wineCost = rankWin.cost;
 
-  const builds = ranked.slice(0, SOL_LIMIT).map(sol => ({
+  const builds = allSols.map(sol => ({
     slots: sol.slots,
     wineGrants: sol.wineGrants,
     wine: wineLabel,
@@ -318,6 +333,145 @@ function costOf(res, model) {
   return Math.round(total);
 }
 
+// Legendary swap-out pass: because legendary gear is often out of stock, surface
+// alternatives that deliberately AVOID the legendary/holy items in the cheapest
+// build. For each unique legendary item name used there, re-solve with that item
+// fully excluded and collect the result as an extra option.
+function legendaryVariants(base, info, refSol, knownKeys, maxExtras, budgetMs) {
+  const legendaryNames = new Set();
+  for (const sl of refSol.slots) {
+    if (sl.gear && (sl.rarity === 'Legendary' || sl.rarity === 'Holy')) legendaryNames.add(sl.gear);
+  }
+  const extras = [];
+  const extrasSeen = new Set();
+  const tStart = Date.now();
+  for (const name of legendaryNames) {
+    if (extras.length >= maxExtras || (Date.now() - tStart) > budgetMs) break;
+    // Build an exclusion model that forbids every variant of this item name.
+    const baseModel = JSON.parse(JSON.stringify(base));
+    let ci = 0;
+    for (const id of Object.keys(info)) {
+      const i = info[id];
+      if (i && i.kind === 'gear' && i.variant.gear === name) {
+        const cname = 'exclx' + (ci++);
+        baseModel.constraints[cname] = { max: 0 };
+        if (!baseModel.variables[id]) baseModel.variables[id] = { cost: i.cost || 0 };
+        baseModel.variables[id][cname] = 1;
+        baseModel.ints[id] = 1;
+      }
+    }
+    if (ci === 0) continue;
+
+    // Collect up to 3 distinct gear sets that avoid this item (gear-diverse).
+    const cuts = [];
+    for (let k = 0; k < 3 && extras.length < maxExtras && (Date.now() - tStart) < budgetMs; k++) {
+      const model = JSON.parse(JSON.stringify(baseModel));
+      cuts.forEach((c, ci2) => {
+        const cn = 'exclcut_' + ci2;
+        model.constraints[cn] = { max: c.max };
+        for (const id of c.vars) {
+          if (!model.variables[id]) model.variables[id] = { cost: (info[id] ? info[id].cost : 0) };
+          model.variables[id][cn] = 1;
+          model.ints[id] = 1;
+        }
+      });
+      let res;
+      try { res = solver.Solve(model); } catch (e) { break; }
+      if (!res || !res.feasible) break;
+      const chosen = Object.keys(res).filter(k =>
+        !['feasible', 'result', 'bounded', 'isIntegral', 'fractional'].includes(k) && res[k] >= 0.999);
+      const gearVars = chosen.filter(k => info[k] && info[k].kind === 'gear');
+      cuts.push({ vars: gearVars.length ? gearVars : chosen, max: (gearVars.length ? gearVars : chosen).length - 1 });
+      const sol = decode(chosen, info, res);
+      const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
+      if (knownKeys.has(key) || extrasSeen.has(key)) continue;
+      extrasSeen.add(key);
+      extras.push(sol);
+    }
+  }
+  return extras;
+}
+
+// Full-legendary enumeration: the cheapest build is ALL Legendary/Holy. Most slots
+// have exactly ONE legendary item name (variants of it), so the real variety lives
+// in the few slots with multiple names (Ring, Necklace, some weapons). We enumerate
+// EVERY distinct name combination (product), solving only a reduced legendary-only
+// model per combo so gems/wine are still auto-optimized — fast AND complete.
+function legendaryEnumeration(base, info, refSlots, knownKeys, maxCombos, budgetMs) {
+  // Legend-only reduced model: only legendary/holy gear variables remain.
+  const modelBase = JSON.parse(JSON.stringify(base));
+  let ci = 0;
+  for (const id of Object.keys(info)) {
+    const i = info[id];
+    if (i && i.kind === 'gear' && i.variant.rarity !== 'Legendary' && i.variant.rarity !== 'Holy') {
+      const cname = 'lgonly' + (ci++);
+      modelBase.constraints[cname] = { max: 0 };
+      if (!modelBase.variables[id]) modelBase.variables[id] = { cost: i.cost || 0 };
+      modelBase.variables[id][cname] = 1;
+      modelBase.ints[id] = 1;
+    }
+  }
+
+  // Unique legendary item NAMES per slot (from the reference build's slots).
+  const perSlotNames = {};
+  for (const sl of refSlots) {
+    if (!sl || !sl.gear) continue;
+    const names = new Set();
+    for (const id of Object.keys(info)) {
+      const i = info[id];
+      if (i && i.kind === 'gear' && i.slot === sl.slot &&
+          (i.variant.rarity === 'Legendary' || i.variant.rarity === 'Holy')) names.add(i.variant.gear);
+    }
+    if (names.size) perSlotNames[sl.slot] = [...names];
+  }
+
+  const variableSlots = Object.keys(perSlotNames).filter(s => perSlotNames[s].length > 1);
+  if (variableSlots.length === 0) return []; // no variety to enumerate
+
+  let combos = [{}];
+  for (const s of variableSlots) {
+    const next = [];
+    for (const c of combos) {
+      for (const n of perSlotNames[s]) next.push({ ...c, [s]: n });
+    }
+    combos = next;
+  }
+  if (combos.length > maxCombos) combos = combos.slice(0, maxCombos);
+
+  const results = [];
+  const seen = new Set(knownKeys);
+  const tStart = Date.now();
+  for (const combo of combos) {
+    if (results.length >= maxCombos || (Date.now() - tStart) > budgetMs) break;
+    const model = JSON.parse(JSON.stringify(modelBase));
+    let mn = 0;
+    for (const s of variableSlots) {
+      const chosen = combo[s];
+      for (const id of Object.keys(info)) {
+        const i = info[id];
+        if (i && i.kind === 'gear' && i.slot === s && i.variant.gear !== chosen) {
+          const cn = 'mn' + (mn++);
+          model.constraints[cn] = { max: 0 };
+          if (!model.variables[id]) model.variables[id] = { cost: i.cost || 0 };
+          model.variables[id][cn] = 1;
+          model.ints[id] = 1;
+        }
+      }
+    }
+    let res;
+    try { res = solver.Solve(model); } catch (e) { continue; }
+    if (!res || !res.feasible) continue;
+    const chosenVars = Object.keys(res).filter(k =>
+      !['feasible', 'result', 'bounded', 'isIntegral', 'fractional'].includes(k) && res[k] >= 0.999);
+    const sol = decode(chosenVars, info, res);
+    const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
+    if (seen.has(key)) continue;
+    seen.add(key);
+    results.push(sol);
+  }
+  return results;
+}
+
 function solveRanked(base, info, budgetMs) {
   const cuts = [];
   const solutions = [];
@@ -342,10 +496,14 @@ function solveRanked(base, info, budgetMs) {
     const chosen = Object.keys(res).filter(k =>
       !['feasible', 'result', 'bounded', 'isIntegral', 'fractional'].includes(k) && res[k] >= 0.999);
 
-    cuts.push({ vars: chosen, max: chosen.length - 1 });
+    // Diversity: force each NEXT build to change at least one GEAR item (not just
+    // a gem), so the list shows genuinely different gear combinations.
+    const gearVars = chosen.filter(k => info[k] && info[k].kind === 'gear');
+    const cutVars = (gearVars.length ? gearVars : chosen);
+    cuts.push({ vars: cutVars, max: cutVars.length - 1 });
 
     const sol = decode(chosen, info, res);
-    const key = JSON.stringify(sol.slots.map(s => ({ slot: s.slot, gear: s.gear, gems: (s.gems || []).map(g => g && (g.affix1 + '/' + (g.affix2 || ''))) })));
+    const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
     if (seen.has(key)) continue;
     seen.add(key);
     solutions.push(sol);

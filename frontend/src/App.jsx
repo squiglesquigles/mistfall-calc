@@ -62,6 +62,12 @@ function gemName(shape) { return GEM_NAMES[shape] || shape || '?'; }
 function gemIcon(shape) { return GEM_ICONS[gemName(shape)] || null; }
 function slotIcon(slot) { return SLOT_ICONS[slot] || null; }
 
+function raritySummary(slots) {
+  const m = {};
+  for (const s of slots || []) if (s && s.rarity) m[s.rarity] = (m[s.rarity] || 0) + 1;
+  return Object.entries(m).map(([r, c]) => r + ' ×' + c).join(' · ');
+}
+
 function App() {
   const [selectedClass, setSelectedClass] = useState(null);
   const [weapon, setWeapon] = useState('Mace');
@@ -71,6 +77,7 @@ function App() {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState('');
   const [groupFilter, setGroupFilter] = useState('All');
+  const [buildCount, setBuildCount] = useState(2); // builds shown initially (more on demand)
 
   // Feedback report (per gear slot -> Discord webhook)
   const [feedbackCtx, setFeedbackCtx] = useState(null); // null = closed
@@ -195,6 +202,7 @@ function App() {
       const result = generateBuild(selectedClass.name, weapon, null,
         Object.entries(selected).map(([affix, level]) => ({ affix, level })));
       setBuilds(result);
+      setBuildCount(2);
     } catch (e) { setError(e.message); } finally { setLoading(false); }
   }
 
@@ -377,11 +385,14 @@ function App() {
                 {builds.combinedLevel}/{MAX_AFFIX_BUDGET} combined · {builds.totalBuilds} found · wine: {builds.wine && builds.wine.label ? (builds.wine.label + ' · ' + builds.wine.cost + 'g') : 'none'} · targets: {builds.targetAffixes.map(t => t.affix + ' Lv' + t.level).join(', ')}
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {builds.builds.map((b, i) => (
+                {builds.builds.slice(0, buildCount).map((b, i) => (
                   <div key={i} style={{ borderRadius: '8px', border: '1px solid ' + (i === 0 ? COLORS.primary : COLORS.border), backgroundColor: COLORS.card, overflow: 'hidden' }}>
-                    <div style={{ padding: '10px 16px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
+                    <div style={{ padding: '10px 16px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
                       <strong style={{ color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
-                      <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '14px' }}>💠 {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                        <span style={{ fontSize: '11px', color: COLORS.textMuted, backgroundColor: COLORS.bg, border: '1px solid ' + COLORS.border, borderRadius: '4px', padding: '2px 6px' }}>{raritySummary(b.slots)}</span>
+                        <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '14px' }}>💠 {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
+                      </span>
                     </div>
                     {b.capacityWarnings && b.capacityWarnings.length > 0 && (
                       <div style={{ padding: '4px 16px', backgroundColor: COLORS.danger + '22', color: COLORS.danger, fontSize: '11px' }}>
@@ -406,6 +417,12 @@ function App() {
                     </div>
                   </div>
                 ))}
+                {builds.builds.length > buildCount && (
+                  <button onClick={() => setBuildCount(c => Math.min(c + 10, builds.builds.length))}
+                    style={{ marginTop: '12px', width: '100%', padding: '10px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '13px', cursor: 'pointer' }}>
+                    Show more builds ({builds.builds.length - buildCount} more)
+                  </button>
+                )}
               </div>
             </section>
           )}
