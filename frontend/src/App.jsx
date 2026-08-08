@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { classes, affixes, meta, generateBuild } from './lib/engine';
+import React, { useState, useEffect, useRef } from 'react';
+import { classes, affixes, meta } from './lib/engine';
+import { AFFIX_ICONS } from './lib/affixIcons';
 
 // ---- Icon assets (copied from the repo-root /icons folder) ----
 import AmethystIcon from './assets/icons/Amethyst.png';
@@ -78,6 +79,7 @@ function App() {
   const [search, setSearch] = useState('');
   const [groupFilter, setGroupFilter] = useState('All');
   const [buildCount, setBuildCount] = useState(2); // builds shown initially (more on demand)
+  const [budgetNotice, setBudgetNotice] = useState(null); // shown when adding an affix at max budget
 
   // Feedback report (per gear slot -> Discord webhook)
   const [feedbackCtx, setFeedbackCtx] = useState(null); // null = closed
@@ -176,6 +178,12 @@ function App() {
   });
 
   function toggleAffix(name) {
+    // Budget guard: can't add a NEW affix when already at the max combined level.
+    if (!(name in selected) && combined + 1 > MAX_AFFIX_BUDGET) {
+      setBudgetNotice('Budget full (' + combined + '/' + MAX_AFFIX_BUDGET + ') — lower an existing affix first (use −) before adding another.');
+      return;
+    }
+    setBudgetNotice(null);
     setSelected(prev => {
       const next = { ...prev };
       if (name in next) delete next[name];
@@ -186,6 +194,7 @@ function App() {
   }
 
   function setLevel(name, lvl) {
+    setBudgetNotice(null);
     setSelected(prev => {
       const others = Object.entries(prev).filter(([k]) => k !== name).reduce((a, [k, v]) => a + v, 0);
       const maxLvl = affixMaxMap[name] || MAX_AFFIX_BUDGET;
@@ -195,15 +204,35 @@ function App() {
     setBuilds(null);
   }
 
+  // Build engine runs in a Web Worker so the UI never freezes during the solve.
+  const workerRef = useRef(null);
+  useEffect(() => {
+    const w = new Worker(new URL('./lib/buildWorker.js', import.meta.url), { type: 'module' });
+    workerRef.current = w;
+    w.onmessage = (e) => {
+      const { ok, result, error } = e.data || {};
+      setLoading(false);
+      if (ok) { setBuilds(result); setBuildCount(2); }
+      else { setError(error || 'Could not generate builds.'); }
+    };
+    w.onerror = (err) => { setLoading(false); setError('Build engine failed to start: ' + (err.message || 'worker error')); };
+    return () => w.terminate();
+  }, []);
+
   function generateBuilds() {
-    if (!selectedClass || Object.keys(selected).length === 0 || overBudget) return;
+    if (!selectedClass || Object.keys(selected).length === 0 || overBudget || loading) return;
     setLoading(true); setError(null);
-    try {
-      const result = generateBuild(selectedClass.name, weapon, null,
-        Object.entries(selected).map(([affix, level]) => ({ affix, level })));
-      setBuilds(result);
-      setBuildCount(2);
-    } catch (e) { setError(e.message); } finally { setLoading(false); }
+    if (!workerRef.current) {
+      setLoading(false);
+      setError('Build engine isn’t ready yet — try again in a second.');
+      return;
+    }
+    workerRef.current.postMessage({
+      className: selectedClass.name,
+      weapon,
+      wine: null,
+      targets: Object.entries(selected).map(([affix, level]) => ({ affix, level }))
+    });
   }
 
   const filteredAffixes = affixes.filter(a =>
@@ -256,6 +285,8 @@ function App() {
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: COLORS.bg, color: COLORS.text }}>
+      <style>{`@keyframes mc-spin { to { transform: rotate(360deg); } }
+.mc-spinner { display: inline-block; width: 18px; height: 18px; border: 3px solid #2a2b36; border-top-color: #c9a54a; border-radius: 50%; animation: mc-spin 0.8s linear infinite; }`}</style>
       <header style={{ borderBottom: '1px solid ' + COLORS.border, padding: '16px 24px', backgroundColor: COLORS.bgAlt }}>
         <h1 style={{ color: COLORS.primary, fontSize: '24px', fontWeight: 'bold' }}>⚔ Mistfall Hunter — Build Calculator</h1>
         <p style={{ color: COLORS.textMuted, fontSize: '14px', marginTop: '4px' }}>
@@ -280,8 +311,8 @@ function App() {
                     style={{ color: COLORS.text, opacity: comingSoon ? 0.6 : 1, padding: '12px', borderRadius: '8px', cursor: comingSoon ? 'not-allowed' : 'pointer', textAlign: 'left',
                       border: '2px solid ' + (active ? COLORS.primary : COLORS.border), backgroundColor: active ? '#2a2320' : COLORS.card }}>
                     <div style={{ fontSize: '16px', fontWeight: 'bold', color: COLORS.text }}>{cls.name}</div>
-                    <div style={{ fontSize: '12px', color: COLORS.textMuted, marginTop: '4px' }}>{cls.role} · {cls.weapon}</div>
-                    {comingSoon && <span style={{ color: COLORS.danger, fontWeight: 'bold', fontSize: '11px' }}>⏳ Coming Soon</span>}
+                    <div style={{ fontSize: '14px', color: COLORS.textMuted, marginTop: '4px' }}>{cls.role} · {cls.weapon}</div>
+                    {comingSoon && <span style={{ color: COLORS.danger, fontWeight: 'bold', fontSize: '12px' }}>⏳ Coming Soon</span>}
                   </button>
                 );
               })}
@@ -315,7 +346,7 @@ function App() {
                 {['All', 'Defensive', 'Offensive', 'Utility'].map(g => {
                   const active = groupFilter === g;
                   const col = g === 'Defensive' ? COLORS.defensive : g === 'Offensive' ? COLORS.offensive : g === 'Utility' ? COLORS.utility : COLORS.primary;
-                  return <button key={g} onClick={() => setGroupFilter(g)} style={{ padding: '6px 14px', borderRadius: '6px', fontSize: '13px', cursor: 'pointer',
+                  return <button key={g} onClick={() => setGroupFilter(g)} style={{ padding: '6px 14px', borderRadius: '6px', fontSize: '14px', cursor: 'pointer',
                     border: '1px solid ' + (active ? col : COLORS.border), backgroundColor: active ? col + '22' : COLORS.bgAlt, color: active ? col : COLORS.textMuted, fontWeight: active ? 'bold' : 'normal' }}>{g}</button>;
                 })}
               </div>
@@ -324,6 +355,11 @@ function App() {
                 <strong style={{ color: overBudget ? COLORS.danger : COLORS.text }}>Combined level: {combined} / {MAX_AFFIX_BUDGET}</strong>
                 {overBudget && <span style={{ color: COLORS.danger, fontWeight: 'bold' }}>(over budget — lower a level)</span>}
               </div>
+              {budgetNotice && (
+                <div style={{ backgroundColor: COLORS.danger + '1f', border: '1px solid ' + COLORS.danger, color: COLORS.danger, borderRadius: '6px', padding: '8px 12px', fontSize: '14px', marginBottom: '12px' }}>
+                  ⚠ {budgetNotice}
+                </div>
+              )}
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: '10px' }}>
                 {filteredAffixes.map(affix => {
@@ -337,18 +373,28 @@ function App() {
                   return (
                     <button key={affix.slug} disabled={!reachable_}
                       onClick={() => reachable_ && toggleAffix(affix.name)}
-                      style={{ color: COLORS.text, opacity: reachable_ ? 1 : 0.5, padding: '12px', borderRadius: '8px', textAlign: 'left',
+                      style={{ color: COLORS.text, opacity: reachable_ ? 1 : 0.5, padding: '12px', borderRadius: '8px', textAlign: 'left', display: 'flex', flexDirection: 'column',
                         border: '2px solid ' + (sel ? col : COLORS.border), backgroundColor: sel ? '#1d2430' : COLORS.card, cursor: reachable_ ? 'pointer' : 'not-allowed' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span style={{ fontWeight: 'bold', color: COLORS.text }}>{affix.name}</span>
-                        <span style={{ fontSize: '10px', padding: '2px 6px', borderRadius: '4px', backgroundColor: col + '22', color: col }}>{affix.group}</span>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '6px' }}>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                          {AFFIX_ICONS[affix.name] && <img src={AFFIX_ICONS[affix.name]} alt={affix.name + ' icon'} style={{ width: 24, height: 24, flex: '0 0 auto' }} />}
+                          <span style={{ fontWeight: 'bold', color: COLORS.text, fontSize: '16px' }}>{affix.name}</span>
+                        </span>
+                        <span style={{ fontSize: '12px', padding: '2px 6px', borderRadius: '4px', backgroundColor: col + '22', color: col, whiteSpace: 'nowrap' }}>{affix.group}</span>
                       </div>
-                      <div style={{ fontSize: '11px', color: COLORS.textMuted, marginTop: '4px' }}>{affix.desc ? affix.desc.slice(0, 90) : ''}</div>
-                      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginTop: '6px', alignItems: 'center' }}>
-                        {hasPassive && <span style={{ fontSize: '10px', padding: '2px 6px', borderRadius: '4px', backgroundColor: COLORS.primary + '33', color: COLORS.primary, fontWeight: 'bold' }}>Recommended Lv {affix.level[0]}</span>}
-                        {maxLvl && <span style={{ fontSize: '10px', padding: '2px 6px', borderRadius: '4px', backgroundColor: COLORS.border, color: COLORS.textMuted }}>Max Lv {maxLvl}</span>}
+                      <div title={affix.desc || undefined} style={{ fontSize: '14px', color: COLORS.textMuted, marginTop: '4px', flex: '1 1 auto',
+                        display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                        {affix.desc || ''}
                       </div>
-                      {!reachable_ && <div style={{ fontSize: '10px', color: COLORS.danger, marginTop: '4px' }}>Not reachable with {weapon}</div>}
+                      {!reachable_ && <div style={{ fontSize: '12px', color: COLORS.danger, marginTop: '4px' }}>Not reachable with {weapon}</div>}
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '6px', marginTop: '8px' }}>
+                        <div style={{ display: 'flex', gap: '6px' }}>
+                          {hasPassive && <span style={{ fontSize: '12px', padding: '2px 6px', borderRadius: '4px', backgroundColor: COLORS.border, color: COLORS.textMuted, fontWeight: 'bold' }}>Recommended Lv {affix.level[0]}</span>}
+                        </div>
+                        <div style={{ display: 'flex', gap: '6px' }}>
+                          {maxLvl && <span style={{ fontSize: '12px', padding: '2px 6px', borderRadius: '4px', backgroundColor: COLORS.border, color: COLORS.textMuted }}>Max Lv {maxLvl}</span>}
+                        </div>
+                      </div>
                       {sel && (
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '8px', backgroundColor: COLORS.bgAlt, padding: '6px', borderRadius: '6px' }}>
                           <button onClick={(e) => { e.stopPropagation(); setLevel(affix.name, cur - 1); }} disabled={cur <= 1}
@@ -356,6 +402,8 @@ function App() {
                           <span style={{ fontSize: '14px', minWidth: '70px', textAlign: 'center', color: '#ffffff', fontWeight: 'bold' }}>Lv {cur}/{aMax}</span>
                           <button onClick={(e) => { e.stopPropagation(); setLevel(affix.name, cur + 1); }} disabled={cur >= aMax || combined >= MAX_AFFIX_BUDGET}
                             style={{ borderRadius: 4, border: '1px solid ' + COLORS.border, background: COLORS.card, color: '#ffffff', fontWeight: 'bold', width: 28, height: 28, cursor: 'pointer', opacity: (cur >= aMax || combined >= MAX_AFFIX_BUDGET) ? 0.5 : 1 }}>+</button>
+                          <button onClick={(e) => { e.stopPropagation(); setLevel(affix.name, aMax); }} disabled={cur >= aMax}
+                            style={{ borderRadius: 4, border: '1px solid ' + COLORS.border, background: COLORS.card, color: COLORS.primary, fontSize: '12px', height: 28, padding: '0 8px', cursor: 'pointer', fontWeight: 'bold', opacity: cur >= aMax ? 0.5 : 1 }}>Max</button>
                         </div>
                       )}
                     </button>
@@ -371,6 +419,15 @@ function App() {
                 style={{ background: COLORS.primary, color: '#000', padding: '12px 24px', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', border: 'none', cursor: 'pointer', opacity: loading ? 0.6 : 1 }}>
                 {loading ? 'Finding builds...' : `Generate Build (${Object.keys(selected).length} affixes · ${combined}/${MAX_AFFIX_BUDGET})`}
               </button>
+              {loading && (
+                <div style={{ marginTop: '12px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span className="mc-spinner"></span>
+                  <div>
+                    <div style={{ color: COLORS.primary, fontWeight: 'bold', fontSize: '14px' }}>Finding the cheapest builds…</div>
+                    <div style={{ color: COLORS.textMuted, fontSize: '14px' }}>Full-legendary requests can take a few seconds.</div>
+                  </div>
+                </div>
+              )}
             </section>
           )}
 
@@ -390,26 +447,26 @@ function App() {
                     <div style={{ padding: '10px 16px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
                       <strong style={{ color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
                       <span style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                        <span style={{ fontSize: '11px', color: COLORS.textMuted, backgroundColor: COLORS.bg, border: '1px solid ' + COLORS.border, borderRadius: '4px', padding: '2px 6px' }}>{raritySummary(b.slots)}</span>
-                        <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '14px' }}>💠 {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
+                        <span style={{ fontSize: '12px', color: COLORS.textMuted, backgroundColor: COLORS.bg, border: '1px solid ' + COLORS.border, borderRadius: '4px', padding: '2px 6px' }}>{raritySummary(b.slots)}</span>
+                        <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '14px' }}>💠 Average market price: {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
                       </span>
                     </div>
                     {b.capacityWarnings && b.capacityWarnings.length > 0 && (
-                      <div style={{ padding: '4px 16px', backgroundColor: COLORS.danger + '22', color: COLORS.danger, fontSize: '11px' }}>
+                      <div style={{ padding: '4px 16px', backgroundColor: COLORS.danger + '22', color: COLORS.danger, fontSize: '14px' }}>
                         ⚠ {b.capacityWarnings.join(' · ')}
                       </div>
                     )}
                     {b.wine && b.wineGrants && Object.keys(b.wineGrants).length > 0 && (
-                      <div style={{ padding: '4px 16px', fontSize: '11px', color: COLORS.primary, backgroundColor: COLORS.bgAlt }}>
-                        🍷 {b.wine} grants: {Object.entries(b.wineGrants).map(([a, n]) => a + ' +' + n).join(', ')}
+                      <div style={{ padding: '4px 16px', fontSize: '14px', color: COLORS.primary, backgroundColor: COLORS.bgAlt }}>
+                        🍷 {b.wine} grants: {Object.entries(b.wineGrants).map(([a, n]) => a + ' +' + n).join(', ') }
                       </div>
                     )}
                     <div style={{ padding: '6px 16px' }}>
                       {b.slots.map((p, j) => (
-                        <div key={j} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '10px', padding: '5px 0', fontSize: '13px', borderBottom: j < b.slots.length - 1 ? '1px solid ' + COLORS.border : 'none' }}>
+                        <div key={j} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '10px', padding: '5px 0', fontSize: '14px', borderBottom: j < b.slots.length - 1 ? '1px solid ' + COLORS.border : 'none' }}>
                           <span style={{ flex: '1 1 auto', minWidth: '0' }}>{slotLabel(p)}</span>
                           <button onClick={() => openFeedback(b, p, i)} title="Report an issue with this gear slot"
-                            style={{ flex: '0 0 auto', background: 'transparent', border: '1px solid ' + COLORS.border, borderRadius: '6px', color: COLORS.textMuted, fontSize: '11px', padding: '3px 8px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                            style={{ flex: '0 0 auto', background: 'transparent', border: '1px solid ' + COLORS.border, borderRadius: '6px', color: COLORS.textMuted, fontSize: '12px', padding: '3px 8px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
                             ⚠️ Report
                           </button>
                         </div>
@@ -419,7 +476,7 @@ function App() {
                 ))}
                 {builds.builds.length > buildCount && (
                   <button onClick={() => setBuildCount(c => Math.min(c + 10, builds.builds.length))}
-                    style={{ marginTop: '12px', width: '100%', padding: '10px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '13px', cursor: 'pointer' }}>
+                    style={{ marginTop: '12px', width: '100%', padding: '10px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '14px', cursor: 'pointer' }}>
                     Show more builds ({builds.builds.length - buildCount} more)
                   </button>
                 )}
@@ -438,7 +495,7 @@ function App() {
               <iframe title="Twitch livestream" src={twitchSrc} height="380" width="100%" allowFullScreen
                 style={{ border: 'none', display: 'block', backgroundColor: '#000' }} />
             ) : (
-              <div style={{ padding: '24px', color: COLORS.textMuted, fontSize: '13px' }}>
+              <div style={{ padding: '24px', color: COLORS.textMuted, fontSize: '14px' }}>
                 Set <code>twitchChannel</code> in <code>App.jsx</code> (SITE config) to show the live embed.
               </div>
             )}
@@ -455,7 +512,7 @@ function App() {
           {kofiHref && (
             <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.card, padding: '14px' }}>
               <strong style={{ color: COLORS.primary, fontSize: '14px' }}>☕ Tip the build</strong>
-              <p style={{ color: COLORS.textMuted, fontSize: '12px', marginTop: '6px', paddingBottom: '8px' }}>
+              <p style={{ color: COLORS.textMuted, fontSize: '14px', marginTop: '6px', paddingBottom: '8px' }}>
                 Love the calculator? A Ko-fi keeps this fan tool running and helps the stream.</p>
               <a href={kofiHref} target="_blank" rel="noopener noreferrer"
                 style={{ display: 'block', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', background: '#29abe0', color: '#fff', padding: '12px 0', borderRadius: '6px', fontWeight: 'bold', fontSize: '16px', textDecoration: 'none' }}>
@@ -469,7 +526,7 @@ function App() {
         </aside>
       </div>
 
-      <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '16px 24px', color: COLORS.textMuted, fontSize: '12px', textAlign: 'center' }}>
+      <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '16px 24px', color: COLORS.textMuted, fontSize: '14px', textAlign: 'center' }}>
         Mistfall Hunter Build Calculator — Unofficial fan tool. Not affiliated with Bellring Games. · Helpful?{' '}
         {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
         {' '}·{' '}
@@ -481,11 +538,11 @@ function App() {
           <div onClick={(e) => e.stopPropagation()}
             style={{ background: COLORS.card, border: '1px solid ' + COLORS.border, borderRadius: '10px', width: '100%', maxWidth: '520px', padding: '20px', color: COLORS.text }}>
             <h3 style={{ color: COLORS.primary, fontSize: '17px', marginBottom: '6px' }}>⚠️ Report an issue</h3>
-            <p style={{ color: COLORS.textMuted, fontSize: '12px', marginBottom: '14px' }}>
+            <p style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '14px' }}>
               Found something wrong? This report is sent to the build team automatically. Explain what's off in your own words — thanks for helping!
             </p>
 
-            <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, padding: '10px 12px', marginBottom: '12px', fontSize: '12px' }}>
+            <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, padding: '10px 12px', marginBottom: '12px', fontSize: '14px' }}>
               <div style={{ color: COLORS.textMuted, marginBottom: '4px' }}>REPORTING</div>
               <div style={{ fontWeight: 'bold', marginBottom: '2px' }}>
                 {feedbackCtx.slot !== 'General' ? (feedbackCtx.slot + ': ' + feedbackCtx.gear + (feedbackCtx.rarity ? ' [' + feedbackCtx.rarity + ']' : '')) : 'General feedback'}
@@ -507,7 +564,7 @@ function App() {
               <input type="text" value={fHp} onChange={(e) => setFHp(e.target.value)} name="website" tabIndex={-1} autoComplete="off"
                 style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, opacity: 0 }} aria-hidden="true" />
 
-              <label style={{ display: 'block', fontSize: '12px', color: COLORS.textMuted, marginBottom: '4px' }}>What's the issue?</label>
+              <label style={{ display: 'block', fontSize: '14px', color: COLORS.textMuted, marginBottom: '4px' }}>What's the issue?</label>
               <select value={fType} onChange={(e) => setFType(e.target.value)}
                 style={{ width: '100%', padding: '9px', borderRadius: '6px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, marginBottom: '12px' }}>
                 <option>Wrong gear</option>
@@ -518,13 +575,13 @@ function App() {
                 <option>Other</option>
               </select>
 
-              <label style={{ display: 'block', fontSize: '12px', color: COLORS.textMuted, marginBottom: '4px' }}>Your note (what should it be?)</label>
+              <label style={{ display: 'block', fontSize: '14px', color: COLORS.textMuted, marginBottom: '4px' }}>Your note (what should it be?)</label>
               <textarea value={fNote} onChange={(e) => setFNote(e.target.value)} rows={4} placeholder="e.g. This slot should recommend Ardent Hood instead — the socket is wrong for this class."
                 maxLength={1000}
                 style={{ width: '100%', padding: '9px', borderRadius: '6px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, resize: 'vertical', marginBottom: '12px' }}></textarea>
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
-                <span style={{ fontSize: '12px', color: COLORS.textMuted }}>
+                <span style={{ fontSize: '14px', color: COLORS.textMuted }}>
                   {fStatus === 'sending' && 'Sending…'}
                   {fStatus === 'ok' && '✅ Sent, thank you!'}
                   {fStatus === 'error' && '⚠️ Could not send — please try again.'}
@@ -532,9 +589,9 @@ function App() {
                 </span>
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <button type="button" onClick={closeFeedback}
-                    style={{ padding: '9px 16px', borderRadius: '6px', border: '1px solid ' + COLORS.border, background: COLORS.bgAlt, color: COLORS.textMuted, fontSize: '13px', cursor: 'pointer' }}>Cancel</button>
+                    style={{ padding: '9px 16px', borderRadius: '6px', border: '1px solid ' + COLORS.border, background: COLORS.bgAlt, color: COLORS.textMuted, fontSize: '14px', cursor: 'pointer' }}>Cancel</button>
                   <button type="submit" disabled={fStatus === 'sending'}
-                    style={{ padding: '9px 18px', borderRadius: '6px', border: 'none', background: COLORS.primary, color: '#000', fontWeight: 'bold', fontSize: '13px', cursor: 'pointer', opacity: fStatus === 'sending' ? 0.6 : 1 }}>
+                    style={{ padding: '9px 18px', borderRadius: '6px', border: 'none', background: COLORS.primary, color: '#000', fontWeight: 'bold', fontSize: '14px', cursor: 'pointer', opacity: fStatus === 'sending' ? 0.6 : 1 }}>
                     {fStatus === 'sending' ? 'Sending…' : 'Send report'}
                   </button>
                 </div>
