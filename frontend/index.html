@@ -6,8 +6,8 @@
 
   <!-- Primary SEO -->
   <title>Mistfall Hunter Build Calculator — Cheapest Gear Finder</title>
-  <meta name="description" content="Free Mistfall Hunter build calculator. Pick a class, choose your affixes, and find the cheapest gear, gem and socket loadout. Built for Seer & Sorcerer." />
-  <meta name="keywords" content="Mistfall Hunter, build calculator, Mistfall builds, gear optimizer, gems, sockets, cheapest build" />
+  <meta name="description" content="Free Mistfall Hunter build calculator. Pick a class, choose your affixes, and find the cheapest gear, gem and socket loadout. Built for all six classes by Squigle." />
+  <meta name="keywords" content="Mistfall Hunter, build calculator, Mistfall builds, gear optimizer, gems, sockets, cheapest build, mistfall calc" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="squiglesquigles" />
   <meta name="theme-color" content="#0c0d11" />
@@ -17,14 +17,18 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Mistfall Hunter Build Calculator" />
   <meta property="og:title" content="Mistfall Hunter Build Calculator — Cheapest Gear Finder" />
-  <meta property="og:description" content="Pick a class, choose your affixes, and find the cheapest gear, gem and socket loadout for Mistfall Hunter. Free and built by a Hunter." />
+  <meta property="og:description" content="Pick a class, choose your affixes, and find the cheapest gear, gem and socket loadout for Mistfall Hunter. Free and built by Squigle." />
   <meta property="og:url" content="https://www.mistfallcalc.com/" />
-  <!-- <meta property="og:image" content="https://www.mistfallcalc.com/og-image.png" />  ← add a 1200x630 image to frontend/public/ and uncomment -->
+  <meta property="og:image" content="https://www.mistfallcalc.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mistfall Hunter Build Calculator by Squigle — find the cheapest gear loadout for all six classes" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mistfall Hunter Build Calculator — Cheapest Gear Finder" />
-  <meta name="twitter:description" content="Find the cheapest gear, gem and socket loadout for your Mistfall Hunter build." />
+  <meta name="twitter:description" content="Find the cheapest gear, gem and socket loadout for your Mistfall Hunter build. Free, by Squigle." />
+  <meta name="twitter:image" content="https://www.mistfallcalc.com/og-image.png" />
 
   <!-- Structured data: lets Google understand this is a calculator tool -->
   <script type="application/ld+json">
@@ -36,7 +40,42 @@
     "description": "Free Mistfall Hunter build calculator that finds the cheapest gear, gem and socket loadout for your class and affixes.",
     "applicationCategory": "GameApplication",
     "operatingSystem": "Any (web browser)",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": {
+      "@type": "Person",
+      "name": "Squigle",
+      "url": "https://github.com/squiglesquigles"
+    }
+  }
+  </script>
+
+  <!-- FAQ structured data (mirrors the visible FAQ at the bottom of the page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Mistfall build calculator?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It's a free fan-made calculator for Mistfall Hunter. You pick one of the six classes (Mercenary, Sorcerer, Blackarrow, Shadowstrix, Seer or Withered Knight), choose a weapon and the affixes you want, and it finds the cheapest gear, gem and socket loadout that fits your budget." }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the cheapest Mistfall Hunter build calculator work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Select a class and weapon, then add the affix levels you want up to a combined budget of 40. The calculator runs an optimization engine in your browser and lists the cheapest builds, with recommended gear, rarity, sockets and gems priced against average market prices." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Mistfall Hunter class should I play?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Mercenary (bruiser), Sorcerer (mage), Blackarrow (ranged), Shadowstrix (assassin), Seer (support) and Withered Knight (heavy). Each has a dedicated class page linked below that deep-links straight into the calculator with that class preselected." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Mistfall Hunter build calculator free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — it's free, needs no sign-up, includes no ads, and runs entirely in your browser. It's an unofficial fan tool, not affiliated with Bellring Games." }
+      }
+    ]
   }
   </script>
 
@@ -49,10 +88,66 @@
       min-height: 100vh;
     }
     #root { min-height: 100vh; }
+
+    /* Static SEO section shown below the app (always crawlable, no JS needed) */
+    .seo-section {
+      background: #0c0d11;
+      color: #e5e7eb;
+      border-top: 1px solid #2a2b36;
+      padding: 40px 24px 56px;
+    }
+    .seo-section-inner { max-width: 960px; margin: 0 auto; }
+    .seo-section h2 { color: #c9a54a; font-size: 20px; font-weight: 700; margin: 28px 0 12px; }
+    .seo-section h2:first-child { margin-top: 0; }
+    .seo-section p { color: #b9c0cc; font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
+    .seo-section ul { list-style: none; padding: 0; }
+    .seo-section li { margin: 8px 0; }
+    .seo-section a { color: #c9a54a; text-decoration: none; }
+    .seo-section a:hover { text-decoration: underline; }
+    .seo-section .faq-q { color: #f3f4f6; font-weight: 700; margin: 20px 0 8px; }
+    .seo-section .credit { margin-top: 32px; padding-top: 16px; border-top: 1px solid #2a2b36; color: #6b7280; font-size: 12px; }
   </style>
 </head>
 <body>
   <div id="root"></div>
+
+  <!-- Static SEO content — rendered below the calculator, no JS required -->
+  <section class="seo-section">
+    <div class="seo-section-inner">
+      <h2>About the Mistfall Hunter Build Calculator</h2>
+      <p>
+        The <strong>Mistfall build calculator</strong> — also known as the Mistfall calc — is a free
+        fan tool by <strong>Squigle</strong> that finds the <strong>cheapest gear, gem and socket
+        loadout</strong> for your Mistfall Hunter character. Pick one of the six classes
+        (Mercenary, Sorcerer, Blackarrow, Shadowstrix, Seer or Withered Knight), choose a weapon and
+        the affixes you want, and the calc optimizes every slot against average market prices so you spend
+        gold where it matters instead of guessing.
+      </p>
+      <p>
+        There is also a dedicated page per class:
+        <a href="/mercenary-build-calculator/">Mercenary build calculator</a> ·
+        <a href="/sorcerer-build-calculator/">Sorcerer build calculator</a> ·
+        <a href="/blackarrow-build-calculator/">Blackarrow build calculator</a> ·
+        <a href="/shadowstrix-build-calculator/">Shadowstrix build calculator</a> ·
+        <a href="/seer-build-calculator/">Seer build calculator</a> ·
+        <a href="/withered-knight-build-calculator/">Withered Knight build calculator</a>.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-q">What is the Mistfall build calculator?</div>
+      <p>It's a free fan-made calculator for Mistfall Hunter. You pick one of the six classes, choose a weapon and the affixes you want, and it finds the cheapest gear, gem and socket loadout that fits your budget.</p>
+      <div class="faq-q">How does the cheapest Mistfall Hunter build calculator work?</div>
+      <p>Select your class and weapon, then add affix levels up to a combined budget of 40. The optimization engine that runs in your browser lists the cheapest builds, with recommended gear, rarity, sockets and gems priced against average market prices.</p>
+      <div class="faq-q">Which Mistfall Hunter class should I play?</div>
+      <p>Mercenary (bruiser), Sorcerer (mage), Blackarrow (ranged), Shadowstrix (assassin), Seer (support) and Withered Knight (heavy). Each class page d
+eep-links straight into the calculator with that class preselected.</p>
+      <div class="faq-q">Is the Mistfall Hunter calc free?</div>
+      <p>Yes — no sign-up, no ads, and it runs entirely in your browser. It's an unofficial fan tool, not affiliated with Bellring Games.</p>
+
+      <p class="credit">Mistfall Calc by Squigle · mistfallcalc.com — a free Mistfall Hunter build calculator, not affiliated with Bellring Games.</p>
+    </div>
+  </section>
+
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

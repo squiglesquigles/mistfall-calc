@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mistfall Shadowstrix Build Calculator — Cheapest Shadowstrix Gear & Gems</title>
+  <meta name="description" content="Free Mistfall Shadowstrix build calculator. Find the cheapest dagger or dual-blade assassin loadout for your crit affixes, priced against average market prices." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.mistfallcalc.com/shadowstrix-build-calculator/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mistfall Hunter Build Calculator" />
+  <meta property="og:title" content="Mistfall Shadowstrix Build Calculator — Cheapest Shadowstrix Gear & Gems" />
+  <meta property="og:description" content="Free Mistfall Shadowstrix build calculator. Find the cheapest dagger or dual-blade assassin loadout for your crit affixes, priced against average market prices." />
+  <meta property="og:url" content="https://www.mistfallcalc.com/shadowstrix-build-calculator/" />
+  <meta property="og:image" content="https://www.mistfallcalc.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mistfall Shadowstrix Build Calculator — Cheapest Shadowstrix Gear & Gems" />
+  <meta name="twitter:description" content="Free Mistfall Shadowstrix build calculator. Find the cheapest dagger or dual-blade assassin loadout for your crit affixes, priced against average market prices." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Mistfall Shadowstrix Build Calculator",
+    "url": "https://www.mistfallcalc.com/shadowstrix-build-calculator/",
+    "description": "Free Mistfall Shadowstrix build calculator. Find the cheapest dagger or dual-blade assassin loadout for your crit affixes, priced against average market prices.",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any (web browser)",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "Squigle", "url": "https://github.com/squiglesquigles" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Mistfall Build Calculator", "item": "https://www.mistfallcalc.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Mistfall Shadowstrix Build Calculator", "item": "https://www.mistfallcalc.com/shadowstrix-build-calculator/" }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is the Mistfall Shadowstrix build calculator free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — it is free, needs no sign-up, shows no ads, and runs entirely in your browser. It is an unofficial fan tool by Squigle, not affiliated with Bellring Games." }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Shadowstrix build calculator find the cheapest build?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It tries every legal combination of Shadowstrix gear, gems and sockets against average market prices and returns the cheapest loadout that reaches your chosen affix levels." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which weapons does the Shadowstrix build calculator support?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The Shadowstrix build calculator supports Dagger / Dual Blades. Switch weapons and the whole loadout re-optimises automatically." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the Shadowstrix build calculator include gem and socket prices?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — gear, gems and sockets are all priced at average market prices, so the total shown covers the full loadout cost." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0c0d11; color: #e5e7eb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.65; padding: 32px 20px 48px; }
+    .wrap { max-width: 860px; margin: 0 auto; }
+    header { border-bottom: 1px solid #2a2b36; padding-bottom: 16px; margin-bottom: 24px; }
+    h1 { color: #c9a54a; font-size: 28px; font-weight: 700; }
+    .sub { color: #b9c0cc; font-size: 16px; margin-top: 8px; }
+    .card { background: #14151c; border: 1px solid #2a2b36; border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; }
+    .card h2 { color: #c9a54a; font-size: 20px; margin-bottom: 12px; }
+    .card p { font-size: 16px; color: #b9c0cc; margin-bottom: 12px; }
+    .meta { color: #f3f4f6; font-weight: 600; }
+    .cta { display: inline-block; background: #c9a54a; color: #0c0d11; font-weight: 700; padding: 12px 20px; border-radius: 8px; text-decoration: none; margin-top: 8px; }
+    .classes ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 16px; }
+    .classes li a { color: #c9a54a; text-decoration: none; }
+    .classes li a.current { color: #f3f4f6; border-bottom: 1px solid #c9a54a; }
+    footer { border-top: 1px solid #2a2b36; margin-top: 24px; padding-top: 16px; color: #6b7280; font-size: 12px; }
+    footer a { color: #c9a54a; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Mistfall Shadowstrix Build Calculator</h1>
+      <p class="sub">Find the cheapest Shadowstrix gear, gem and socket loadout for your affixes — Assassin · Dagger / Dual Blades</p>
+    </header>
+
+    <section class="card">
+      <h2>About the Shadowstrix</h2>
+      <p>The Shadowstrix is a high-mobility assassin built for daggers and dual blades — it closes distance, opens with critical strikes, and disengages before retaliation lands. Cheap Shadowstrix builds live or die by their weapon and crit scaling.</p>
+      <p class="meta">Role: Assassin · Weapon(s): Dagger / Dual Blades</p>
+    </section>
+
+    <section class="card">
+      <h2>How the Mistfall Shadowstrix calc helps</h2>
+      <p>Choose your crit and dagger affixes, then let the calc find the cheapest Shadowstrix loadout — every slot, socket and gem priced and optimised against average market prices.</p>
+      <a class="cta" href="/?class=shadowstrix">Open the Shadowstrix build calculator →</a>
+    </section>
+
+    <section class="card">
+      <h2>Shadowstrix build calculator — FAQ</h2>
+      <p><strong>Is the Mistfall Shadowstrix build calculator free?</strong></p>
+      <p>Yes — it is free, needs no sign-up, shows no ads, and runs entirely in your browser. It is an unofficial fan tool by Squigle, not affiliated with Bellring Games.</p>
+      <p><strong>How does the Shadowstrix build calculator find the cheapest build?</strong></p>
+      <p>It tries every legal combination of Shadowstrix gear, gems and sockets against average market prices and returns the cheapest loadout that reaches your chosen affix levels.</p>
+      <p><strong>Which weapons does the Shadowstrix build calculator support?</strong></p>
+      <p>The Shadowstrix build calculator supports Dagger / Dual Blades. Switch weapons and the whole loadout re-optimises automatically.</p>
+      <p><strong>Does the Shadowstrix build calculator include gem and socket prices?</strong></p>
+      <p>Yes — gear, gems and sockets are all priced at average market prices, so the total shown covers the full loadout cost.</p>
+    </section>
+
+    <nav class="card classes">
+      <h2>All Mistfall class calculators</h2>
+      <ul>
+        <li><a href="/mercenary-build-calculator/">Mercenary build calculator</a></li>
+        <li><a href="/sorcerer-build-calculator/">Sorcerer build calculator</a></li>
+        <li><a href="/blackarrow-build-calculator/">Blackarrow build calculator</a></li>
+        <li><a class="current" href="/shadowstrix-build-calculator/">Shadowstrix build calculator</a></li>
+        <li><a href="/seer-build-calculator/">Seer build calculator</a></li>
+        <li><a href="/withered-knight-build-calculator/">Withered Knight build calculator</a></li>
+        <li><a href="/">Mistfall build calculator — all classes</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      mistfallcalc.com — free Mistfall Hunter build calculator by Squigle. Not affiliated with Bellring Games.
+      <a href="/">← Back to the main Mistfall build calculator</a>
+    </footer>
+  </div>
+</body>
+</html>

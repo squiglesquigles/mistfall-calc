@@ -15,6 +15,9 @@ import PantsIcon from './assets/icons/Pants.png';
 import PeridotIcon from './assets/icons/Peridot.png';
 import RingIcon from './assets/icons/Ring.png';
 import WeaponIcon from './assets/icons/Weapon.png';
+import KoFiLogo from './assets/icons/logomarkLogo.webp';
+import ChevronDown from './assets/icons/ChevronDown.svg';
+import ChevronRight from './assets/icons/ChevronRight.svg';
 
 // ----------------------------------------------------------------
 //  CONFIG — fill in your Twitch channel and Ko-fi username/page
@@ -79,6 +82,7 @@ function App() {
   const [search, setSearch] = useState('');
   const [groupFilter, setGroupFilter] = useState('All');
   const [buildCount, setBuildCount] = useState(2); // builds shown initially (more on demand)
+  const [openBuilds, setOpenBuilds] = useState({}); // accordion: which build cards are expanded (default: all open)
   const [budgetNotice, setBudgetNotice] = useState(null); // shown when adding an affix at max budget
 
   // Feedback report (per gear slot -> Discord webhook)
@@ -155,7 +159,7 @@ function App() {
   const weaponOptions = (meta.weaponsByClass && selectedClass && meta.weaponsByClass[selectedClass.name]) || [];
 
   // Clear target affixes + builds when class or weapon changes
-  useEffect(() => { setSelected({}); setBuilds(null); }, [selectedClass, weapon]);
+  useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); }, [selectedClass, weapon]);
 
   // Reset the weapon to the first option for the newly picked class.
   useEffect(() => {
@@ -212,7 +216,7 @@ function App() {
     w.onmessage = (e) => {
       const { ok, result, error } = e.data || {};
       setLoading(false);
-      if (ok) { setBuilds(result); setBuildCount(2); }
+      if (ok) { setBuilds(result); setBuildCount(2); setOpenBuilds({}); }
       else { setError(error || 'Could not generate builds.'); }
     };
     w.onerror = (err) => { setLoading(false); setError('Build engine failed to start: ' + (err.message || 'worker error')); };
@@ -245,16 +249,29 @@ function App() {
   const cs = selectedClass ? !classHasData(selectedClass) : true;
   const weaponLabel = w => (w === 'Weapon' && selectedClass ? (selectedClass.weapon || 'Weapon') : w);
 
+  // Deep-link support: the static class pages (frontend/public/*-build-calculator/)
+  // link in as /?class=mercenary, /?class=sorcerer, ... so the class is preselected.
+  useEffect(() => {
+    const wanted = (new URLSearchParams(window.location.search).get('class') || '').toLowerCase();
+    if (!wanted) return;
+    const match = classes.find(c => c.slug === wanted || c.name.toLowerCase() === wanted);
+    if (match && classHasData(match)) setSelectedClass(match);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   function gemLabel(slot, gem) {
     if (!gem) return null;
     const afx = [gem.affix1, gem.affix2].filter(Boolean).join(' + ');
     const tier = slot.tier === 2 ? ' T2' : '';
-    const name = gemName(slot.shape);
-    const icon = gemIcon(slot.shape);
+    const isAll = slot.shape === 'Circle' || slot.shape === 'Circle/Swirl';
+    const shape = (gem && gem.shape) || slot.shape;
+    const name = gemName(shape);
+    const icon = gemIcon(shape);
+    const label = (isAll ? '(All gems) ' : '') + name + tier;
     return (
-      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', backgroundColor: COLORS.bgAlt, borderRadius: '4px', padding: '1px 6px', fontSize: '12px', margin: '1px 2px' }}>
-        {icon && <img src={icon} alt={name} style={{ width: 16, height: 16 }} />}
-        {name + tier + ': ' + afx}
+      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: COLORS.bgAlt, borderRadius: '8px', padding: '8px 12px', fontSize: '16px', margin: '0' }}>
+        {icon && <img src={icon} alt={name} style={{ width: 20, height: 20 }} />}
+        <span>{label}: <strong style={{ fontWeight: 600 }}>{afx}</strong></span>
       </span>
     );
   }
@@ -264,15 +281,15 @@ function App() {
     const gems = (p.sockets || []).map((s, i) => gemLabel(s, (p.gems || [])[i])).filter(Boolean);
     const icon = slotIcon(p.slot);
     return (
-      <span style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '2px 8px' }}>
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
-          {icon && <img src={icon} alt={p.slot} style={{ width: 18, height: 18 }} />}
+      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '8px' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+          {icon && <img src={icon} alt={p.slot} style={{ width: 20, height: 20 }} />}
           <span>
             {p.slot}: <strong>{p.gear}</strong>{' '}
             <span style={{ color: RARITY_COLORS[p.rarity] || COLORS.textMuted }}>[{p.rarity}]</span>{built}
           </span>
         </span>
-        {gems.length > 0 && <span style={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap' }}>{gems}</span>}
+        {gems.length > 0 && <span style={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>{gems}</span>}
       </span>
     );
   }
@@ -286,23 +303,23 @@ function App() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: COLORS.bg, color: COLORS.text }}>
       <style>{`@keyframes mc-spin { to { transform: rotate(360deg); } }
-.mc-spinner { display: inline-block; width: 18px; height: 18px; border: 3px solid #2a2b36; border-top-color: #c9a54a; border-radius: 50%; animation: mc-spin 0.8s linear infinite; }`}</style>
-      <header style={{ borderBottom: '1px solid ' + COLORS.border, padding: '16px 24px', backgroundColor: COLORS.bgAlt }}>
-        <h1 style={{ color: COLORS.primary, fontSize: '24px', fontWeight: 'bold' }}>⚔ Mistfall Hunter — Build Calculator</h1>
-        <p style={{ color: COLORS.textMuted, fontSize: '14px', marginTop: '4px' }}>
+.mc-spinner { display: inline-block; width: 20px; height: 20px; border: 3px solid #2a2b36; border-top-color: #c9a54a; border-radius: 50%; animation: mc-spin 0.8s linear infinite; }`}</style>
+      <header style={{ borderBottom: '1px solid ' + COLORS.border, padding: '20px 28px', backgroundColor: COLORS.bgAlt }}>
+        <h1 style={{ color: COLORS.primary, fontSize: '24px', fontWeight: 'bold' }}>Mistfall Hunter Build Calculator</h1>
+        <p style={{ color: COLORS.textMuted, fontSize: '16px', marginTop: '8px' }}>
           Pick a class, choose a weapon, and select affix levels (max {MAX_AFFIX_BUDGET} combined) to find a gear + gem loadout.
         </p>
       </header>
 
-      <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '24px', display: 'flex', gap: '24px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+      <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '28px', display: 'flex', gap: '28px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {/* MAIN CALCULATOR */}
         <main style={{ flex: '1 1 620px', minWidth: '0' }}>
           {error && <div style={{ backgroundColor: '#7f1d1d', padding: '12px', borderRadius: '8px', marginBottom: '16px', color: '#fecaca' }}>{error}</div>}
 
           {/* Step 1: Class */}
-          <section style={{ marginBottom: '32px' }}>
-            <h2 style={{ color: COLORS.primary, fontSize: '18px', marginBottom: '12px' }}>Step 1: Choose Your Class</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '12px' }}>
+          <section style={{ marginBottom: '36px' }}>
+            <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>Step 1: Choose Your Class</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '16px' }}>
               {classes.map(cls => {
                 const comingSoon = !classHasData(cls);
                 const active = selectedClass && selectedClass.slug === cls.slug;
@@ -311,7 +328,7 @@ function App() {
                     style={{ color: COLORS.text, opacity: comingSoon ? 0.6 : 1, padding: '12px', borderRadius: '8px', cursor: comingSoon ? 'not-allowed' : 'pointer', textAlign: 'left',
                       border: '2px solid ' + (active ? COLORS.primary : COLORS.border), backgroundColor: active ? '#2a2320' : COLORS.card }}>
                     <div style={{ fontSize: '16px', fontWeight: 'bold', color: COLORS.text }}>{cls.name}</div>
-                    <div style={{ fontSize: '14px', color: COLORS.textMuted, marginTop: '4px' }}>{cls.role} · {cls.weapon}</div>
+                    <div style={{ fontSize: '16px', color: COLORS.textMuted, marginTop: '8px' }}>{cls.role} · {cls.weapon}</div>
                     {comingSoon && <span style={{ color: COLORS.danger, fontWeight: 'bold', fontSize: '12px' }}>⏳ Coming Soon</span>}
                   </button>
                 );
@@ -321,13 +338,13 @@ function App() {
 
           {selectedClass && (
             <section style={{ marginBottom: '24px' }}>
-              <h2 style={{ color: COLORS.primary, fontSize: '18px', marginBottom: '12px' }}>Step 2: Choose a Weapon ({selectedClass.name})</h2>
-              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>Step 2: Choose a Weapon ({selectedClass.name})</h2>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                 {weaponOptions.map(w => {
                     const active = weapon === w;
                     return (
                       <button key={w} disabled={cs} onClick={() => setWeapon(w)}
-                        style={{ color: COLORS.text, fontWeight: '600', opacity: cs ? 0.6 : 1, padding: '10px 18px', borderRadius: '8px', cursor: cs ? 'not-allowed' : 'pointer', fontSize: '14px',
+                        style={{ color: COLORS.text, fontWeight: '600', opacity: cs ? 0.6 : 1, padding: '12px 20px', borderRadius: '8px', cursor: cs ? 'not-allowed' : 'pointer', fontSize: '16px',
                           border: '2px solid ' + (active ? COLORS.primary : COLORS.border), backgroundColor: active ? '#2a2320' : COLORS.card }}>
                         {weaponLabel(w)}
                       </button>
@@ -338,30 +355,30 @@ function App() {
           )}
 
           {selectedClass && !cs && (
-            <section style={{ marginBottom: '32px' }}>
-              <h2 style={{ color: COLORS.primary, fontSize: '18px', marginBottom: '12px' }}>Step 3: Select Affixes &amp; Levels (max {MAX_AFFIX_BUDGET})</h2>
+            <section style={{ marginBottom: '36px' }}>
+              <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>Step 3: Select Affixes &amp; Levels (max {MAX_AFFIX_BUDGET})</h2>
               <input type="text" placeholder="Search affixes..." value={search} onChange={e => setSearch(e.target.value)}
-                style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, marginBottom: '12px' }} />
-              <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
+                style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, marginBottom: '16px' }} />
+              <div style={{ display: 'flex', gap: '12px', marginBottom: '16px', flexWrap: 'wrap' }}>
                 {['All', 'Defensive', 'Offensive', 'Utility'].map(g => {
                   const active = groupFilter === g;
                   const col = g === 'Defensive' ? COLORS.defensive : g === 'Offensive' ? COLORS.offensive : g === 'Utility' ? COLORS.utility : COLORS.primary;
-                  return <button key={g} onClick={() => setGroupFilter(g)} style={{ padding: '6px 14px', borderRadius: '6px', fontSize: '14px', cursor: 'pointer',
+                  return <button key={g} onClick={() => setGroupFilter(g)} style={{ padding: '8px 16px', borderRadius: '8px', fontSize: '16px', cursor: 'pointer',
                     border: '1px solid ' + (active ? col : COLORS.border), backgroundColor: active ? col + '22' : COLORS.bgAlt, color: active ? col : COLORS.textMuted, fontWeight: active ? 'bold' : 'normal' }}>{g}</button>;
                 })}
               </div>
 
-              <div style={{ display: 'flex', gap: '12px', alignItems: 'center', marginBottom: '14px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '16px', flexWrap: 'wrap' }}>
                 <strong style={{ color: overBudget ? COLORS.danger : COLORS.text }}>Combined level: {combined} / {MAX_AFFIX_BUDGET}</strong>
                 {overBudget && <span style={{ color: COLORS.danger, fontWeight: 'bold' }}>(over budget — lower a level)</span>}
               </div>
               {budgetNotice && (
-                <div style={{ backgroundColor: COLORS.danger + '1f', border: '1px solid ' + COLORS.danger, color: COLORS.danger, borderRadius: '6px', padding: '8px 12px', fontSize: '14px', marginBottom: '12px' }}>
+                <div style={{ backgroundColor: COLORS.danger + '1f', border: '1px solid ' + COLORS.danger, color: COLORS.danger, borderRadius: '8px', padding: '12px 16px', fontSize: '16px', marginBottom: '16px' }}>
                   ⚠ {budgetNotice}
                 </div>
               )}
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: '10px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: '12px' }}>
                 {filteredAffixes.map(affix => {
                   const reachable_ = true; // wine can grant any affix
                   const sel = (affix.name in selected);
@@ -373,33 +390,37 @@ function App() {
                   return (
                     <button key={affix.slug} disabled={!reachable_}
                       onClick={() => reachable_ && toggleAffix(affix.name)}
-                      style={{ color: COLORS.text, opacity: reachable_ ? 1 : 0.5, padding: '12px', borderRadius: '8px', textAlign: 'left', display: 'flex', flexDirection: 'column',
+                      style={{ color: COLORS.text, opacity: reachable_ ? 1 : 0.5, height: '212px', padding: '16px', borderRadius: '8px', textAlign: 'left', display: 'flex', flexDirection: 'column', overflow: 'hidden',
                         border: '2px solid ' + (sel ? col : COLORS.border), backgroundColor: sel ? '#1d2430' : COLORS.card, cursor: reachable_ ? 'pointer' : 'not-allowed' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '6px' }}>
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                          {AFFIX_ICONS[affix.name] && <img src={AFFIX_ICONS[affix.name]} alt={affix.name + ' icon'} style={{ width: 24, height: 24, flex: '0 0 auto' }} />}
-                          <span style={{ fontWeight: 'bold', color: COLORS.text, fontSize: '16px' }}>{affix.name}</span>
+                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', flex: '0 0 auto' }}>
+                        {AFFIX_ICONS[affix.name] && (
+                          <img src={AFFIX_ICONS[affix.name]} alt={affix.name + ' icon'} style={{ width: 48, height: 48, flex: '0 0 auto', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '4px' }} />
+                        )}
+                        <span style={{ flex: '1 1 auto', minWidth: '0', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                          <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
+                            <span style={{ fontWeight: 'bold', color: COLORS.text, fontSize: '16px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{affix.name}</span>
+                            <span style={{ fontSize: '12px', padding: '4px 8px', borderRadius: '4px', backgroundColor: col + '22', color: col, whiteSpace: 'nowrap' }}>{affix.group}</span>
+                          </span>
+                          <span title={affix.desc || undefined} style={{ fontSize: '14px', lineHeight: '1.35', opacity: 0.8, color: COLORS.textMuted, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                            {affix.desc || ''}
+                          </span>
                         </span>
-                        <span style={{ fontSize: '12px', padding: '2px 6px', borderRadius: '4px', backgroundColor: col + '22', color: col, whiteSpace: 'nowrap' }}>{affix.group}</span>
                       </div>
-                      <div title={affix.desc || undefined} style={{ fontSize: '14px', color: COLORS.textMuted, marginTop: '4px', flex: '1 1 auto',
-                        display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                        {affix.desc || ''}
-                      </div>
-                      {!reachable_ && <div style={{ fontSize: '12px', color: COLORS.danger, marginTop: '4px' }}>Not reachable with {weapon}</div>}
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '6px', marginTop: '8px' }}>
-                        <div style={{ display: 'flex', gap: '6px' }}>
-                          {hasPassive && <span style={{ fontSize: '12px', padding: '2px 6px', borderRadius: '4px', backgroundColor: COLORS.border, color: COLORS.textMuted, fontWeight: 'bold' }}>Recommended Lv {affix.level[0]}</span>}
-                        </div>
-                        <div style={{ display: 'flex', gap: '6px' }}>
-                          {maxLvl && <span style={{ fontSize: '12px', padding: '2px 6px', borderRadius: '4px', backgroundColor: COLORS.border, color: COLORS.textMuted }}>Max Lv {maxLvl}</span>}
-                        </div>
+                      <div style={{ flex: '1 1 auto', minHeight: '0' }} />
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px', flex: '0 0 auto' }}>
+                        <span style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                          {!reachable_ && <span style={{ fontSize: '12px', color: COLORS.danger }}>Not reachable with {weapon}</span>}
+                          {hasPassive && <span style={{ fontSize: '12px', padding: '4px 8px', borderRadius: '4px', backgroundColor: COLORS.border, color: COLORS.textMuted, fontWeight: 'bold' }}>Recommended Lv {affix.level[0]}</span>}
+                        </span>
+                        <span style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                          {maxLvl && <span style={{ fontSize: '12px', padding: '4px 8px', borderRadius: '4px', backgroundColor: COLORS.border, color: COLORS.textMuted }}>Max Lv {maxLvl}</span>}
+                        </span>
                       </div>
                       {sel && (
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '8px', backgroundColor: COLORS.bgAlt, padding: '6px', borderRadius: '6px' }}>
+                        <div style={{ flex: '0 0 auto', marginTop: '8px', display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: COLORS.bgAlt, padding: '8px', borderRadius: '8px' }}>
                           <button onClick={(e) => { e.stopPropagation(); setLevel(affix.name, cur - 1); }} disabled={cur <= 1}
                             style={{ borderRadius: 4, border: '1px solid ' + COLORS.border, background: COLORS.card, color: '#ffffff', fontWeight: 'bold', width: 28, height: 28, cursor: 'pointer', opacity: cur <= 1 ? 0.5 : 1 }}>−</button>
-                          <span style={{ fontSize: '14px', minWidth: '70px', textAlign: 'center', color: '#ffffff', fontWeight: 'bold' }}>Lv {cur}/{aMax}</span>
+                          <span style={{ fontSize: '16px', minWidth: '72px', textAlign: 'center', color: '#ffffff', fontWeight: 'bold' }}>Lv {cur}/{aMax}</span>
                           <button onClick={(e) => { e.stopPropagation(); setLevel(affix.name, cur + 1); }} disabled={cur >= aMax || combined >= MAX_AFFIX_BUDGET}
                             style={{ borderRadius: 4, border: '1px solid ' + COLORS.border, background: COLORS.card, color: '#ffffff', fontWeight: 'bold', width: 28, height: 28, cursor: 'pointer', opacity: (cur >= aMax || combined >= MAX_AFFIX_BUDGET) ? 0.5 : 1 }}>+</button>
                           <button onClick={(e) => { e.stopPropagation(); setLevel(affix.name, aMax); }} disabled={cur >= aMax}
@@ -414,17 +435,17 @@ function App() {
           )}
 
           {selectedClass && !cs && Object.keys(selected).length > 0 && !overBudget && (
-            <section style={{ marginBottom: '32px' }}>
+            <section style={{ marginBottom: '36px' }}>
               <button onClick={generateBuilds} disabled={loading}
                 style={{ background: COLORS.primary, color: '#000', padding: '12px 24px', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', border: 'none', cursor: 'pointer', opacity: loading ? 0.6 : 1 }}>
                 {loading ? 'Finding builds...' : `Generate Build (${Object.keys(selected).length} affixes · ${combined}/${MAX_AFFIX_BUDGET})`}
               </button>
               {loading && (
-                <div style={{ marginTop: '12px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <div style={{ marginTop: '12px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <span className="mc-spinner"></span>
                   <div>
-                    <div style={{ color: COLORS.primary, fontWeight: 'bold', fontSize: '14px' }}>Finding the cheapest builds…</div>
-                    <div style={{ color: COLORS.textMuted, fontSize: '14px' }}>Full-legendary requests can take a few seconds.</div>
+                    <div style={{ color: COLORS.primary, fontWeight: 'bold', fontSize: '16px' }}>Finding the cheapest builds…</div>
+                    <div style={{ color: COLORS.textMuted, fontSize: '16px' }}>Full-legendary requests can take a few seconds.</div>
                   </div>
                 </div>
               )}
@@ -437,46 +458,55 @@ function App() {
 
           {builds && builds.builds && (
             <section>
-              <h2 style={{ color: COLORS.primary, fontSize: '18px', marginBottom: '8px' }}>{builds.className} · {builds.weapon} Builds</h2>
+              <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>{builds.className} · {builds.weapon} Builds</h2>
               <p style={{ color: COLORS.textMuted, marginBottom: '16px' }}>
                 {builds.combinedLevel}/{MAX_AFFIX_BUDGET} combined · {builds.totalBuilds} found · wine: {builds.wine && builds.wine.label ? (builds.wine.label + ' · ' + builds.wine.cost + 'g') : 'none'} · targets: {builds.targetAffixes.map(t => t.affix + ' Lv' + t.level).join(', ')}
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {builds.builds.slice(0, buildCount).map((b, i) => (
-                  <div key={i} style={{ borderRadius: '8px', border: '1px solid ' + (i === 0 ? COLORS.primary : COLORS.border), backgroundColor: COLORS.card, overflow: 'hidden' }}>
-                    <div style={{ padding: '10px 16px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
-                      <strong style={{ color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
-                      <span style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                        <span style={{ fontSize: '12px', color: COLORS.textMuted, backgroundColor: COLORS.bg, border: '1px solid ' + COLORS.border, borderRadius: '4px', padding: '2px 6px' }}>{raritySummary(b.slots)}</span>
-                        <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '14px' }}>💠 Average market price: {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
-                      </span>
-                    </div>
-                    {b.capacityWarnings && b.capacityWarnings.length > 0 && (
-                      <div style={{ padding: '4px 16px', backgroundColor: COLORS.danger + '22', color: COLORS.danger, fontSize: '14px' }}>
-                        ⚠ {b.capacityWarnings.join(' · ')}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                {builds.builds.slice(0, buildCount).map((b, i) => {
+                  const isOpen = openBuilds[i] !== false;
+                  return (
+                    <div key={i} style={{ borderRadius: '8px', border: '1px solid ' + (i === 0 ? COLORS.primary : COLORS.border), backgroundColor: COLORS.card, overflow: 'hidden' }}>
+                      <div onClick={() => setOpenBuilds(prev => ({ ...prev, [i]: !isOpen }))}
+                        style={{ padding: '12px 20px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap', cursor: 'pointer', userSelect: 'none' }}>
+                        <strong style={{ color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
+                        <span style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                          <span style={{ fontSize: '12px', color: COLORS.textMuted, backgroundColor: COLORS.bg, border: '1px solid ' + COLORS.border, borderRadius: '4px', padding: '4px 8px' }}>{raritySummary(b.slots)}</span>
+                          <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '16px' }}>💠 Average market price: {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
+                        </span>
+                        <img src={isOpen ? ChevronDown : ChevronRight} alt={isOpen ? 'Collapse build' : 'Expand build'} style={{ flex: '0 0 auto', width: 24, height: 24 }} />
                       </div>
-                    )}
-                    {b.wine && b.wineGrants && Object.keys(b.wineGrants).length > 0 && (
-                      <div style={{ padding: '4px 16px', fontSize: '14px', color: COLORS.primary, backgroundColor: COLORS.bgAlt }}>
-                        🍷 {b.wine} grants: {Object.entries(b.wineGrants).map(([a, n]) => a + ' +' + n).join(', ') }
-                      </div>
-                    )}
-                    <div style={{ padding: '6px 16px' }}>
-                      {b.slots.map((p, j) => (
-                        <div key={j} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '10px', padding: '5px 0', fontSize: '14px', borderBottom: j < b.slots.length - 1 ? '1px solid ' + COLORS.border : 'none' }}>
-                          <span style={{ flex: '1 1 auto', minWidth: '0' }}>{slotLabel(p)}</span>
-                          <button onClick={() => openFeedback(b, p, i)} title="Report an issue with this gear slot"
-                            style={{ flex: '0 0 auto', background: 'transparent', border: '1px solid ' + COLORS.border, borderRadius: '6px', color: COLORS.textMuted, fontSize: '12px', padding: '3px 8px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
-                            ⚠️ Report
-                          </button>
-                        </div>
-                      ))}
+                      {isOpen && (
+                        <>
+                          {b.capacityWarnings && b.capacityWarnings.length > 0 && (
+                            <div style={{ padding: '8px 20px', backgroundColor: COLORS.danger + '22', color: COLORS.danger, fontSize: '16px' }}>
+                              ⚠ {b.capacityWarnings.join(' · ')}
+                            </div>
+                          )}
+                          {b.wine && b.wineGrants && Object.keys(b.wineGrants).length > 0 && (
+                            <div style={{ padding: '12px 16px', fontSize: '16px', color: COLORS.primary, backgroundColor: COLORS.bgAlt }}>
+                              🍷 <span style={{ fontWeight: 600 }}>{b.wine} grants: </span>{Object.entries(b.wineGrants).map(([a, n]) => a + ' +' + n).join(', ') }
+                            </div>
+                          )}
+                          <div style={{ padding: '12px 16px' }}>
+                            {b.slots.map((p, j) => (
+                              <div key={j} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px', fontSize: '16px', padding: '12px 0', borderBottom: j < b.slots.length - 1 ? '1px solid ' + COLORS.border : 'none' }}>
+                                <span style={{ flex: '1 1 auto', minWidth: '0' }}>{slotLabel(p)}</span>
+                                <button onClick={() => openFeedback(b, p, i)} title="Report an issue with this gear slot"
+                                  style={{ flex: '0 0 auto', background: 'transparent', border: '1px solid ' + COLORS.border, borderRadius: '8px', color: COLORS.textMuted, fontSize: '14px', padding: '4px 8px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                                  ⚠️ Report
+                                </button>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      )}
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
                 {builds.builds.length > buildCount && (
                   <button onClick={() => setBuildCount(c => Math.min(c + 10, builds.builds.length))}
-                    style={{ marginTop: '12px', width: '100%', padding: '10px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '14px', cursor: 'pointer' }}>
+                    style={{ marginTop: '16px', width: '100%', padding: '12px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '16px', cursor: 'pointer' }}>
                     Show more builds ({builds.builds.length - buildCount} more)
                   </button>
                 )}
@@ -486,23 +516,23 @@ function App() {
         </main>
 
         {/* SIDEBAR: Twitch live + Ko-fi */}
-        <aside style={{ flex: '0 1 380px', width: '100%', maxWidth: '380px', position: 'sticky', top: '16px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+        <aside style={{ flex: '0 1 380px', width: '100%', maxWidth: '380px', position: 'sticky', top: '20px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.card, overflow: 'hidden' }}>
-            <div style={{ padding: '10px 14px', backgroundColor: COLORS.bgAlt, borderBottom: '1px solid ' + COLORS.border }}>
-              <strong style={{ color: COLORS.primary }}>🔴 Live — Watch &amp; Support the Stream</strong>
+            <div style={{ padding: '12px 16px', backgroundColor: COLORS.bgAlt, borderBottom: '1px solid ' + COLORS.border }}>
+              <strong style={{ color: COLORS.primary, fontSize: '16px' }}>🔴 Live — Watch &amp; Support the Stream</strong>
             </div>
             {twitchSrc ? (
               <iframe title="Twitch livestream" src={twitchSrc} height="380" width="100%" allowFullScreen
                 style={{ border: 'none', display: 'block', backgroundColor: '#000' }} />
             ) : (
-              <div style={{ padding: '24px', color: COLORS.textMuted, fontSize: '14px' }}>
+              <div style={{ padding: '24px', color: COLORS.textMuted, fontSize: '16px' }}>
                 Set <code>twitchChannel</code> in <code>App.jsx</code> (SITE config) to show the live embed.
               </div>
             )}
-            <div style={{ padding: '6px 12px' }}>
+            <div style={{ padding: '16px' }}>
               {SITE.twitchChannel && SITE.twitchChannel !== 'YOUR_TWITCH_CHANNEL' && (
                 <a href={`https://twitch.tv/${SITE.twitchChannel}`} target="_blank" rel="noopener noreferrer"
-                  style={{ display: 'block', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', background: '#9146ff', color: '#fff', padding: '12px 0', borderRadius: '6px', fontWeight: 'bold', fontSize: '16px', textDecoration: 'none' }}>
+                  style={{ display: 'block', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', background: '#9146ff', color: '#fff', padding: '12px 0', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', textDecoration: 'none' }}>
                   Open on Twitch
                 </a>
               )}
@@ -510,48 +540,51 @@ function App() {
           </div>
 
           {kofiHref && (
-            <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.card, padding: '14px' }}>
-              <strong style={{ color: COLORS.primary, fontSize: '14px' }}>☕ Tip the build</strong>
-              <p style={{ color: COLORS.textMuted, fontSize: '14px', marginTop: '6px', paddingBottom: '8px' }}>
+            <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.card, padding: '16px' }}>
+              <strong style={{ color: COLORS.primary, fontSize: '16px' }}>☕ Tip the build</strong>
+              <p style={{ color: COLORS.textMuted, fontSize: '16px', marginTop: '8px', paddingBottom: '12px' }}>
                 Love the calculator? A Ko-fi keeps this fan tool running and helps the stream.</p>
               <a href={kofiHref} target="_blank" rel="noopener noreferrer"
-                style={{ display: 'block', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', background: '#29abe0', color: '#fff', padding: '12px 0', borderRadius: '6px', fontWeight: 'bold', fontSize: '16px', textDecoration: 'none' }}>
-                ☕ Support on Ko-fi
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', width: '100%', whiteSpace: 'nowrap', background: '#f45d22', color: '#fff', padding: '12px 0', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', textDecoration: 'none' }}>
+                <img src={KoFiLogo} alt="Ko-fi" style={{ height: 20, width: 'auto' }} />
+                Support me
               </a>
-              <iframe title="Ko-fi donation widget" id="kofiframe"
+              <iframe id="kofiframe"
                 src={`https://ko-fi.com/${SITE.kofi}/?hidefeed=true&widget=true&embed=true&preview=true`}
-                height="712" style={{ border: 'none', width: '100%', padding: '4px', background: '#f9f9f9', marginTop: '8px' }} />
+                title="squigle" height="712" style={{ border: 'none', width: '100%', padding: '4px', background: '#f9f9f9', marginTop: '8px', borderRadius: '8px' }} />
             </div>
           )}
         </aside>
       </div>
 
-      <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '16px 24px', color: COLORS.textMuted, fontSize: '14px', textAlign: 'center' }}>
-        Mistfall Hunter Build Calculator — Unofficial fan tool. Not affiliated with Bellring Games. · Helpful?{' '}
+      <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '20px 24px', color: COLORS.textMuted, fontSize: '16px', textAlign: 'center' }}>
+        Mistfall Hunter Build Calculator — a free fan tool by{' '}
+        <a href="https://github.com/squiglesquigles/mistfall-calc" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Squigle</a>.
+        Not affiliated with Bellring Games. · Helpful?{' '}
         {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
         {' '}·{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); openGenericFeedback(); }} style={{ color: COLORS.primary }}>Report an issue</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); openGenericFeedback(); }} style={{ color: COLORS.primary }}>Feedback</a>
       </footer>
 
       {feedbackCtx && (
         <div onClick={closeFeedback} style={{ position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: '20px' }}>
           <div onClick={(e) => e.stopPropagation()}
-            style={{ background: COLORS.card, border: '1px solid ' + COLORS.border, borderRadius: '10px', width: '100%', maxWidth: '520px', padding: '20px', color: COLORS.text }}>
-            <h3 style={{ color: COLORS.primary, fontSize: '17px', marginBottom: '6px' }}>⚠️ Report an issue</h3>
-            <p style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '14px' }}>
-              Found something wrong? This report is sent to the build team automatically. Explain what's off in your own words — thanks for helping!
+            style={{ background: COLORS.card, border: '1px solid ' + COLORS.border, borderRadius: '12px', width: '100%', maxWidth: '520px', padding: '20px', color: COLORS.text }}>
+            <h3 style={{ color: COLORS.primary, fontSize: '16px', marginBottom: '8px' }}>📣 Feedback</h3>
+            <p style={{ color: COLORS.textMuted, fontSize: '16px', marginBottom: '16px' }}>
+              Have feedback for the build team? Tell us what's off, what's missing, or what could be clearer — it goes straight to us. Thanks for helping!
             </p>
 
-            <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, padding: '10px 12px', marginBottom: '12px', fontSize: '14px' }}>
-              <div style={{ color: COLORS.textMuted, marginBottom: '4px' }}>REPORTING</div>
-              <div style={{ fontWeight: 'bold', marginBottom: '2px' }}>
+            <div style={{ borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, padding: '12px 16px', marginBottom: '16px', fontSize: '16px' }}>
+              <div style={{ color: COLORS.textMuted, marginBottom: '8px' }}>FEEDBACK</div>
+              <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
                 {feedbackCtx.slot !== 'General' ? (feedbackCtx.slot + ': ' + feedbackCtx.gear + (feedbackCtx.rarity ? ' [' + feedbackCtx.rarity + ']' : '')) : 'General feedback'}
               </div>
               <div style={{ color: COLORS.textMuted }}>
                 {[feedbackCtx.className, feedbackCtx.weapon, feedbackCtx.option].filter(Boolean).join(' · ') || '—'} · cost: {feedbackCtx.cost != null ? feedbackCtx.cost + 'g' : '—'}
               </div>
               {feedbackCtx.sockets && feedbackCtx.sockets.length > 0 && (
-                <div style={{ color: COLORS.textMuted, marginTop: '4px' }}>
+                <div style={{ color: COLORS.textMuted, marginTop: '8px' }}>
                   sockets/gems: {(feedbackCtx.sockets || []).map((s, i) => {
                     const g = (feedbackCtx.gems || [])[i];
                     return gemName(s.shape) + (s.tier === 2 ? ' T2' : '') + (g ? ' → ' + [g.affix1, g.affix2].filter(Boolean).join(' + ') : '');
@@ -564,9 +597,9 @@ function App() {
               <input type="text" value={fHp} onChange={(e) => setFHp(e.target.value)} name="website" tabIndex={-1} autoComplete="off"
                 style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, opacity: 0 }} aria-hidden="true" />
 
-              <label style={{ display: 'block', fontSize: '14px', color: COLORS.textMuted, marginBottom: '4px' }}>What's the issue?</label>
+              <label style={{ display: 'block', fontSize: '16px', color: COLORS.textMuted, marginBottom: '8px' }}>What's the issue?</label>
               <select value={fType} onChange={(e) => setFType(e.target.value)}
-                style={{ width: '100%', padding: '9px', borderRadius: '6px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, marginBottom: '12px' }}>
+                style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, marginBottom: '16px' }}>
                 <option>Wrong gear</option>
                 <option>Wrong rarity</option>
                 <option>Wrong socket</option>
@@ -575,13 +608,13 @@ function App() {
                 <option>Other</option>
               </select>
 
-              <label style={{ display: 'block', fontSize: '14px', color: COLORS.textMuted, marginBottom: '4px' }}>Your note (what should it be?)</label>
+              <label style={{ display: 'block', fontSize: '16px', color: COLORS.textMuted, marginBottom: '8px' }}>Your note (what should it be?)</label>
               <textarea value={fNote} onChange={(e) => setFNote(e.target.value)} rows={4} placeholder="e.g. This slot should recommend Ardent Hood instead — the socket is wrong for this class."
                 maxLength={1000}
-                style={{ width: '100%', padding: '9px', borderRadius: '6px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, resize: 'vertical', marginBottom: '12px' }}></textarea>
+                style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, resize: 'vertical', marginBottom: '16px' }}></textarea>
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
-                <span style={{ fontSize: '14px', color: COLORS.textMuted }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px' }}>
+                <span style={{ fontSize: '16px', color: COLORS.textMuted }}>
                   {fStatus === 'sending' && 'Sending…'}
                   {fStatus === 'ok' && '✅ Sent, thank you!'}
                   {fStatus === 'error' && '⚠️ Could not send — please try again.'}
@@ -589,10 +622,10 @@ function App() {
                 </span>
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <button type="button" onClick={closeFeedback}
-                    style={{ padding: '9px 16px', borderRadius: '6px', border: '1px solid ' + COLORS.border, background: COLORS.bgAlt, color: COLORS.textMuted, fontSize: '14px', cursor: 'pointer' }}>Cancel</button>
+                    style={{ padding: '12px 16px', borderRadius: '8px', border: '1px solid ' + COLORS.border, background: COLORS.bgAlt, color: COLORS.textMuted, fontSize: '16px', cursor: 'pointer' }}>Cancel</button>
                   <button type="submit" disabled={fStatus === 'sending'}
-                    style={{ padding: '9px 18px', borderRadius: '6px', border: 'none', background: COLORS.primary, color: '#000', fontWeight: 'bold', fontSize: '14px', cursor: 'pointer', opacity: fStatus === 'sending' ? 0.6 : 1 }}>
-                    {fStatus === 'sending' ? 'Sending…' : 'Send report'}
+                    style={{ padding: '12px 20px', borderRadius: '8px', border: 'none', background: COLORS.primary, color: '#000', fontWeight: 'bold', fontSize: '16px', cursor: 'pointer', opacity: fStatus === 'sending' ? 0.6 : 1 }}>
+                    {fStatus === 'sending' ? 'Sending…' : 'Send feedback'}
                   </button>
                 </div>
               </div>
@@ -605,3 +638,4 @@ function App() {
 }
 
 export default App;
+
