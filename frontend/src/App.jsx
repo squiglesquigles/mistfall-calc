@@ -72,6 +72,56 @@ function raritySummary(slots) {
   return Object.entries(m).map(([r, c]) => r + ' ×' + c).join(' · ');
 }
 
+
+function FilterDropdown({ label, value, options, onSelect, open, onOpen, onClose }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    if (!open) return;
+    const onDoc = (e) => { if (ref.current && !ref.current.contains(e.target)) onClose(); };
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('mousedown', onDoc);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDoc);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open, onClose]);
+
+  const sel = options.find(o => o.value === value) || options[0];
+
+  return (
+    <div ref={ref} style={{ position: 'relative', minWidth: '220px' }}>
+      <button onClick={() => (open ? onClose() : onOpen())} aria-expanded={open}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', width: '100%', padding: '8px 12px', borderRadius: '8px',
+          border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, fontSize: '14px', cursor: 'pointer', textAlign: 'left' }}>
+        <span><strong style={{ color: COLORS.primary }}>{label}:</strong> {sel ? sel.name : 'All'}</span>
+        <img src={ChevronDown} alt={open ? 'Close' : 'Open'} style={{ width: 16, height: 16, flex: '0 0 auto', transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s ease' }} />
+      </button>
+      {open && (
+        <div style={{ position: 'absolute', top: 'calc(100% + 8px)', left: 0, right: 0, zIndex: 30, maxHeight: '280px', overflowY: 'auto',
+          backgroundColor: COLORS.card, border: '1px solid ' + COLORS.border, borderRadius: '8px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.45)' }}>
+          {options.map(o => {
+            const active = o.value === value;
+            return (
+              <button key={o.value} disabled={o.disabled}
+                onClick={() => { if (!o.disabled) { onSelect(o.value); onClose(); } }}
+                style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', border: 'none', borderBottom: '1px solid ' + COLORS.border,
+                  backgroundColor: active ? '#2a2320' : 'transparent', color: COLORS.text, cursor: o.disabled ? 'not-allowed' : 'pointer',
+                  fontSize: '14px', opacity: o.disabled ? 0.45 : 1 }}>
+                <span style={{ display: 'block' }}>{o.name}</span>
+                {o.disabled && o.hint && (
+                  <span style={{ display: 'block', fontSize: '12px', color: COLORS.textMuted, marginTop: '4px', lineHeight: '1.35' }}>{o.hint}</span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+
 function App() {
   const [selectedClass, setSelectedClass] = useState(null);
   const [weapon, setWeapon] = useState('Mace');
@@ -84,6 +134,10 @@ function App() {
   const [buildCount, setBuildCount] = useState(2); // builds shown initially (more on demand)
   const [openBuilds, setOpenBuilds] = useState({}); // accordion: which build cards are expanded (default: all open)
   const [budgetNotice, setBudgetNotice] = useState(null); // shown when adding an affix at max budget
+  const [ringFilter, setRingFilter] = useState('all');   // post-build Ring accessory filter
+  const [neckFilter, setNeckFilter] = useState('all');   // post-build Necklace accessory filter
+  const [openFilter, setOpenFilter] = useState(null);    // which accessory dropdown is open: 'ring' | 'neck' | null
+
 
   // Feedback report (per gear slot -> Discord webhook)
   const [feedbackCtx, setFeedbackCtx] = useState(null); // null = closed
@@ -159,7 +213,7 @@ function App() {
   const weaponOptions = (meta.weaponsByClass && selectedClass && meta.weaponsByClass[selectedClass.name]) || [];
 
   // Clear target affixes + builds when class or weapon changes
-  useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); }, [selectedClass, weapon]);
+  useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); }, [selectedClass, weapon]);
 
   // Reset the weapon to the first option for the newly picked class.
   useEffect(() => {
@@ -208,7 +262,16 @@ function App() {
     setBuilds(null);
   }
 
-  // Build engine runs in a Web Worker so the UI never freezes during the solve.
+  function resetAffixes() {
+    if (Object.keys(selected).length === 0) return;
+    setBudgetNotice(null);
+    setSelected({});
+    setBuilds(null);
+    setOpenFilter(null);
+  }
+
+
+// Build engine runs in a Web Worker so the UI never freezes during the solve.
   const workerRef = useRef(null);
   useEffect(() => {
     const w = new Worker(new URL('./lib/buildWorker.js', import.meta.url), { type: 'module' });
@@ -216,7 +279,7 @@ function App() {
     w.onmessage = (e) => {
       const { ok, result, error } = e.data || {};
       setLoading(false);
-      if (ok) { setBuilds(result); setBuildCount(2); setOpenBuilds({}); }
+      if (ok) { setBuilds(result); setBuildCount(2); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); }
       else { setError(error || 'Could not generate builds.'); }
     };
     w.onerror = (err) => { setLoading(false); setError('Build engine failed to start: ' + (err.message || 'worker error')); };
@@ -248,6 +311,56 @@ function App() {
   const classHasData = cls => !!cls && !!(meta.complete && meta.complete[cls.name]);
   const cs = selectedClass ? !classHasData(selectedClass) : true;
   const weaponLabel = w => (w === 'Weapon' && selectedClass ? (selectedClass.weapon || 'Weapon') : w);
+  // ---- Post-build Ring / Necklace accessory filters ----
+  const buildResults = builds && builds.builds ? builds.builds : [];
+  const slotGear = (b, slot) => {
+    const s = (b.slots || []).find(x => x.slot === slot);
+    return s && s.gear ? s.gear : null;
+  };
+  const ringMatches = (b, v) => {
+    if (v === 'all') return true;
+    const g = slotGear(b, 'Ring');
+    if (v === '__none__') return !g;
+    return g === v;
+  };
+  const neckMatches = (b, v) => {
+    if (v === 'all') return true;
+    const g = slotGear(b, 'Necklace');
+    if (v === '__none__') return !g;
+    return g === v;
+  };
+
+  const ringOptions = [];
+  const neckOptions = [];
+  if (buildResults.length) {
+    const rset = new Set();
+    const nset = new Set();
+    let noRing = false;
+    let noNeck = false;
+    for (const b of buildResults) {
+      const r = slotGear(b, 'Ring');
+      const n = slotGear(b, 'Necklace');
+      if (r) rset.add(r); else noRing = true;
+      if (n) nset.add(n); else noNeck = true;
+    }
+    ringOptions.push({ value: 'all', name: 'All' });
+    [...rset].sort().forEach(n => ringOptions.push({ value: n, name: n }));
+    if (noRing) ringOptions.push({ value: '__none__', name: 'None — no ring' });
+    neckOptions.push({ value: 'all', name: 'All' });
+    [...nset].sort().forEach(n => neckOptions.push({ value: n, name: n }));
+    if (noNeck) neckOptions.push({ value: '__none__', name: 'None — no necklace' });
+  }
+  const FILTER_HINT = 'No existing build with the combination of filters';
+  const ringFilterOpts = ringOptions.map(o => {
+    const disabled = o.value !== 'all' && !buildResults.some(b => ringMatches(b, o.value) && neckMatches(b, neckFilter));
+    return { ...o, disabled, hint: disabled ? FILTER_HINT : null };
+  });
+  const neckFilterOpts = neckOptions.map(o => {
+    const disabled = o.value !== 'all' && !buildResults.some(b => neckMatches(b, o.value) && ringMatches(b, ringFilter));
+    return { ...o, disabled, hint: disabled ? FILTER_HINT : null };
+  });
+  const visibleBuilds = buildResults.filter(b => ringMatches(b, ringFilter) && neckMatches(b, neckFilter));
+
 
   // Deep-link support: the static class pages (frontend/public/*-build-calculator/)
   // link in as /?class=mercenary, /?class=sorcerer, ... so the class is preselected.
@@ -370,6 +483,9 @@ function App() {
 
               <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '16px', flexWrap: 'wrap' }}>
                 <strong style={{ color: overBudget ? COLORS.danger : COLORS.text }}>Combined level: {combined} / {MAX_AFFIX_BUDGET}</strong>
+                <button onClick={resetAffixes} disabled={combined === 0} title="Clear all chosen affixes"
+                  style={{ padding: '8px 12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.textMuted, fontSize: '14px', fontWeight: 'bold', cursor: combined === 0 ? 'not-allowed' : 'pointer', opacity: combined === 0 ? 0.5 : 1 }}>↺ Reset</button>
+
                 {overBudget && <span style={{ color: COLORS.danger, fontWeight: 'bold' }}>(over budget — lower a level)</span>}
               </div>
               {budgetNotice && (
@@ -460,10 +576,29 @@ function App() {
             <section>
               <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>{builds.className} · {builds.weapon} Builds</h2>
               <p style={{ color: COLORS.textMuted, marginBottom: '16px' }}>
-                {builds.combinedLevel}/{MAX_AFFIX_BUDGET} combined · {builds.totalBuilds} found · wine: {builds.wine && builds.wine.label ? (builds.wine.label + ' · ' + builds.wine.cost + 'g') : 'none'} · targets: {builds.targetAffixes.map(t => t.affix + ' Lv' + t.level).join(', ')}
+                {builds.combinedLevel}/{MAX_AFFIX_BUDGET} combined · {builds.totalBuilds} found{visibleBuilds.length < builds.builds.length ? ' · showing ' + visibleBuilds.length : ''} · wine: {builds.wine && builds.wine.label ? (builds.wine.label + ' · ' + builds.wine.cost + 'g') : 'none'} · targets: {builds.targetAffixes.map(t => t.affix + ' Lv' + t.level).join(', ')}
               </p>
+              {(ringOptions.length > 1 || neckOptions.length > 1) && (
+                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '16px' }}>
+                  <FilterDropdown
+                    label="Ring" value={ringFilter} options={ringFilterOpts}
+                    open={openFilter === 'ring'} onOpen={() => setOpenFilter('ring')} onClose={() => setOpenFilter(null)}
+                    onSelect={(v) => { setRingFilter(v); setBuildCount(2); setOpenBuilds({}); }} />
+                  <FilterDropdown
+                    label="Necklace" value={neckFilter} options={neckFilterOpts}
+                    open={openFilter === 'neck'} onOpen={() => setOpenFilter('neck')} onClose={() => setOpenFilter(null)}
+                    onSelect={(v) => { setNeckFilter(v); setBuildCount(2); setOpenBuilds({}); }} />
+                </div>
+              )}
+
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                {builds.builds.slice(0, buildCount).map((b, i) => {
+                {visibleBuilds.length === 0 && (
+                  <div style={{ color: COLORS.textMuted, fontSize: '16px', padding: '16px', border: '1px dashed ' + COLORS.border, borderRadius: '8px' }}>
+                    No builds match the current filters.
+                  </div>
+                )}
+
+                {visibleBuilds.slice(0, buildCount).map((b, i) => {
                   const isOpen = openBuilds[i] !== false;
                   return (
                     <div key={i} style={{ borderRadius: '8px', border: '1px solid ' + (i === 0 ? COLORS.primary : COLORS.border), backgroundColor: COLORS.card, overflow: 'hidden' }}>
@@ -504,10 +639,10 @@ function App() {
                     </div>
                   );
                 })}
-                {builds.builds.length > buildCount && (
-                  <button onClick={() => setBuildCount(c => Math.min(c + 10, builds.builds.length))}
+                {visibleBuilds.length > buildCount && (
+                  <button onClick={() => setBuildCount(c => Math.min(c + 10, visibleBuilds.length))}
                     style={{ marginTop: '16px', width: '100%', padding: '12px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '16px', cursor: 'pointer' }}>
-                    Show more builds ({builds.builds.length - buildCount} more)
+                    Show more builds ({visibleBuilds.length - buildCount} more)
                   </button>
                 )}
               </div>
