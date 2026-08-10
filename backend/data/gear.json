@@ -3965,7 +3965,55 @@
     "gear": "Rover Pants",
     "slot": "Pants",
     "rarity": "Common",
-    "built_in_affix": null,
+    "built_in_affix": "Smiting",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Tenacious",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Curse",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Elusive",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Vitality",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Aegis",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Fervid",
     "sockets": []
   },
   {
@@ -3974,7 +4022,12 @@
     "slot": "Pants",
     "rarity": "Common",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -3982,39 +4035,103 @@
     "slot": "Pants",
     "rarity": "Common",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Pants",
+    "gear": "Crusader Pants",
     "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Pants",
+    "gear": "Crusader Pants",
     "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Smiting",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Pants",
+    "gear": "Crusader Pants",
     "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Pants",
+    "gear": "Crusader Pants",
     "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4022,7 +4139,16 @@
     "slot": "Pants",
     "rarity": "Rare",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4030,190 +4156,281 @@
     "slot": "Pants",
     "rarity": "Rare",
     "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Eagle God Pants",
     "slot": "Pants",
     "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Smiting",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Eagle God Pants",
     "slot": "Pants",
     "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Eagle God Pants",
     "slot": "Pants",
     "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Eagle God Pants",
     "slot": "Pants",
     "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Eagle God Pants",
     "slot": "Pants",
     "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Eagle God Pants",
     "slot": "Pants",
     "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Eagle God Pants",
     "slot": "Pants",
     "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Pants",
     "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Smiting",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Pants",
     "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Pants",
     "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Pants",
     "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Pants",
     "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Pants",
     "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Pants",
     "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Long Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Ethereal",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Long Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Sky Piercer",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Long Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Elusive",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Long Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Fervid",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Long Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Vitality",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Long Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Smiting",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Long Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Ranged",
     "sockets": []
   },
   {
@@ -4222,7 +4439,12 @@
     "slot": "Boots",
     "rarity": "Common",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4230,63 +4452,103 @@
     "slot": "Boots",
     "rarity": "Common",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Long Boots",
+    "gear": "Crusader Long Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Long Boots",
+    "gear": "Crusader Long Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Ethereal",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Long Boots",
+    "gear": "Crusader Long Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Long Boots",
+    "gear": "Crusader Long Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Long Boots",
+    "gear": "Crusader Long Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Smiting",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Long Boots",
+    "gear": "Crusader Long Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Long Boots",
+    "gear": "Crusader Long Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4294,7 +4556,16 @@
     "slot": "Boots",
     "rarity": "Rare",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4302,63 +4573,107 @@
     "slot": "Boots",
     "rarity": "Rare",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Long Boots",
+    "gear": "Eagle God Leather Boots",
     "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Long Boots",
+    "gear": "Eagle God Leather Boots",
     "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Long Boots",
+    "gear": "Eagle God Leather Boots",
     "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Ethereal",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Long Boots",
+    "gear": "Eagle God Leather Boots",
     "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Long Boots",
+    "gear": "Eagle God Leather Boots",
     "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Smiting",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Long Boots",
+    "gear": "Eagle God Leather Boots",
     "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Long Boots",
+    "gear": "Eagle God Leather Boots",
     "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4366,7 +4681,16 @@
     "slot": "Boots",
     "rarity": "Epic",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4374,118 +4698,232 @@
     "slot": "Boots",
     "rarity": "Epic",
     "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Leather Boots",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Leather Boots",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Leather Boots",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Leather Boots",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Leather Boots",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Leather Boots",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Leather Boots",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Leather Boots",
     "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Leather Boots",
     "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Leather Boots",
     "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Leather Boots",
     "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Leather Boots",
     "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Smiting",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Leather Boots",
     "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Ethereal",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
     "gear": "Scaleclaw Leather Boots",
     "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Boots",
+    "rarity": "Legendary",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Boots",
+    "rarity": "Legendary",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Weapon",
+    "rarity": "Common",
+    "built_in_affix": "Ranged",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Weapon",
+    "rarity": "Common",
+    "built_in_affix": "Focused",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Weapon",
+    "rarity": "Common",
+    "built_in_affix": "Seeker",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Weapon",
+    "rarity": "Common",
+    "built_in_affix": "Curse",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Weapon",
+    "rarity": "Common",
+    "built_in_affix": "Vitality",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Weapon",
+    "rarity": "Common",
+    "built_in_affix": "Sky Piercer",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Oil-soaked Wooden Bow",
+    "slot": "Weapon",
+    "rarity": "Common",
+    "built_in_affix": "Fervid",
     "sockets": []
   },
   {
@@ -4494,7 +4932,12 @@
     "slot": "Weapon",
     "rarity": "Common",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4502,63 +4945,103 @@
     "slot": "Weapon",
     "rarity": "Common",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Oil-soaked Wooden Bow",
+    "gear": "Yew Longbow",
     "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Oil-soaked Wooden Bow",
+    "gear": "Yew Longbow",
     "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Oil-soaked Wooden Bow",
+    "gear": "Yew Longbow",
     "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Oil-soaked Wooden Bow",
+    "gear": "Yew Longbow",
     "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Oil-soaked Wooden Bow",
+    "gear": "Yew Longbow",
     "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Oil-soaked Wooden Bow",
+    "gear": "Yew Longbow",
     "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Oil-soaked Wooden Bow",
+    "gear": "Yew Longbow",
     "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Rare",
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4566,7 +5049,16 @@
     "slot": "Weapon",
     "rarity": "Rare",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4574,63 +5066,107 @@
     "slot": "Weapon",
     "rarity": "Rare",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Yew Longbow",
+    "gear": "Crusader Strongbow",
     "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Yew Longbow",
+    "gear": "Crusader Strongbow",
     "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Yew Longbow",
+    "gear": "Crusader Strongbow",
     "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Yew Longbow",
+    "gear": "Crusader Strongbow",
     "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Yew Longbow",
+    "gear": "Crusader Strongbow",
     "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Yew Longbow",
+    "gear": "Crusader Strongbow",
     "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Yew Longbow",
+    "gear": "Crusader Strongbow",
     "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Epic",
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4638,7 +5174,16 @@
     "slot": "Weapon",
     "rarity": "Epic",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4646,63 +5191,135 @@
     "slot": "Weapon",
     "rarity": "Epic",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Strongbow",
+    "gear": "Deathclaw Hunter",
     "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Strongbow",
+    "gear": "Deathclaw Hunter",
     "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Strongbow",
+    "gear": "Deathclaw Hunter",
     "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Fervid",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Strongbow",
+    "gear": "Deathclaw Hunter",
     "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Strongbow",
+    "gear": "Deathclaw Hunter",
     "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Strongbow",
+    "gear": "Deathclaw Hunter",
     "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Crusader Strongbow",
+    "gear": "Deathclaw Hunter",
     "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4710,7 +5327,20 @@
     "slot": "Weapon",
     "rarity": "Legendary",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4718,263 +5348,471 @@
     "slot": "Weapon",
     "rarity": "Legendary",
     "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": "Fervor",
     "sockets": []
   },
   {
     "class": "Blackarrow",
-    "gear": "Deathclaw Hunter",
-    "slot": "Weapon",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": "Aegis",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": "Tenacious",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": "Curse",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": "Focused",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": "Iron Helmet",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": "Elusive",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Top",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": "Iron Helmet",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": "Fervor",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Leather Armor",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": "Fervor",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": "Iron Helmet",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Scaleclaw Armor",
+    "slot": "Chest",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Iron Helmet",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Deathclaw Hunter",
-    "slot": "Weapon",
+    "gear": "Scaleclaw Armor",
+    "slot": "Chest",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Deathclaw Hunter",
-    "slot": "Weapon",
+    "gear": "Scaleclaw Armor",
+    "slot": "Chest",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Deathclaw Hunter",
-    "slot": "Weapon",
+    "gear": "Scaleclaw Armor",
+    "slot": "Chest",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Deathclaw Hunter",
-    "slot": "Weapon",
+    "gear": "Scaleclaw Armor",
+    "slot": "Chest",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Curse",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Top",
+    "gear": "Scaleclaw Armor",
     "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Top",
+    "gear": "Scaleclaw Armor",
     "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Top",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Top",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Top",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Top",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Top",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Top",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Top",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Leather Armor",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Fervor",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4982,7 +5820,20 @@
     "slot": "Chest",
     "rarity": "Legendary",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -4990,263 +5841,471 @@
     "slot": "Chest",
     "rarity": "Legendary",
     "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": "Sky Piercer",
     "sockets": []
   },
   {
     "class": "Blackarrow",
-    "gear": "Scaleclaw Armor",
-    "slot": "Chest",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": "Deft",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": "Focused",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": "Ranged",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": "Wealth",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": "Seeker",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": "Elusive",
+    "sockets": []
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Rover Bracers",
+    "slot": "Gloves",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": "Wealth",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": "Deft",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Crusader Gauntlets",
+    "slot": "Gloves",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": "Deft",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": "Wealth",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Eagle God Bracers",
+    "slot": "Gloves",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Blackarrow",
+    "gear": "Scaleclaw Bracers",
+    "slot": "Gloves",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Deft",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Scaleclaw Armor",
-    "slot": "Chest",
+    "gear": "Scaleclaw Bracers",
+    "slot": "Gloves",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Sky Piercer",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Scaleclaw Armor",
-    "slot": "Chest",
+    "gear": "Scaleclaw Bracers",
+    "slot": "Gloves",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Scaleclaw Armor",
-    "slot": "Chest",
+    "gear": "Scaleclaw Bracers",
+    "slot": "Gloves",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Ranged",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Scaleclaw Armor",
-    "slot": "Chest",
+    "gear": "Scaleclaw Bracers",
+    "slot": "Gloves",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Bracers",
+    "gear": "Scaleclaw Bracers",
     "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Wealth",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
-    "gear": "Rover Bracers",
+    "gear": "Scaleclaw Bracers",
     "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Bracers",
-    "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Bracers",
-    "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Bracers",
-    "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Bracers",
-    "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Bracers",
-    "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Bracers",
-    "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Rover Bracers",
-    "slot": "Gloves",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Crusader Gauntlets",
-    "slot": "Gloves",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Blackarrow",
-    "gear": "Eagle God Bracers",
-    "slot": "Gloves",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -5254,7 +6313,20 @@
     "slot": "Gloves",
     "rarity": "Legendary",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Blackarrow",
@@ -5262,263 +6334,471 @@
     "slot": "Gloves",
     "rarity": "Legendary",
     "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": "Vitality",
     "sockets": []
   },
   {
-    "class": "Blackarrow",
-    "gear": "Scaleclaw Bracers",
-    "slot": "Gloves",
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": "Seeker",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": "Stoic",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": "Bulwark",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": "Resilience",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": "Tenacious",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": "Aegis",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Helmet",
+    "slot": "Head",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": "Brotherhood",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": "Resilience",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": "Bulwark",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Helmet",
+    "slot": "Head",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": "Resilience",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": "Bulwark",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": "Brotherhood",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Helmet",
+    "slot": "Head",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Champion's Helmet",
+    "slot": "Head",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Brotherhood",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
-    "class": "Blackarrow",
-    "gear": "Scaleclaw Bracers",
-    "slot": "Gloves",
+    "class": "Mercenary",
+    "gear": "Champion's Helmet",
+    "slot": "Head",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Seeker",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
-    "class": "Blackarrow",
-    "gear": "Scaleclaw Bracers",
-    "slot": "Gloves",
+    "class": "Mercenary",
+    "gear": "Champion's Helmet",
+    "slot": "Head",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
-    "class": "Blackarrow",
-    "gear": "Scaleclaw Bracers",
-    "slot": "Gloves",
+    "class": "Mercenary",
+    "gear": "Champion's Helmet",
+    "slot": "Head",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
-    "class": "Blackarrow",
-    "gear": "Scaleclaw Bracers",
-    "slot": "Gloves",
+    "class": "Mercenary",
+    "gear": "Champion's Helmet",
+    "slot": "Head",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Bulwark",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Veteran Helmet",
+    "gear": "Champion's Helmet",
     "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Resilience",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Veteran Helmet",
+    "gear": "Champion's Helmet",
     "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Helmet",
-    "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Helmet",
-    "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Helmet",
-    "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Helmet",
-    "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Helmet",
-    "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Helmet",
-    "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Helmet",
-    "slot": "Head",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Helmet",
-    "slot": "Head",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Helmet",
-    "slot": "Head",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
@@ -5526,7 +6806,20 @@
     "slot": "Head",
     "rarity": "Legendary",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
@@ -5534,263 +6827,471 @@
     "slot": "Head",
     "rarity": "Legendary",
     "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Iron Helmet",
     "sockets": []
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Helmet",
-    "slot": "Head",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Bulwark",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Tenacious",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Stoic",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Distant Ward",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Elusive",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": "Aegis",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Pants",
+    "slot": "Pants",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Bulwark",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Distant Ward",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Iron Helmet",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Pants",
+    "slot": "Pants",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": "Distant Ward",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": "Aegis",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": "Iron Helmet",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": "Bulwark",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Pants",
+    "slot": "Pants",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Champion's Pants",
+    "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Distant Ward",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Helmet",
-    "slot": "Head",
+    "gear": "Champion's Pants",
+    "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Iron Helmet",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Helmet",
-    "slot": "Head",
+    "gear": "Champion's Pants",
+    "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Helmet",
-    "slot": "Head",
+    "gear": "Champion's Pants",
+    "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Bulwark",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Helmet",
-    "slot": "Head",
+    "gear": "Champion's Pants",
+    "slot": "Pants",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Veteran Pants",
+    "gear": "Champion's Pants",
     "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Tenacious",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Veteran Pants",
+    "gear": "Champion's Pants",
     "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Pants",
-    "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Pants",
-    "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Pants",
-    "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Pants",
-    "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Pants",
-    "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Pants",
-    "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Pants",
-    "slot": "Pants",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Pants",
-    "slot": "Pants",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Pants",
-    "slot": "Pants",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Iron Helmet",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
@@ -5798,7 +7299,20 @@
     "slot": "Pants",
     "rarity": "Legendary",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
@@ -5806,263 +7320,471 @@
     "slot": "Pants",
     "rarity": "Legendary",
     "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Vitality",
     "sockets": []
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Pants",
-    "slot": "Pants",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Elusive",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Ethereal",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Focused",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Unyielding",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Wrath",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": "Stoic",
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Boots",
+    "slot": "Boots",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": "Wrath",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": "Ethereal",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": "Unyielding",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Boots",
+    "slot": "Boots",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": "Wrath",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": "Ethereal",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": "Unyielding",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Greaves",
+    "slot": "Boots",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Champion's Boots",
+    "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Unyielding",
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Pants",
-    "slot": "Pants",
+    "gear": "Champion's Boots",
+    "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Elusive",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Pants",
-    "slot": "Pants",
+    "gear": "Champion's Boots",
+    "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Vitality",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Pants",
-    "slot": "Pants",
+    "gear": "Champion's Boots",
+    "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Stoic",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Pants",
-    "slot": "Pants",
+    "gear": "Champion's Boots",
+    "slot": "Boots",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
+    "built_in_affix": "Ethereal",
+    "sockets": [
+      {
+        "shape": "Rectangle",
+        "tier": 2
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Veteran Boots",
+    "gear": "Champion's Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Wealth",
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
-    "gear": "Veteran Boots",
+    "gear": "Champion's Boots",
     "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Boots",
-    "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Boots",
-    "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Boots",
-    "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Boots",
-    "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Boots",
-    "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Boots",
-    "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Boots",
-    "slot": "Boots",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Boots",
-    "slot": "Boots",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Greaves",
-    "slot": "Boots",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
+    "rarity": "Legendary",
+    "built_in_affix": "Focused",
+    "sockets": [
+      {
+        "shape": "Octagon",
+        "tier": 2
+      },
+      {
+        "shape": "Triangle",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
@@ -6070,7 +7792,20 @@
     "slot": "Boots",
     "rarity": "Legendary",
     "built_in_affix": null,
-    "sockets": []
+    "sockets": [
+      {
+        "shape": "Square",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Octagon",
+        "tier": 1
+      }
+    ]
   },
   {
     "class": "Mercenary",
@@ -6078,253 +7813,250 @@
     "slot": "Boots",
     "rarity": "Legendary",
     "built_in_affix": null,
+    "sockets": [
+      {
+        "shape": "Triangle",
+        "tier": 2
+      },
+      {
+        "shape": "Rectangle",
+        "tier": 1
+      },
+      {
+        "shape": "Square",
+        "tier": 1
+      }
+    ]
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
     "sockets": []
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Boots",
-    "slot": "Boots",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Veteran Armor",
+    "slot": "Chest",
+    "rarity": "Common",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Fearless Breastplate",
+    "slot": "Chest",
+    "rarity": "Rare",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Bloodwrath General Armor",
+    "slot": "Chest",
+    "rarity": "Epic",
+    "built_in_affix": null,
+    "sockets": []
+  },
+  {
+    "class": "Mercenary",
+    "gear": "Champion's Armor",
+    "slot": "Chest",
     "rarity": "Legendary",
     "built_in_affix": null,
     "sockets": []
   },
   {
     "class": "Mercenary",
-    "gear": "Champion's Boots",
-    "slot": "Boots",
+    "gear": "Champion's Armor",
+    "slot": "Chest",
     "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Champion's Boots",
-    "slot": "Boots",
-    "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Champion's Boots",
-    "slot": "Boots",
-    "rarity": "Legendary",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Veteran Armor",
-    "slot": "Chest",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fearless Breastplate",
-    "slot": "Chest",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Bloodwrath General Armor",
-    "slot": "Chest",
-    "rarity": "Epic",
     "built_in_affix": null,
     "sockets": []
   },
@@ -6658,41 +8390,25 @@
   },
   {
     "class": "Mercenary",
-    "gear": "Fine Iron Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Common",
+    "gear": "Champion's Bracers",
+    "slot": "Gloves",
+    "rarity": "Legendary",
     "built_in_affix": null,
     "sockets": []
   },
   {
     "class": "Mercenary",
-    "gear": "Fine Iron Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Common",
+    "gear": "Champion's Bracers",
+    "slot": "Gloves",
+    "rarity": "Legendary",
     "built_in_affix": null,
     "sockets": []
   },
   {
     "class": "Mercenary",
-    "gear": "Fine Iron Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fine Iron Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Common",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Fine Iron Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Common",
+    "gear": "Champion's Bracers",
+    "slot": "Gloves",
+    "rarity": "Legendary",
     "built_in_affix": null,
     "sockets": []
   },
@@ -6741,126 +8457,6 @@
     "gear": "Studded Sword and Shield",
     "slot": "Weapon",
     "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Studded Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Studded Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Studded Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Studded Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Studded Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Studded Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Studded Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Rare",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
-    "built_in_affix": null,
-    "sockets": []
-  },
-  {
-    "class": "Mercenary",
-    "gear": "Commander Sword and Shield",
-    "slot": "Weapon",
-    "rarity": "Epic",
     "built_in_affix": null,
     "sockets": []
   },
