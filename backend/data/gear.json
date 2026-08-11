@@ -214,7 +214,7 @@
     "built_in_affix": "Creation",
     "sockets": [
       {
-        "shape": "Octagon",
+        "shape": "Triangle",
         "tier": 2
       }
     ]
