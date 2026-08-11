@@ -3841,7 +3841,7 @@
     "built_in_affix": "Seeker",
     "sockets": [
       {
-        "shape": "Rectangle",
+        "shape": "Square",
         "tier": 2
       },
       {

@@ -56,7 +56,7 @@ app.get('/api/prices', (req, res) => {
 
 // API: Generate a build
 app.post('/api/builds', (req, res) => {
-  const { className, weapon, wine, affixes } = req.body;
+  const { className, weapon, wine, affixes, rarityPref } = req.body;
 
   if (!className) return res.status(400).json({ error: 'className is required' });
   if (!weapon) return res.status(400).json({ error: 'weapon is required' });
@@ -64,7 +64,7 @@ app.post('/api/builds', (req, res) => {
     return res.status(400).json({ error: 'affixes array is required' });
   }
 
-  const result = generateBuild(className, weapon, wine, affixes);
+  const result = generateBuild(className, weapon, wine, affixes, rarityPref);
   res.json(result);
 });
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { classes, affixes, meta } from './lib/engine';
+import { classes, affixes, meta, buildSetKey } from './lib/engine';
 import { AFFIX_ICONS } from './lib/affixIcons';
 
 // ---- Icon assets (copied from the repo-root /icons folder) ----
@@ -45,7 +45,7 @@ const COLORS = {
 const MAX_AFFIX_BUDGET = 40;
 
 const RARITY_COLORS = {
-  'Common': '#9ca3af', 'Rare': '#3b82f6', 'Excellent': '#a855f7', 'Epic': '#ec4899', 'Legendary': '#f59e0b', 'Holy': '#ef4444'
+  'Common': '#4ade80', 'Rare': '#3b82f6', 'Excellent': '#a855f7', 'Epic': '#ec4899', 'Legendary': '#f59e0b', 'Holy': '#ef4444'
 };
 
 // Gem shape -> player-facing gem name. The data keeps the real shape names
@@ -163,6 +163,10 @@ function App() {
   const [ringFilter, setRingFilter] = useState('all');   // post-build Ring accessory filter
   const [neckFilter, setNeckFilter] = useState('all');   // post-build Necklace accessory filter
   const [openFilter, setOpenFilter] = useState(null);    // which accessory dropdown is open: 'ring' | 'neck' | null
+  const [rarityPref, setRarityPref] = useState({});          // optional per-slot rarity filter (slot -> rarity)
+  const [extra, setExtra] = useState([]);                      // builds generated on-demand by Show more
+  const [moreBusy, setMoreBusy] = useState(false);             // a 'more' search is in flight
+  const [noMore, setNoMore] = useState(false);                 // engine reports no further builds
 
 
   // Feedback report (per gear slot -> Discord webhook)
@@ -239,7 +243,7 @@ function App() {
   const weaponOptions = (meta.weaponsByClass && selectedClass && meta.weaponsByClass[selectedClass.name]) || [];
 
   // Clear target affixes + builds when class or weapon changes
-  useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); }, [selectedClass, weapon]);
+  useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); setRarityPref({}); setExtra([]); setNoMore(false); setMoreBusy(false); }, [selectedClass, weapon]);
 
   // Reset the weapon to the first option for the newly picked class.
   useEffect(() => {
@@ -303,14 +307,48 @@ function App() {
     const w = new Worker(new URL('./lib/buildWorker.js', import.meta.url), { type: 'module' });
     workerRef.current = w;
     w.onmessage = (e) => {
-      const { ok, result, error } = e.data || {};
+      const { ok, result, error, type } = e.data || {};
+      if (type === 'more') {
+        setMoreBusy(false);
+        if (ok && result && result.builds && result.builds.length) {
+          setExtra(prev => [...prev, ...result.builds]);
+          setBuildCount(c => c + result.builds.length);
+        } else if (ok) {
+          setNoMore(true);
+        } else {
+          setNoMore(true); setError(error || 'Could not generate more builds.');
+        }
+        return;
+      }
       setLoading(false);
-      if (ok) { setBuilds(result); setBuildCount(2); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); }
+      if (ok) { setBuilds(result); setBuildCount(2); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); setExtra([]); setNoMore(false); }
       else { setError(error || 'Could not generate builds.'); }
     };
     w.onerror = (err) => { setLoading(false); setError('Build engine failed to start: ' + (err.message || 'worker error')); };
     return () => w.terminate();
   }, []);
+
+  function showMoreBuilds() {
+    if (!selectedClass || moreBusy || loading) return;
+    setError(null);
+    if (buildCount < visibleBuilds.length) { setBuildCount(c => c + 5); return; }
+    if (noMore) return;
+    setMoreBusy(true);
+    const all = baseBuilds.concat(extra);
+    const seen = all.map(b => buildSetKey(b.slots));
+    let minCost = 0;
+    for (const b of all) if (b.cost > minCost) minCost = b.cost;
+    workerRef.current.postMessage({
+      type: 'more',
+      className: selectedClass.name,
+      weapon,
+      wine: null,
+      targets: Object.entries(selected).map(([affix, level]) => ({ affix, level })),
+      rarityPref,
+      seenKeys: seen,
+      minCost
+    });
+  }
 
   function generateBuilds() {
     if (!selectedClass || Object.keys(selected).length === 0 || overBudget || loading) return;
@@ -324,7 +362,8 @@ function App() {
       className: selectedClass.name,
       weapon,
       wine: null,
-      targets: Object.entries(selected).map(([affix, level]) => ({ affix, level }))
+      targets: Object.entries(selected).map(([affix, level]) => ({ affix, level })),
+      rarityPref
     });
   }
 
@@ -338,7 +377,8 @@ function App() {
   const cs = selectedClass ? !classHasData(selectedClass) : true;
   const weaponLabel = w => (w === 'Weapon' && selectedClass ? (selectedClass.weapon || 'Weapon') : w);
   // ---- Post-build Ring / Necklace accessory filters ----
-  const buildResults = builds && builds.builds ? builds.builds : [];
+  const baseBuilds = builds && builds.builds ? builds.builds : [];
+  const buildResults = baseBuilds.concat(extra);
   const slotGear = (b, slot) => {
     const s = (b.slots || []).find(x => x.slot === slot);
     return s && s.gear ? s.gear : null;
@@ -417,7 +457,16 @@ function App() {
 
   function slotLabel(p) {
     const built = p.built_in_affix ? ' (' + p.built_in_affix + ')' : '';
-    const gems = (p.sockets || []).map((s, i) => gemLabel(s, (p.gems || [])[i])).filter(Boolean);
+    const gems = (p.sockets || []).map((s, i) => {
+      const gem = (p.gems || [])[i];
+      if (gem) return <span key={i} style={{ display: 'inline-flex' }}>{gemLabel(s, gem)}</span>;
+      const tt = s.tier === 2 ? ' T2' : '';
+      return (
+        <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', border: '1px dashed ' + COLORS.border, borderRadius: '8px', padding: '8px 12px', fontSize: '16px', color: COLORS.textMuted }}>
+          {gemName(s.shape)}{tt}: <strong style={{ fontWeight: 600, color: COLORS.text }}>empty</strong>
+        </span>
+      );
+    });
     const icon = slotIcon(p.slot);
     return (
       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '8px' }}>
@@ -578,6 +627,23 @@ function App() {
 
           {selectedClass && !cs && Object.keys(selected).length > 0 && !overBudget && (
             <section style={{ marginBottom: '36px' }}>
+              <div style={{ marginBottom: '16px' }}>
+                <div style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '8px' }}>Rarity preference (optional):</div>
+                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+                  {['Head', 'Chest', 'Gloves', 'Pants', 'Boots', weapon, 'Ring', 'Necklace'].map(slot => (
+                    <label key={slot} style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: COLORS.textMuted }}>
+                      {slot === weapon ? weaponLabel(weapon) : slot}
+                      <select value={rarityPref[slot] || ''} onChange={(e) => setRarityPref(pv => ({ ...pv, [slot]: e.target.value || null }))}
+                        style={{ padding: '8px 12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, fontSize: '14px', cursor: 'pointer' }}>
+                        <option value="">Any</option>
+                        {['Common', 'Rare', 'Epic', 'Legendary'].map(r => (
+                          <option key={r} value={r} style={{ color: RARITY_COLORS[r] || COLORS.text }}>{r}</option>
+                        ))}
+                      </select>
+                    </label>
+                  ))}
+                </div>
+              </div>
               <button onClick={generateBuilds} disabled={loading}
                 style={{ background: COLORS.primary, color: '#000', padding: '12px 24px', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', border: 'none', cursor: 'pointer', opacity: loading ? 0.6 : 1 }}>
                 {loading ? 'Finding builds...' : `Generate Build (${Object.keys(selected).length} affixes · ${combined}/${MAX_AFFIX_BUDGET})`}
@@ -671,11 +737,20 @@ function App() {
                     </div>
                   );
                 })}
-                {visibleBuilds.length > buildCount && (
-                  <button onClick={() => setBuildCount(c => Math.min(c + 10, visibleBuilds.length))}
-                    style={{ marginTop: '16px', width: '100%', padding: '12px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '16px', cursor: 'pointer' }}>
-                    Show more builds ({visibleBuilds.length - buildCount} more)
-                  </button>
+                {visibleBuilds.length > 0 && (
+                  <div style={{ marginTop: '16px', width: '100%' }}>
+                    <button onClick={showMoreBuilds}
+                      disabled={moreBusy || loading || (buildCount >= visibleBuilds.length && noMore)}
+                      style={{ width: '100%', padding: '12px', borderRadius: '8px', background: COLORS.bgAlt, border: '1px solid ' + COLORS.border, color: COLORS.primary, fontWeight: 'bold', fontSize: '16px', cursor: (moreBusy || loading || (buildCount >= visibleBuilds.length && noMore)) ? 'not-allowed' : 'pointer', opacity: (moreBusy || loading || (buildCount >= visibleBuilds.length && noMore)) ? 0.5 : 1 }}>
+                      {moreBusy ? 'Searching for more builds…' : buildCount < visibleBuilds.length ? `Show more builds (${Math.min(5, visibleBuilds.length - buildCount)} more)` : noMore ? 'No more builds' : 'Show more builds'}
+                    </button>
+                    {(moreBusy || (buildCount >= visibleBuilds.length && noMore)) && (
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', color: COLORS.textMuted, fontSize: '14px', marginTop: '8px' }}>
+                        {moreBusy && <span className="mc-spinner"></span>}
+                        <span>{moreBusy ? 'Searching for more builds — exploring pricier gear…' : noMore ? 'No builds found — no more matches available.' : ''}</span>
+                      </div>
+                    )}
+                  </div>
                 )}
               </div>
             </section>
@@ -756,7 +831,7 @@ function App() {
                 <div style={{ color: COLORS.textMuted, marginTop: '8px' }}>
                   sockets/gems: {(feedbackCtx.sockets || []).map((s, i) => {
                     const g = (feedbackCtx.gems || [])[i];
-                    return gemName(s.shape) + (s.tier === 2 ? ' T2' : '') + (g ? ' → ' + [g.affix1, g.affix2].filter(Boolean).join(' + ') : '');
+                    return gemName(s.shape) + (s.tier === 2 ? ' T2' : '') + (g ? ' → ' + [g.affix1, g.affix2].filter(Boolean).join(' + ') : ' (empty)');
                   }).join(' · ')}
                 </div>
               )}

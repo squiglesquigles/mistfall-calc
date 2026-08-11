@@ -3,14 +3,16 @@
  * responsive (the spinner can animate and the page never freezes during the
  * multi-second MILP computation).
  */
-import { generateBuild } from './engine';
+import { generateBuild, generateMoreBuilds } from './engine';
 
 self.onmessage = (e) => {
-  const { className, weapon, wine, targets, id } = e.data || {};
+  const { type = 'generate', className, weapon, wine, targets, rarityPref, seenKeys, minCost, id } = e.data || {};
   try {
-    const result = generateBuild(className, weapon, wine, targets);
-    self.postMessage({ id, ok: true, result });
+    const result = type === 'more'
+      ? generateMoreBuilds(className, weapon, wine, targets, rarityPref, seenKeys, 5, minCost, 5000)
+      : generateBuild(className, weapon, wine, targets, rarityPref);
+    self.postMessage({ id, ok: true, type, result });
   } catch (err) {
-    self.postMessage({ id, ok: false, error: String((err && err.message) || err) });
+    self.postMessage({ id, ok: false, type, error: String((err && err.message) || err) });
   }
 };

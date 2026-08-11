@@ -114,8 +114,8 @@ const WINE_OPTIONS = [
   { key: 'Wine 4', name: "God's Brew", label: "Lv 4: God's Brew", cap: 8, maxStack: 2, cost: 530 }
 ];
 
-const SOL_LIMIT = 25;
-const RANK_BUDGET = 1500;
+const SOL_LIMIT = 60;
+const RANK_BUDGET = 4000;
 const MAX_COMBINED_LEVEL = 40;
 
 function poolFor(gear, className, slot) {
@@ -132,7 +132,8 @@ function assists(need, a1, a2) {
   return (a1 && need[a1] > 0) || (a2 && need[a2] > 0);
 }
 
-function generateBuild(className, weapon, wine, targets) {
+function buildCore(className, weapon, wine, targets, rarityPref) {
+  rarityPref = rarityPref || null;
   const { gear, gemCatalog } = loadData();
   const priceIndex = PRICE_INDEX;
 
@@ -143,8 +144,9 @@ function generateBuild(className, weapon, wine, targets) {
     return { error: className + ' does not use weapon "' + weapon + '". Options: ' + weapons.join(', ') };
   }
 
-  const mandatorySlots = ARMOR_SLOTS.concat([weaponSlot]);
-  const allSlots = mandatorySlots.concat(ACCESSORY_SLOTS);
+  const forcedAcc = (rarityPref && (rarityPref.Ring || rarityPref.Necklace)) ? ACCESSORY_SLOTS.filter(s => rarityPref[s]) : [];
+  const mandatorySlots = ARMOR_SLOTS.concat([weaponSlot]).concat(forcedAcc);
+  const allSlots = ARMOR_SLOTS.concat([weaponSlot]).concat(ACCESSORY_SLOTS);
 
   if (!targets || targets.length === 0) return { error: 'Select at least one affix.' };
 
@@ -189,9 +191,18 @@ function generateBuild(className, weapon, wine, targets) {
     }
   }
 
+  if (rarityPref) {
+    for (const s of mandatorySlots) {
+      const want = rarityPref[s];
+      if (want && !poolFor(gear, className, s).some(v => v.rarity === want)) {
+        return { error: 'No ' + want + ' ' + s + ' gear found for ' + className + '.' };
+      }
+    }
+  }
+
   let best = null;
   for (const opt of options) {
-    const { base } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt);
+    const { base } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref);
     const res = solveOnce(base);
     if (!res || !res.feasible) continue;
     const gearGem = costOf(res, base);
@@ -203,22 +214,30 @@ function generateBuild(className, weapon, wine, targets) {
     return { error: 'No ' + className + ' ' + weaponSlot + ' build satisfies the selected affix levels. Try lowering a level or choosing different affixes.' };
   }
 
-  const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, best.opt);
+  const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, best.opt, rarityPref);
+  return { need, combined, winnerBase, info, best, weaponSlot, priceIndex };
+}
+
+function generateBuild(className, weapon, wine, targets, rarityPref) {
+  rarityPref = rarityPref || null;
+  const core = buildCore(className, weapon, wine, targets, rarityPref);
+  if (core.error) return { error: core.error };
+  const { need, combined, winnerBase, info, best, weaponSlot, priceIndex } = core;
   const ranked = solveRanked(winnerBase, info, RANK_BUDGET);
   // Add legendary/holy swap-out alternatives (stock-friendly variety), merged in,
   // deduped by gear set, and re-sorted by cost.
-  const knownKeys = new Set(ranked.map(sol => JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear))));
-  const extras = ranked.length ? legendaryVariants(winnerBase, info, ranked[0], knownKeys, 18, 2000) : [];
+  const knownKeys = new Set(ranked.map(sol => buildSetKey(sol.slots)));
+  const extras = ranked.length ? legendaryVariants(winnerBase, info, ranked[0], knownKeys, 18, 3000) : [];
   // Full-legendary case: sweep ALL distinct legendary gear combinations.
   const isFullLegend = ranked.length > 0 && ranked[0].slots.every(s => !s.gear || s.rarity === 'Legendary' || s.rarity === 'Holy');
-  const enumSols = isFullLegend ? legendaryEnumeration(winnerBase, info, ranked[0].slots, knownKeys, 60, 4000) : [];
+  const enumSols = isFullLegend ? legendaryEnumeration(winnerBase, info, ranked[0].slots, knownKeys, 60, 6000) : [];
   // Merge + dedupe by gear set (each gear set appears once; gems auto-optimized).
   const dedup = new Map();
   for (const sol of ranked.concat(extras, enumSols)) {
-    const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
+    const key = buildSetKey(sol.slots);
     if (!dedup.has(key)) dedup.set(key, sol);
   }
-  const allSols = [...dedup.values()].sort((a, b) => a.cost - b.cost).slice(0, isFullLegend ? 60 : SOL_LIMIT);
+  const allSols = [...dedup.values()].sort((a, b) => a.cost - b.cost).slice(0, 60);
 
   const rankWin = best.opt;
   const wineLabel = rankWin.label;
@@ -257,13 +276,64 @@ function generateBuild(className, weapon, wine, targets) {
   };
 }
 
-function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt) {
+function buildSetKey(slots) {
+  // Variant-level key: gear item, rarity, socket shapes and chosen gems — two
+  // builds only dedupe when they are truly the same loadout.
+  return JSON.stringify((slots || []).map(s => ({
+    slot: s.slot, gear: s.gear || '', rar: s.rarity || '',
+    sk: (s.sockets || []).map(x => x.shape + '#' + x.tier).join(','),
+    g: (s.gems || []).map(g => g ? ((g.affix1 || '') + '/' + (g.affix2 || '')) : '').join(',')
+  })));
+}
+
+function generateMoreBuilds(className, weapon, wine, targets, rarityPref, seenKeys, count, minCost, budgetMs) {
+  rarityPref = rarityPref || null;
+  const core = buildCore(className, weapon, wine, targets, rarityPref);
+  if (core.error) return { error: core.error };
+  const { need, combined, winnerBase, info, best, weaponSlot, priceIndex } = core;
+  const modelBase = JSON.parse(JSON.stringify(winnerBase));
+  if (minCost) {
+    const floorVal = Math.max(1, minCost - (best.opt.cost || 0));
+    modelBase.constraints.floormin = { min: floorVal };
+    for (const id of Object.keys(modelBase.variables)) {
+      const c = modelBase.variables[id].cost || 0;
+      if (c) modelBase.variables[id].floormin = c;
+    }
+  }
+  const next = solveRanked(modelBase, info, budgetMs || 3000, new Set(seenKeys || []), count || 5);
+  const wineLabel = best.opt.label;
+  const wineName = best.opt.name;
+  const wineKey = best.opt.key;
+  const wineCost = best.opt.cost;
+  const builds = next.map(sol => ({
+    slots: sol.slots,
+    wineGrants: sol.wineGrants,
+    wine: wineLabel,
+    wineKey,
+    wineName,
+    wineCost,
+    cost: sol.cost + wineCost,
+    capacityWarnings: sol.capacityWarnings
+  }));
+  return {
+    className,
+    weapon: weaponSlot,
+    wine: { key: wineKey, name: wineName, label: wineLabel, cap: best.opt.cap, maxStack: best.opt.maxStack, cost: wineCost, grants: builds.length ? builds[0].wineGrants : [] },
+    targetAffixes: Object.keys(need).map(k => ({ affix: k, level: need[k] })),
+    combinedLevel: combined,
+    totalBuilds: builds.length,
+    pricing: priceIndex.config,
+    builds
+  };
+}
+
+function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref) {
   const info = {};
   const base = { optimize: 'cost', opType: 'min', constraints: {}, variables: {}, ints: {} };
 
   for (const s of allSlots) {
     const isMandatory = mandatorySlots.includes(s);
-    const variants = poolFor(gear, className, s);
+    const variants = poolFor(gear, className, s).filter(v => !rarityPref || !rarityPref[s] || v.rarity === rarityPref[s]);
     base.constraints['slot_' + s] = { min: isMandatory ? 1 : 0, max: 1 };
 
     variants.forEach((v, vi) => {
@@ -383,7 +453,7 @@ function legendaryVariants(base, info, refSol, knownKeys, maxExtras, budgetMs) {
       const gearVars = chosen.filter(k => info[k] && info[k].kind === 'gear');
       cuts.push({ vars: gearVars.length ? gearVars : chosen, max: (gearVars.length ? gearVars : chosen).length - 1 });
       const sol = decode(chosen, info, res);
-      const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
+      const key = buildSetKey(sol.slots);
       if (knownKeys.has(key) || extrasSeen.has(key)) continue;
       extrasSeen.add(key);
       extras.push(sol);
@@ -464,7 +534,7 @@ function legendaryEnumeration(base, info, refSlots, knownKeys, maxCombos, budget
     const chosenVars = Object.keys(res).filter(k =>
       !['feasible', 'result', 'bounded', 'isIntegral', 'fractional'].includes(k) && res[k] >= 0.999);
     const sol = decode(chosenVars, info, res);
-    const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
+    const key = buildSetKey(sol.slots);
     if (seen.has(key)) continue;
     seen.add(key);
     results.push(sol);
@@ -472,12 +542,14 @@ function legendaryEnumeration(base, info, refSlots, knownKeys, maxCombos, budget
   return results;
 }
 
-function solveRanked(base, info, budgetMs) {
+function solveRanked(base, info, budgetMs, seenIn, maxResults) {
   const cuts = [];
   const solutions = [];
-  const seen = new Set();
+  const seen = seenIn || new Set();
   const tStart = Date.now();
-  for (let it = 0; it < SOL_LIMIT * 6 && seen.size < SOL_LIMIT && (Date.now() - tStart) < budgetMs; it++) {
+  const limit = maxResults || SOL_LIMIT;
+  const itCap = limit * 6 + (seenIn ? seenIn.size * 2 : 0);
+  for (let it = 0; it < itCap && solutions.length < limit && (Date.now() - tStart) < budgetMs; it++) {
     const model = JSON.parse(JSON.stringify(base));
     cuts.forEach((c, ci) => {
       const cname = 'cut_' + ci;
@@ -498,15 +570,21 @@ function solveRanked(base, info, budgetMs) {
 
     // Diversity: force each NEXT build to change at least one GEAR item (not just
     // a gem), so the list shows genuinely different gear combinations.
+    // Diversity: force each NEXT build to change at least one GEAR NAME (not just
+    // a different socket variant of the same item), so the list shows genuinely
+    // different gear combinations, climbing toward rarer/more expensive sets.
+    // Diversity: force each NEXT build to change at least one GEAR item (not just
+    // a gem), so the list shows genuinely different gear combinations.
     const gearVars = chosen.filter(k => info[k] && info[k].kind === 'gear');
     const cutVars = (gearVars.length ? gearVars : chosen);
     cuts.push({ vars: cutVars, max: cutVars.length - 1 });
 
     const sol = decode(chosen, info, res);
-    const key = JSON.stringify(sol.slots.map(s => s.slot + '=>' + s.gear));
+    const key = buildSetKey(sol.slots);
     if (seen.has(key)) continue;
     seen.add(key);
     solutions.push(sol);
+    if (solutions.length >= limit) break;
   }
   solutions.sort((a, b) => a.cost - b.cost);
   return solutions;
@@ -643,6 +721,8 @@ export const affixes = DATA.affixes;
 export const meta = buildMeta();
 export {
   generateBuild,
+  generateMoreBuilds,
+  buildSetKey,
   buildMeta,
   reachableAffixes,
   WEAPONS_BY_CLASS,
