@@ -67,6 +67,10 @@ const CLASS_FAQ = [
   {
     q: c => `Does the ${c.name} build calculator include gem and socket prices?`,
     a: c => `Yes — gear, gems and sockets are all priced at average market prices, so the total shown covers the full loadout cost.`
+  },
+  {
+    q: () => 'Why can I not see all Necklaces and Rings?',
+    a: () => 'The calculator shows only the possible combinations of gear plus Necklaces and Rings that can create your build. If you have found a build that includes a specific ring or necklace, please leave some feedback and I will update accordingly.'
   }
 ];
 

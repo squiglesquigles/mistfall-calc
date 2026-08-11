@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { classes, affixes, meta } from './lib/engine';
 import { AFFIX_ICONS } from './lib/affixIcons';
 
@@ -24,7 +25,8 @@ import ChevronRight from './assets/icons/ChevronRight.svg';
 // ----------------------------------------------------------------
 const SITE = {
   twitchChannel: 'squigle8', // just the channel name — no https://, no www, no .tv
-  kofi: 'squigle'            // just the username -> ko-fi.com/<this>
+  kofi: 'squigle',            // just the username -> ko-fi.com/<this>
+  discordInvite: 'https://discord.gg/bXuR4Eh2DV'
 };
 
 // Feedback goes to your Discord channel via a webhook.
@@ -73,6 +75,14 @@ function raritySummary(slots) {
 }
 
 
+function InfoIcon({ color = 'rgb(243, 244, 246)' }) {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 function FilterDropdown({ label, value, options, onSelect, open, onOpen, onClose }) {
   const ref = useRef(null);
   useEffect(() => {
@@ -87,6 +97,8 @@ function FilterDropdown({ label, value, options, onSelect, open, onOpen, onClose
     };
   }, [open, onClose]);
 
+  const [tipEl, setTipEl] = useState(null); // { hint, x, y } for the info tooltip portal
+  const [hov, setHov] = useState(null);        // hovered option value for whole-row select cue
   const sel = options.find(o => o.value === value) || options[0];
 
   return (
@@ -103,19 +115,33 @@ function FilterDropdown({ label, value, options, onSelect, open, onOpen, onClose
           {options.map(o => {
             const active = o.value === value;
             return (
-              <button key={o.value} disabled={o.disabled}
-                onClick={() => { if (!o.disabled) { onSelect(o.value); onClose(); } }}
-                style={{ display: 'block', width: '100%', textAlign: 'left', padding: '8px 12px', border: 'none', borderBottom: '1px solid ' + COLORS.border,
-                  backgroundColor: active ? '#2a2320' : 'transparent', color: COLORS.text, cursor: o.disabled ? 'not-allowed' : 'pointer',
-                  fontSize: '14px', opacity: o.disabled ? 0.45 : 1 }}>
-                <span style={{ display: 'block' }}>{o.name}</span>
-                {o.disabled && o.hint && (
-                  <span style={{ display: 'block', fontSize: '12px', color: COLORS.textMuted, marginTop: '4px', lineHeight: '1.35' }}>{o.hint}</span>
-                )}
-              </button>
+              <div key={o.value} onClick={() => { if (!o.disabled) { onSelect(o.value); onClose(); } }}
+                onMouseEnter={() => setHov(o.value)}
+                onMouseLeave={() => setHov(null)}
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', width: '100%', textAlign: 'left', padding: '8px 12px', border: 'none', borderBottom: '1px solid ' + COLORS.border, cursor: o.disabled ? 'not-allowed' : 'pointer',
+                  backgroundColor: active ? '#2a2320' : hov === o.value ? (o.disabled ? 'transparent' : 'rgba(201, 165, 74, 0.12)') : 'transparent', color: COLORS.text, fontSize: '14px' }}>
+                <span style={{ display: 'block', opacity: o.disabled ? 0.45 : 1 }}>{o.name}</span>
+                {o.disabled && o.hint ? (
+                  <span role="img" aria-label={o.hint} tabIndex={0}
+                    onClick={(e) => e.stopPropagation()}
+                    onMouseEnter={(e) => { const r = e.currentTarget.getBoundingClientRect(); setTipEl({ hint: o.hint, x: r.right + 8, y: r.top + r.height / 2 }); }}
+                    onMouseLeave={() => setTipEl(null)}
+                    onFocus={(e) => { const r = e.currentTarget.getBoundingClientRect(); setTipEl({ hint: o.hint, x: r.right + 8, y: r.top + r.height / 2 }); }}
+                    onBlur={() => setTipEl(null)}
+                    style={{ flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'help', paddingLeft: '8px', color: 'rgb(243, 244, 246)' }}>
+                    <InfoIcon color="rgb(243, 244, 246)" />
+                  </span>
+                ) : null}
+              </div>
             );
           })}
         </div>
+      )}
+      {tipEl && createPortal(
+        <span role="tooltip" style={{ position: 'fixed', left: tipEl.x, top: tipEl.y, transform: 'translateY(-50%)', zIndex: 1000, maxWidth: '260px', background: COLORS.card, border: '1px solid ' + COLORS.border, borderRadius: '8px', padding: '8px 12px', fontSize: '12px', lineHeight: '1.4', color: COLORS.text, boxShadow: '0 8px 24px rgba(0,0,0,0.45)', pointerEvents: 'none', whiteSpace: 'normal', textAlign: 'left' }}>
+          {tipEl.hint}
+        </span>,
+        document.body
       )}
     </div>
   );
@@ -591,6 +617,12 @@ function App() {
                 </div>
               )}
 
+              {(ringOptions.length > 1 || neckOptions.length > 1) && (
+                <p style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '16px' }}>
+                  The calculator shows only the possible combination of gear + Necklaces and Rings to create your build.
+                </p>
+              )}
+
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 {visibleBuilds.length === 0 && (
                   <div style={{ color: COLORS.textMuted, fontSize: '16px', padding: '16px', border: '1px dashed ' + COLORS.border, borderRadius: '8px' }}>
@@ -699,6 +731,8 @@ function App() {
         {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
         {' '}·{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); openGenericFeedback(); }} style={{ color: COLORS.primary }}>Feedback</a>
+        {' '}·{' '}
+        <a href={SITE.discordInvite} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Join the Discord</a>
       </footer>
 
       {feedbackCtx && (
@@ -765,6 +799,11 @@ function App() {
                 </div>
               </div>
             </form>
+
+            <p style={{ color: COLORS.textMuted, fontSize: '16px', marginTop: '16px', borderTop: '1px solid ' + COLORS.border, paddingTop: '16px' }}>
+              Want to track updates on your feedback?{' '}
+              <a href={SITE.discordInvite} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary, fontWeight: 'bold' }}>Join the Discord →</a>
+            </p>
           </div>
         </div>
       )}
