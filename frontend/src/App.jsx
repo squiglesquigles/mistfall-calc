@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { classes, affixes, meta, buildSetKey } from './lib/engine';
+import { exportBuildCode } from './lib/buildCode';
 import { AFFIX_ICONS } from './lib/affixIcons';
 
 // ---- Icon assets (copied from the repo-root /icons folder) ----
@@ -19,6 +20,7 @@ import WeaponIcon from './assets/icons/Weapon.png';
 import KoFiLogo from './assets/icons/logomarkLogo.webp';
 import ChevronDown from './assets/icons/ChevronDown.svg';
 import ChevronRight from './assets/icons/ChevronRight.svg';
+import CopyIcon from './assets/icons/copy.svg';
 
 // ----------------------------------------------------------------
 //  CONFIG — fill in your Twitch channel and Ko-fi username/page
@@ -167,6 +169,7 @@ function App() {
   const [extra, setExtra] = useState([]);                      // builds generated on-demand by Show more
   const [moreBusy, setMoreBusy] = useState(false);             // a 'more' search is in flight
   const [noMore, setNoMore] = useState(false);                 // engine reports no further builds
+  const [codeStatus, setCodeStatus] = useState('');              // build-code copy feedback
 
 
   // Feedback report (per gear slot -> Discord webhook)
@@ -348,6 +351,25 @@ function App() {
       seenKeys: seen,
       minCost
     });
+  }
+
+  function copyBuildCode(b) {
+    if (!b) return;
+    const payload = {
+      className: builds.className,
+      weapon: builds.weapon,
+      targets: builds.targetAffixes || [],
+      cost: b.cost,
+      slots: b.slots.map(s => ({ slot: s.slot, gear: s.gear, rarity: s.rarity, built_in_affix: s.built_in_affix, sockets: s.sockets || [], gems: s.gems || [] }))
+    };
+    setCodeStatus('Generating code...');
+    exportBuildCode(payload)
+      .then(r => {
+        if (!r.code) throw new Error('No code returned');
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(r.code);
+        setCodeStatus('Code copied to clipboard!');
+      })
+      .catch(err => setCodeStatus('Code error: ' + ((err && err.message) || err)));
   }
 
   function generateBuilds() {
@@ -667,9 +689,11 @@ function App() {
           {builds && builds.builds && (
             <section>
               <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>{builds.className} · {builds.weapon} Builds</h2>
-              <p style={{ color: COLORS.textMuted, marginBottom: '16px' }}>
+              <p style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '16px' }}>
                 {builds.combinedLevel}/{MAX_AFFIX_BUDGET} combined · {builds.totalBuilds} found{visibleBuilds.length < builds.builds.length ? ' · showing ' + visibleBuilds.length : ''} · wine: {builds.wine && builds.wine.label ? (builds.wine.label + ' · ' + builds.wine.cost + 'g') : 'none'} · targets: {builds.targetAffixes.map(t => t.affix + ' Lv' + t.level).join(', ')}
               </p>
+              {codeStatus && <div style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '16px' }}>{codeStatus}</div>}
+
               {(ringOptions.length > 1 || neckOptions.length > 1) && (
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '16px' }}>
                   <FilterDropdown
@@ -701,13 +725,21 @@ function App() {
                   return (
                     <div key={i} style={{ borderRadius: '8px', border: '1px solid ' + (i === 0 ? COLORS.primary : COLORS.border), backgroundColor: COLORS.card, overflow: 'hidden' }}>
                       <div onClick={() => setOpenBuilds(prev => ({ ...prev, [i]: !isOpen }))}
-                        style={{ padding: '12px 20px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap', cursor: 'pointer', userSelect: 'none' }}>
-                        <strong style={{ color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
-                        <span style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                        style={{ padding: '12px 20px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', flexDirection: 'column', gap: '8px', cursor: 'pointer', userSelect: 'none' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+                          <strong style={{ flex: '1 1 auto', minWidth: '0', color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
+                          <button onClick={(e) => { e.stopPropagation(); copyBuildCode(b); }} title="Copy this build as a game share code"
+                            style={{ flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'transparent', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: COLORS.primary, fontSize: '14px', fontWeight: 'bold', padding: '8px 12px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                            <img src={CopyIcon} alt="" style={{ width: 16, height: 16 }} /> Copy code
+                          </button>
+                          <img src={isOpen ? ChevronDown : ChevronRight} alt={isOpen ? 'Collapse build' : 'Expand build'} style={{ flex: '0 0 auto', width: 24, height: 24 }} />
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
                           <span style={{ fontSize: '12px', color: COLORS.textMuted, backgroundColor: COLORS.bg, border: '1px solid ' + COLORS.border, borderRadius: '4px', padding: '4px 8px' }}>{raritySummary(b.slots)}</span>
-                          <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '16px' }}>💠 Average market price: {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
-                        </span>
-                        <img src={isOpen ? ChevronDown : ChevronRight} alt={isOpen ? 'Collapse build' : 'Expand build'} style={{ flex: '0 0 auto', width: 24, height: 24 }} />
+                          <span style={{ flex: '1 1 auto', minWidth: '0', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '8px', flexWrap: 'wrap' }}>
+                            <span style={{ color: COLORS.text, fontWeight: 'bold', fontSize: '14px' }}>💠 Average market price: {b.cost}g · {b.wine ? ('🍷 ' + b.wine + (b.wineCost ? ' +' + b.wineCost + 'g' : ' (free)')) : 'no wine'}</span>
+                          </span>
+                        </div>
                       </div>
                       {isOpen && (
                         <>
@@ -717,7 +749,7 @@ function App() {
                             </div>
                           )}
                           {b.wine && b.wineGrants && Object.keys(b.wineGrants).length > 0 && (
-                            <div style={{ padding: '12px 16px', fontSize: '16px', color: COLORS.primary, backgroundColor: COLORS.bgAlt }}>
+                            <div style={{ padding: '12px 16px', fontSize: '14px', color: COLORS.primary, backgroundColor: COLORS.bgAlt }}>
                               🍷 <span style={{ fontWeight: 600 }}>{b.wine} grants: </span>{Object.entries(b.wineGrants).map(([a, n]) => a + ' +' + n).join(', ') }
                             </div>
                           )}

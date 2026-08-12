@@ -1084,7 +1084,7 @@
     "name": "Ceremonial Bracers",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 51,
+    "price": 70,
     "samples": 30,
     "min": 51,
     "max": 51
@@ -1094,7 +1094,7 @@
     "name": "Ceremonial Sabatons",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 51,
+    "price": 70,
     "samples": 30,
     "min": 51,
     "max": 51
@@ -1134,7 +1134,7 @@
     "name": "Martyr's Bracers",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 51,
+    "price": 70,
     "samples": 30,
     "min": 51,
     "max": 51
@@ -1244,7 +1244,7 @@
     "name": "Veteran Boots",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 51,
+    "price": 70,
     "samples": 30,
     "min": 51,
     "max": 51
@@ -1284,7 +1284,7 @@
     "name": "Practitioner Shoes",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 52,
+    "price": 70,
     "samples": 30,
     "min": 52,
     "max": 52
@@ -1304,7 +1304,7 @@
     "name": "Shadow Skull Boots",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 52,
+    "price": 70,
     "samples": 30,
     "min": 52,
     "max": 52
@@ -1404,7 +1404,7 @@
     "name": "Martyr's Greaves",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 53,
+    "price": 70,
     "samples": 30,
     "min": 53,
     "max": 53
@@ -1424,7 +1424,7 @@
     "name": "Practitioner Bracers",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 53,
+    "price": 70,
     "samples": 30,
     "min": 53,
     "max": 53
@@ -1464,7 +1464,7 @@
     "name": "Rover Bracers",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 53,
+    "price": 70,
     "samples": 30,
     "min": 53,
     "max": 53
@@ -1474,7 +1474,7 @@
     "name": "Rover Long Boots",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 53,
+    "price": 70,
     "samples": 30,
     "min": 53,
     "max": 53
@@ -1484,7 +1484,7 @@
     "name": "Shadow Skull Gauntlets",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 53,
+    "price": 70,
     "samples": 30,
     "min": 53,
     "max": 53
@@ -1544,7 +1544,7 @@
     "name": "Veteran Bracers",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 53,
+    "price": 70,
     "samples": 30,
     "min": 53,
     "max": 53
@@ -3314,7 +3314,7 @@
     "name": "Ceremonial Helmet",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 67,
+    "price": 90,
     "samples": 30,
     "min": 67,
     "max": 67
@@ -3364,7 +3364,7 @@
     "name": "Martyr's Hood",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 67,
+    "price": 90,
     "samples": 30,
     "min": 67,
     "max": 67
@@ -3424,7 +3424,7 @@
     "name": "Practitioner Pants",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 67,
+    "price": 90,
     "samples": 30,
     "min": 67,
     "max": 67
@@ -3524,7 +3524,7 @@
     "name": "Veteran Pants",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 67,
+    "price": 90,
     "samples": 30,
     "min": 67,
     "max": 67
@@ -3564,7 +3564,7 @@
     "name": "Ceremonial Breeches",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -3614,7 +3614,7 @@
     "name": "Martyr's Pants",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -3644,7 +3644,7 @@
     "name": "Practitioner Hood",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -3664,7 +3664,7 @@
     "name": "Rover Hood",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -3684,7 +3684,7 @@
     "name": "Rover Pants",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -3704,7 +3704,7 @@
     "name": "Shadow Skull Mask",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -3714,7 +3714,7 @@
     "name": "Shadow Skull Tights",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -3744,7 +3744,7 @@
     "name": "Veteran Helmet",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 68,
+    "price": 90,
     "samples": 30,
     "min": 68,
     "max": 68
@@ -4244,7 +4244,7 @@
     "name": "Fang-Piercer Dagger",
     "kind": "weapon",
     "rarity": "Rare",
-    "price": 72,
+    "price": 100,
     "samples": 30,
     "min": 72,
     "max": 72
@@ -4374,7 +4374,7 @@
     "name": "Martyr's Vestment",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 73,
+    "price": 100,
     "samples": 30,
     "min": 73,
     "max": 73
@@ -4394,7 +4394,7 @@
     "name": "Practitioner Robe",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 73,
+    "price": 100,
     "samples": 30,
     "min": 73,
     "max": 73
@@ -4444,7 +4444,7 @@
     "name": "Guard Polearm and Shield",
     "kind": "weapon",
     "rarity": "Rare",
-    "price": 74,
+    "price": 100,
     "samples": 30,
     "min": 74,
     "max": 74
@@ -4514,7 +4514,7 @@
     "name": "Shadow Skull Top",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 74,
+    "price": 100,
     "samples": 30,
     "min": 74,
     "max": 74
@@ -4534,7 +4534,7 @@
     "name": "Veteran Armor",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 74,
+    "price": 100,
     "samples": 30,
     "min": 74,
     "max": 74
@@ -4544,7 +4544,7 @@
     "name": "Ceremonial Breastplate",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 75,
+    "price": 100,
     "samples": 30,
     "min": 75,
     "max": 75
@@ -4564,7 +4564,7 @@
     "name": "Executioner Greatsword",
     "kind": "weapon",
     "rarity": "Rare",
-    "price": 75,
+    "price": 100,
     "samples": 30,
     "min": 75,
     "max": 75
@@ -4584,7 +4584,7 @@
     "name": "Fine Iron Sword and Shield",
     "kind": "weapon",
     "rarity": "Rare",
-    "price": 75,
+    "price": 100,
     "samples": 30,
     "min": 75,
     "max": 75
@@ -4624,7 +4624,7 @@
     "name": "Military Hammer",
     "kind": "weapon",
     "rarity": "Rare",
-    "price": 75,
+    "price": 100,
     "samples": 30,
     "min": 75,
     "max": 75
@@ -4644,7 +4644,7 @@
     "name": "Rover Top",
     "kind": "armor",
     "rarity": "Rare",
-    "price": 75,
+    "price": 100,
     "samples": 30,
     "min": 75,
     "max": 75
@@ -4654,7 +4654,7 @@
     "name": "Spirit Feline Dual Blades",
     "kind": "weapon",
     "rarity": "Rare",
-    "price": 75,
+    "price": 100,
     "samples": 30,
     "min": 75,
     "max": 75
@@ -8264,7 +8264,7 @@
     "name": "Emissary Long Boots",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 166,
+    "price": 230,
     "samples": 30,
     "min": 166,
     "max": 166
@@ -8374,7 +8374,7 @@
     "name": "Enlightenment Bracers",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 168,
+    "price": 230,
     "samples": 30,
     "min": 168,
     "max": 168
@@ -8434,7 +8434,7 @@
     "name": "Raven Priest Greaves",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 168,
+    "price": 230,
     "samples": 30,
     "min": 168,
     "max": 168
@@ -8484,7 +8484,7 @@
     "name": "Crusade Sabatons",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 170,
+    "price": 230,
     "samples": 30,
     "min": 170,
     "max": 170
@@ -8584,7 +8584,7 @@
     "name": "Crusade Bracers",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -8614,7 +8614,7 @@
     "name": "Crusader Gauntlets",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -8624,7 +8624,7 @@
     "name": "Crusader Long Boots",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -8634,7 +8634,7 @@
     "name": "Emissary Gauntlets",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -8644,7 +8644,7 @@
     "name": "Enlightenment Greaves",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -8654,7 +8654,7 @@
     "name": "Fearless Boots",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -8664,7 +8664,7 @@
     "name": "Fearless Bracers",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -8674,7 +8674,7 @@
     "name": "Raven Priest Bracers",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 173,
+    "price": 230,
     "samples": 30,
     "min": 173,
     "max": 173
@@ -9714,7 +9714,7 @@
     "name": "Crusader Pants",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 193,
+    "price": 265,
     "samples": 30,
     "min": 193,
     "max": 193
@@ -9924,7 +9924,7 @@
     "name": "Crusade Breeches",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 196,
+    "price": 265,
     "samples": 30,
     "min": 196,
     "max": 196
@@ -9944,7 +9944,7 @@
     "name": "Crusader Hood",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 196,
+    "price": 265,
     "samples": 30,
     "min": 196,
     "max": 196
@@ -9964,7 +9964,7 @@
     "name": "Emissary Mask",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 196,
+    "price": 265,
     "samples": 30,
     "min": 196,
     "max": 196
@@ -10004,7 +10004,7 @@
     "name": "Enlightenment Pants",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 196,
+    "price": 265,
     "samples": 30,
     "min": 196,
     "max": 196
@@ -10014,7 +10014,7 @@
     "name": "Raven Priest Hood",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 196,
+    "price": 265,
     "samples": 30,
     "min": 196,
     "max": 196
@@ -10224,7 +10224,7 @@
     "name": "Crusade Helmet",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 199,
+    "price": 265,
     "samples": 30,
     "min": 199,
     "max": 199
@@ -10244,7 +10244,7 @@
     "name": "Emissary Tights",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 199,
+    "price": 265,
     "samples": 30,
     "min": 199,
     "max": 199
@@ -10254,7 +10254,7 @@
     "name": "Enlightenment Crown",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 199,
+    "price": 265,
     "samples": 30,
     "min": 199,
     "max": 199
@@ -10274,7 +10274,7 @@
     "name": "Fearless Helmet",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 199,
+    "price": 265,
     "samples": 30,
     "min": 199,
     "max": 199
@@ -10284,7 +10284,7 @@
     "name": "Fearless Pants",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 199,
+    "price": 265,
     "samples": 30,
     "min": 199,
     "max": 199
@@ -10294,7 +10294,7 @@
     "name": "Raven Priest Pants",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 199,
+    "price": 265,
     "samples": 30,
     "min": 199,
     "max": 199
@@ -11064,7 +11064,7 @@
     "name": "Crusade Breastplate",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 212,
+    "price": 290,
     "samples": 30,
     "min": 212,
     "max": 212
@@ -11184,7 +11184,7 @@
     "name": "Crusader Leather Armor",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 215,
+    "price": 290,
     "samples": 30,
     "min": 215,
     "max": 215
@@ -11294,7 +11294,7 @@
     "name": "Emissary Leather Armor",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 218,
+    "price": 290,
     "samples": 30,
     "min": 218,
     "max": 218
@@ -11304,7 +11304,7 @@
     "name": "Enlightenment Vestment",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 218,
+    "price": 290,
     "samples": 30,
     "min": 218,
     "max": 218
@@ -11324,7 +11324,7 @@
     "name": "Fearless Breastplate",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 218,
+    "price": 290,
     "samples": 30,
     "min": 218,
     "max": 218
@@ -11364,7 +11364,7 @@
     "name": "Raven Priest Robe",
     "kind": "armor",
     "rarity": "Excellent",
-    "price": 218,
+    "price": 290,
     "samples": 30,
     "min": 218,
     "max": 218
@@ -11564,7 +11564,7 @@
     "name": "Exile Greatsword",
     "kind": "weapon",
     "rarity": "Excellent",
-    "price": 225,
+    "price": 300,
     "samples": 30,
     "min": 225,
     "max": 225
@@ -11584,7 +11584,7 @@
     "name": "Magica Hammer",
     "kind": "weapon",
     "rarity": "Excellent",
-    "price": 225,
+    "price": 300,
     "samples": 30,
     "min": 225,
     "max": 225
@@ -11604,7 +11604,7 @@
     "name": "Studded Sword and Shield",
     "kind": "weapon",
     "rarity": "Excellent",
-    "price": 225,
+    "price": 300,
     "samples": 30,
     "min": 225,
     "max": 225
@@ -11614,7 +11614,7 @@
     "name": "Thorn Polearm and Shield",
     "kind": "weapon",
     "rarity": "Excellent",
-    "price": 225,
+    "price": 300,
     "samples": 30,
     "min": 225,
     "max": 225
@@ -11624,7 +11624,7 @@
     "name": "Veil Dual Blades",
     "kind": "weapon",
     "rarity": "Excellent",
-    "price": 225,
+    "price": 300,
     "samples": 30,
     "min": 225,
     "max": 225
@@ -11634,7 +11634,7 @@
     "name": "Venomfang Dagger",
     "kind": "weapon",
     "rarity": "Excellent",
-    "price": 225,
+    "price": 300,
     "samples": 30,
     "min": 225,
     "max": 225
@@ -13354,7 +13354,7 @@
     "name": "Eagle God Leather Boots",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 369,
+    "price": 550,
     "samples": 30,
     "min": 369,
     "max": 369
@@ -13664,7 +13664,7 @@
     "name": "True Prayer Greaves",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 374,
+    "price": 550,
     "samples": 30,
     "min": 374,
     "max": 374
@@ -13914,7 +13914,7 @@
     "name": "Bloodwrath General Bracers",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 380,
+    "price": 550,
     "samples": 30,
     "min": 380,
     "max": 380
@@ -13954,7 +13954,7 @@
     "name": "Mysteria Elder Bracers",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 380,
+    "price": 550,
     "samples": 30,
     "min": 380,
     "max": 380
@@ -13974,7 +13974,7 @@
     "name": "Shadowstrix Bracers",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 380,
+    "price": 550,
     "samples": 30,
     "min": 380,
     "max": 380
@@ -14114,7 +14114,7 @@
     "name": "Black Iris Bracers",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 385,
+    "price": 550,
     "samples": 30,
     "min": 385,
     "max": 385
@@ -14134,7 +14134,7 @@
     "name": "Black Iris Sabatons",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 385,
+    "price": 550,
     "samples": 30,
     "min": 385,
     "max": 385
@@ -14144,7 +14144,7 @@
     "name": "Bloodwrath General Greaves",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 385,
+    "price": 550,
     "samples": 30,
     "min": 385,
     "max": 385
@@ -14164,7 +14164,7 @@
     "name": "Eagle God Bracers",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 385,
+    "price": 550,
     "samples": 30,
     "min": 385,
     "max": 385
@@ -14184,7 +14184,7 @@
     "name": "Mysteria Elder Boots",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 385,
+    "price": 550,
     "samples": 30,
     "min": 385,
     "max": 385
@@ -14194,7 +14194,7 @@
     "name": "Shadowstrix Leather Boots",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 385,
+    "price": 550,
     "samples": 30,
     "min": 385,
     "max": 385
@@ -14214,7 +14214,7 @@
     "name": "True Prayer Bracers",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 385,
+    "price": 550,
     "samples": 30,
     "min": 385,
     "max": 385
@@ -14714,7 +14714,7 @@
     "name": "True Prayer Pants",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 402,
+    "price": 600,
     "samples": 30,
     "min": 402,
     "max": 402
@@ -14864,7 +14864,7 @@
     "name": "Shadowstrix Mask",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 408,
+    "price": 600,
     "samples": 30,
     "min": 408,
     "max": 408
@@ -14884,7 +14884,7 @@
     "name": "True Prayer Miter",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 408,
+    "price": 600,
     "samples": 30,
     "min": 408,
     "max": 408
@@ -14984,7 +14984,7 @@
     "name": "Black Iris Helmet",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 414,
+    "price": 600,
     "samples": 30,
     "min": 414,
     "max": 414
@@ -14994,7 +14994,7 @@
     "name": "Bloodwrath General Helmet",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 414,
+    "price": 600,
     "samples": 30,
     "min": 414,
     "max": 414
@@ -15024,7 +15024,7 @@
     "name": "Eagle God Winged Helm",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 414,
+    "price": 600,
     "samples": 30,
     "min": 414,
     "max": 414
@@ -15034,7 +15034,7 @@
     "name": "Mysteria Elder Mask",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 414,
+    "price": 600,
     "samples": 30,
     "min": 414,
     "max": 414
@@ -15124,7 +15124,7 @@
     "name": "Black Iris Breeches",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 420,
+    "price": 600,
     "samples": 30,
     "min": 420,
     "max": 420
@@ -15144,7 +15144,7 @@
     "name": "Bloodwrath General Pants",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 420,
+    "price": 600,
     "samples": 30,
     "min": 420,
     "max": 420
@@ -15154,7 +15154,7 @@
     "name": "Eagle God Pants",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 420,
+    "price": 600,
     "samples": 30,
     "min": 420,
     "max": 420
@@ -15174,7 +15174,7 @@
     "name": "Mysteria Elder Pants",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 420,
+    "price": 600,
     "samples": 30,
     "min": 420,
     "max": 420
@@ -15184,7 +15184,7 @@
     "name": "Shadowstrix Pants",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 420,
+    "price": 600,
     "samples": 30,
     "min": 420,
     "max": 420
@@ -15674,7 +15674,7 @@
     "name": "Black Iris Breastplate",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 435,
+    "price": 630,
     "samples": 30,
     "min": 435,
     "max": 435
@@ -15764,7 +15764,7 @@
     "name": "Bloodwrath General Armor",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 441,
+    "price": 630,
     "samples": 30,
     "min": 441,
     "max": 441
@@ -15804,7 +15804,7 @@
     "name": "Eagle God Armor",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 441,
+    "price": 630,
     "samples": 30,
     "min": 441,
     "max": 441
@@ -15834,7 +15834,7 @@
     "name": "Mysteria Elder Robe",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 441,
+    "price": 630,
     "samples": 30,
     "min": 441,
     "max": 441
@@ -15854,7 +15854,7 @@
     "name": "Shadowstrix Vigor",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 441,
+    "price": 630,
     "samples": 30,
     "min": 441,
     "max": 441
@@ -15894,7 +15894,7 @@
     "name": "True Prayer Vestment",
     "kind": "armor",
     "rarity": "Epic",
-    "price": 441,
+    "price": 630,
     "samples": 30,
     "min": 441,
     "max": 441
@@ -16464,7 +16464,7 @@
     "name": "Commander Sword and Shield",
     "kind": "weapon",
     "rarity": "Epic",
-    "price": 476,
+    "price": 700,
     "samples": 30,
     "min": 476,
     "max": 476
@@ -16514,7 +16514,7 @@
     "name": "Obsidian Sledgehammer",
     "kind": "weapon",
     "rarity": "Epic",
-    "price": 476,
+    "price": 700,
     "samples": 30,
     "min": 476,
     "max": 476
@@ -16654,7 +16654,7 @@
     "name": "Sacred Heart Greatsword",
     "kind": "weapon",
     "rarity": "Epic",
-    "price": 483,
+    "price": 700,
     "samples": 30,
     "min": 483,
     "max": 483
@@ -16694,7 +16694,7 @@
     "name": "Blade of Destined Death",
     "kind": "weapon",
     "rarity": "Epic",
-    "price": 490,
+    "price": 700,
     "samples": 30,
     "min": 490,
     "max": 490
@@ -16734,7 +16734,7 @@
     "name": "Gem Lizard Dagger",
     "kind": "weapon",
     "rarity": "Epic",
-    "price": 490,
+    "price": 700,
     "samples": 30,
     "min": 490,
     "max": 490
@@ -16754,7 +16754,7 @@
     "name": "Night Vigil Polearm and Shield",
     "kind": "weapon",
     "rarity": "Epic",
-    "price": 490,
+    "price": 700,
     "samples": 30,
     "min": 490,
     "max": 490
@@ -19854,7 +19854,7 @@
     "name": "Bond of Friendship",
     "kind": "weapon",
     "rarity": "Legendary",
-    "price": 990,
+    "price": 1500,
     "samples": 30,
     "min": 990,
     "max": 990
@@ -19894,7 +19894,7 @@
     "name": "Champion's Pants",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 990,
+    "price": 1500,
     "samples": 30,
     "min": 990,
     "max": 990
@@ -20054,7 +20054,7 @@
     "name": "Scaleclaw Winged Helm",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 990,
+    "price": 1500,
     "samples": 30,
     "min": 990,
     "max": 990
@@ -20444,7 +20444,7 @@
     "name": "Holy Saint's Miter",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1020,
+    "price": 1500,
     "samples": 30,
     "min": 1020,
     "max": 1020
@@ -20474,7 +20474,7 @@
     "name": "Holy Saint's Vestment",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1020,
+    "price": 1500,
     "samples": 30,
     "min": 1020,
     "max": 1020
@@ -20544,7 +20544,7 @@
     "name": "Rosen Oath Boots",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1020,
+    "price": 1500,
     "samples": 30,
     "min": 1020,
     "max": 1020
@@ -20574,7 +20574,7 @@
     "name": "Rosen Oath Helmet",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1020,
+    "price": 1500,
     "samples": 30,
     "min": 1020,
     "max": 1020
@@ -20674,7 +20674,7 @@
     "name": "Ace Assassin Pants",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20764,7 +20764,7 @@
     "name": "Champion's Boots",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20804,7 +20804,7 @@
     "name": "Champion's Helmet",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20834,7 +20834,7 @@
     "name": "Holy Saint's Bracers",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20844,7 +20844,7 @@
     "name": "Holy Saint's Greaves",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20864,7 +20864,7 @@
     "name": "Moon Priestess Boots",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20894,7 +20894,7 @@
     "name": "Moon Priestess Mask",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20924,7 +20924,7 @@
     "name": "Rosen Oath Bracers",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20954,7 +20954,7 @@
     "name": "Rosen Oath Pants",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20964,7 +20964,7 @@
     "name": "Scaleclaw Bracers",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20984,7 +20984,7 @@
     "name": "Scaleclaw Leather Boots",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -20994,7 +20994,7 @@
     "name": "Scaleclaw Pants",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1035,
+    "price": 1500,
     "samples": 30,
     "min": 1035,
     "max": 1035
@@ -21054,7 +21054,7 @@
     "name": "Ace Assassin Boots",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21064,7 +21064,7 @@
     "name": "Ace Assassin Bracers",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21084,7 +21084,7 @@
     "name": "Ace Assassin Garb",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21094,7 +21094,7 @@
     "name": "Ace Assassin Mask",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21104,7 +21104,7 @@
     "name": "Champion's Armor",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21134,7 +21134,7 @@
     "name": "Champion's Bracers",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21194,7 +21194,7 @@
     "name": "Holy Saint's Pants",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21204,7 +21204,7 @@
     "name": "Mercy",
     "kind": "weapon",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21224,7 +21224,7 @@
     "name": "Moon Priestess Bracers",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21234,7 +21234,7 @@
     "name": "Moon Priestess Pants",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21244,7 +21244,7 @@
     "name": "Moon Priestess Robe",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21254,7 +21254,7 @@
     "name": "Rose Proclamation",
     "kind": "weapon",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21264,7 +21264,7 @@
     "name": "Rosen Oath Breastplate",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21274,7 +21274,7 @@
     "name": "Scaleclaw Armor",
     "kind": "armor",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21284,7 +21284,7 @@
     "name": "Serpent's Whisper",
     "kind": "weapon",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21324,7 +21324,7 @@
     "name": "Skullcrusher",
     "kind": "weapon",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -21344,7 +21344,7 @@
     "name": "Venomfang",
     "kind": "weapon",
     "rarity": "Legendary",
-    "price": 1050,
+    "price": 1500,
     "samples": 30,
     "min": 1050,
     "max": 1050
@@ -22394,7 +22394,7 @@
     "name": "Insatiable Heart - Everburn",
     "kind": "weapon",
     "rarity": "Holy",
-    "price": 2070,
+    "price": 3000,
     "samples": 30,
     "min": 2070,
     "max": 2070
@@ -22474,7 +22474,7 @@
     "name": "Insatiable Heart - Demolisher",
     "kind": "weapon",
     "rarity": "Holy",
-    "price": 2100,
+    "price": 3000,
     "samples": 30,
     "min": 2100,
     "max": 2100
@@ -22514,7 +22514,7 @@
     "name": "Moon Deity - Crescent Dagger",
     "kind": "weapon",
     "rarity": "Holy",
-    "price": 2100,
+    "price": 3000,
     "samples": 30,
     "min": 2100,
     "max": 2100
@@ -22584,7 +22584,7 @@
     "name": "Wulfen Einherjar - Blade of Inquisition",
     "kind": "weapon",
     "rarity": "Holy",
-    "price": 2100,
+    "price": 3000,
     "samples": 30,
     "min": 2100,
     "max": 2100
@@ -22594,7 +22594,7 @@
     "name": "Wulfen Einherjar - Oathkeeper",
     "kind": "weapon",
     "rarity": "Holy",
-    "price": 2100,
+    "price": 3000,
     "samples": 30,
     "min": 2100,
     "max": 2100
@@ -22604,7 +22604,7 @@
     "name": "Wulfen Einherjar - Splitclaw",
     "kind": "weapon",
     "rarity": "Holy",
-    "price": 2100,
+    "price": 3000,
     "samples": 30,
     "min": 2100,
     "max": 2100

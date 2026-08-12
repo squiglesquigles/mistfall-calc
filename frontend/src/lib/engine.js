@@ -671,7 +671,7 @@ function reachableAffixes(className, weapon) {
 // you've finished its data. A class ALSO needs real gear data (built-in affix or
 // socket in its own armor+weapon) to actually enable — so you can't accidentally
 // turn on an empty class. Blackarrow is live (Seer, Sorcerer, Blackarrow).
-const ENABLED_CLASSES = ['Seer', 'Sorcerer', 'Blackarrow'];
+const ENABLED_CLASSES = ['Seer', 'Sorcerer', 'Blackarrow', 'Mercenary', 'Shadowstrix', 'Withered Knight'];
 
 // A class is "ready" (enabled) only when it is in ENABLED_CLASSES AND its own
 // class-specific armor + weapon gear actually carries a built-in affix or a
