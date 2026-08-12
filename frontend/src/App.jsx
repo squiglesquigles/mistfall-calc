@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { classes, affixes, meta, buildSetKey } from './lib/engine';
+import { classes, affixes, meta, buildSetKey, accessoryOptions } from './lib/engine';
 import { exportBuildCode } from './lib/buildCode';
 import { AFFIX_ICONS } from './lib/affixIcons';
 
@@ -21,6 +21,7 @@ import KoFiLogo from './assets/icons/logomarkLogo.webp';
 import ChevronDown from './assets/icons/ChevronDown.svg';
 import ChevronRight from './assets/icons/ChevronRight.svg';
 import CopyIcon from './assets/icons/copy.svg';
+import CheckIcon from './assets/icons/check.svg';
 
 // ----------------------------------------------------------------
 //  CONFIG — fill in your Twitch channel and Ko-fi username/page
@@ -108,7 +109,7 @@ function FilterDropdown({ label, value, options, onSelect, open, onOpen, onClose
       <button onClick={() => (open ? onClose() : onOpen())} aria-expanded={open}
         style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', width: '100%', padding: '8px 12px', borderRadius: '8px',
           border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, fontSize: '14px', cursor: 'pointer', textAlign: 'left' }}>
-        <span><strong style={{ color: COLORS.primary }}>{label}:</strong> {sel ? sel.name : 'All'}</span>
+        <span><strong style={{ color: COLORS.primary }}>{label}:</strong> <span style={{ color: sel ? (sel.color || COLORS.text) : COLORS.text }}>{sel ? sel.name : 'All'}</span></span>
         <img src={ChevronDown} alt={open ? 'Close' : 'Open'} style={{ width: 16, height: 16, flex: '0 0 auto', transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s ease' }} />
       </button>
       {open && (
@@ -122,7 +123,10 @@ function FilterDropdown({ label, value, options, onSelect, open, onOpen, onClose
                 onMouseLeave={() => setHov(null)}
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', width: '100%', textAlign: 'left', padding: '8px 12px', border: 'none', borderBottom: '1px solid ' + COLORS.border, cursor: o.disabled ? 'not-allowed' : 'pointer',
                   backgroundColor: active ? '#2a2320' : hov === o.value ? (o.disabled ? 'transparent' : 'rgba(201, 165, 74, 0.12)') : 'transparent', color: COLORS.text, fontSize: '14px' }}>
-                <span style={{ display: 'block', opacity: o.disabled ? 0.45 : 1 }}>{o.name}</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: '0', opacity: o.disabled ? 0.45 : 1 }}>
+                  <span style={{ display: 'block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: o.color || COLORS.text }}>{o.name}</span>
+                  {o.rarity ? <span style={{ flex: '0 0 auto', fontSize: '11px', color: o.color || COLORS.text, border: '1px solid ' + (o.color || COLORS.border), borderRadius: '4px', padding: '1px 6px' }}>{o.rarity}</span> : null}
+                </span>
                 {o.disabled && o.hint ? (
                   <span role="img" aria-label={o.hint} tabIndex={0}
                     onClick={(e) => e.stopPropagation()}
@@ -150,6 +154,15 @@ function FilterDropdown({ label, value, options, onSelect, open, onOpen, onClose
 }
 
 
+function ClearAllFilters({ onClick, style }) {
+  return (
+    <button type="button" onClick={onClick}
+      style={Object.assign({ background: 'transparent', border: 'none', padding: '0', color: COLORS.primary, fontSize: '14px', fontWeight: 600, textDecoration: 'underline', cursor: 'pointer', whiteSpace: 'nowrap' }, style || {})}>
+      Clear all Filters
+    </button>
+  );
+}
+
 function App() {
   const [selectedClass, setSelectedClass] = useState(null);
   const [weapon, setWeapon] = useState('Mace');
@@ -166,10 +179,12 @@ function App() {
   const [neckFilter, setNeckFilter] = useState('all');   // post-build Necklace accessory filter
   const [openFilter, setOpenFilter] = useState(null);    // which accessory dropdown is open: 'ring' | 'neck' | null
   const [rarityPref, setRarityPref] = useState({});          // optional per-slot rarity filter (slot -> rarity)
+  const [forcedAcc, setForcedAcc] = useState({});            // pre-generation specific Ring/Necklace selection (slot -> gear name)
   const [extra, setExtra] = useState([]);                      // builds generated on-demand by Show more
   const [moreBusy, setMoreBusy] = useState(false);             // a 'more' search is in flight
   const [noMore, setNoMore] = useState(false);                 // engine reports no further builds
   const [codeStatus, setCodeStatus] = useState('');              // build-code copy feedback
+  const [copiedIndex, setCopiedIndex] = useState(null);        // which build card's Copy button shows "Copied code"
 
 
   // Feedback report (per gear slot -> Discord webhook)
@@ -246,7 +261,7 @@ function App() {
   const weaponOptions = (meta.weaponsByClass && selectedClass && meta.weaponsByClass[selectedClass.name]) || [];
 
   // Clear target affixes + builds when class or weapon changes
-  useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); setRarityPref({}); setExtra([]); setNoMore(false); setMoreBusy(false); }, [selectedClass, weapon]);
+  useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); setRarityPref({}); setForcedAcc({}); setExtra([]); setNoMore(false); setMoreBusy(false); }, [selectedClass, weapon]);
 
   // Reset the weapon to the first option for the newly picked class.
   useEffect(() => {
@@ -348,12 +363,13 @@ function App() {
       wine: null,
       targets: Object.entries(selected).map(([affix, level]) => ({ affix, level })),
       rarityPref,
+      forcedAccessories: forcedAcc,
       seenKeys: seen,
       minCost
     });
   }
 
-  function copyBuildCode(b) {
+  function copyBuildCode(b, idx) {
     if (!b) return;
     const payload = {
       className: builds.className,
@@ -362,12 +378,13 @@ function App() {
       cost: b.cost,
       slots: b.slots.map(s => ({ slot: s.slot, gear: s.gear, rarity: s.rarity, built_in_affix: s.built_in_affix, sockets: s.sockets || [], gems: s.gems || [] }))
     };
-    setCodeStatus('Generating code...');
     exportBuildCode(payload)
       .then(r => {
         if (!r.code) throw new Error('No code returned');
         if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(r.code);
-        setCodeStatus('Code copied to clipboard!');
+        setCopiedIndex(idx);
+        setCodeStatus('');
+        setTimeout(() => setCopiedIndex(prev => (prev === idx ? null : prev)), 2500);
       })
       .catch(err => setCodeStatus('Code error: ' + ((err && err.message) || err)));
   }
@@ -385,7 +402,8 @@ function App() {
       weapon,
       wine: null,
       targets: Object.entries(selected).map(([affix, level]) => ({ affix, level })),
-      rarityPref
+      rarityPref,
+      forcedAccessories: forcedAcc
     });
   }
 
@@ -448,6 +466,23 @@ function App() {
     return { ...o, disabled, hint: disabled ? FILTER_HINT : null };
   });
   const visibleBuilds = buildResults.filter(b => ringMatches(b, ringFilter) && neckMatches(b, neckFilter));
+
+  // ---- Pre-generation Ring / Necklace selectors ----
+  const ACC_OPTS = accessoryOptions();
+  const accOptions = (slot) => {
+    const rp = rarityPref[slot];
+    const rows = (ACC_OPTS[slot] || []).filter(o => !rp || o.rarity === rp);
+    return [{ value: 'all', name: 'Any ' + slot }, ...rows.map(o => ({ value: o.gear + '\u0000' + o.rarity, gear: o.gear, rarity: o.rarity, name: o.gear, color: RARITY_COLORS[o.rarity] || COLORS.text }))];
+  };
+  const ringAccOpts = accOptions('Ring');
+  const neckAccOpts = accOptions('Necklace');
+  const pickAcc = (slot, value) => {
+    if (!value) { setForcedAcc(pv => ({ ...pv, [slot]: null })); setRarityPref(pv => ({ ...pv, [slot]: null })); return; }
+    const list = slot === 'Ring' ? ringAccOpts : neckAccOpts;
+    const o = list.find(x => x.gear === value);
+    setForcedAcc(pv => ({ ...pv, [slot]: o ? o.gear : null }));
+    if (o) setRarityPref(pv => ({ ...pv, [slot]: o.rarity }));
+  };
 
 
   // Deep-link support: the static class pages (frontend/public/*-build-calculator/)
@@ -650,12 +685,12 @@ function App() {
           {selectedClass && !cs && Object.keys(selected).length > 0 && !overBudget && (
             <section style={{ marginBottom: '36px' }}>
               <div style={{ marginBottom: '16px' }}>
-                <div style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '8px' }}>Rarity preference (optional):</div>
+                <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '12px' }}>Rarity preference (optional):</h2>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                   {['Head', 'Chest', 'Gloves', 'Pants', 'Boots', weapon, 'Ring', 'Necklace'].map(slot => (
                     <label key={slot} style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: COLORS.textMuted }}>
                       {slot === weapon ? weaponLabel(weapon) : slot}
-                      <select value={rarityPref[slot] || ''} onChange={(e) => setRarityPref(pv => ({ ...pv, [slot]: e.target.value || null }))}
+                      <select value={rarityPref[slot] || ''} onChange={(e) => { const rv = e.target.value || null; setRarityPref(pv => ({ ...pv, [slot]: rv })); if (slot === 'Ring' || slot === 'Necklace') setForcedAcc(pv => ({ ...pv, [slot]: null })); }}
                         style={{ padding: '8px 12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, fontSize: '14px', cursor: 'pointer' }}>
                         <option value="">Any</option>
                         {['Common', 'Rare', 'Epic', 'Legendary'].map(r => (
@@ -664,7 +699,27 @@ function App() {
                       </select>
                     </label>
                   ))}
+                  <ClearAllFilters onClick={() => setRarityPref({})} style={{ alignSelf: 'flex-end', marginBottom: '10px' }} />
                 </div>
+              </div>
+              <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '12px' }}>Ring &amp; Necklace selection (optional)</h2>
+              <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '16px' }}>
+                {['Ring', 'Necklace'].map(slot => {
+                  const rows = slot === 'Ring' ? ringAccOpts : neckAccOpts;
+                  return (
+                    <label key={slot} style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: COLORS.textMuted }}>
+                      {slot}
+                      <select value={forcedAcc[slot] || ''} onChange={(e) => pickAcc(slot, e.target.value)}
+                        style={{ padding: '8px 12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, fontSize: '14px', cursor: 'pointer' }}>
+                        <option value="">Any</option>
+                        {rows.map(o => (
+                          <option key={o.value} value={o.gear} style={{ color: o.color || COLORS.text }}>{o.gear}</option>
+                        ))}
+                      </select>
+                    </label>
+                  );
+                })}
+                <ClearAllFilters onClick={() => { setForcedAcc({}); setRarityPref(pv => { const n = { ...pv }; delete n.Ring; delete n.Necklace; return n; }); }} style={{ alignSelf: 'flex-end', marginBottom: '10px' }} />
               </div>
               <button onClick={generateBuilds} disabled={loading}
                 style={{ background: COLORS.primary, color: '#000', padding: '12px 24px', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', border: 'none', cursor: 'pointer', opacity: loading ? 0.6 : 1 }}>
@@ -688,30 +743,11 @@ function App() {
 
           {builds && builds.builds && (
             <section>
-              <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>{builds.className} · {builds.weapon} Builds</h2>
+              <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '12px' }}>{builds.className} · {builds.weapon} Builds</h2>
               <p style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '16px' }}>
                 {builds.combinedLevel}/{MAX_AFFIX_BUDGET} combined · {builds.totalBuilds} found{visibleBuilds.length < builds.builds.length ? ' · showing ' + visibleBuilds.length : ''} · wine: {builds.wine && builds.wine.label ? (builds.wine.label + ' · ' + builds.wine.cost + 'g') : 'none'} · targets: {builds.targetAffixes.map(t => t.affix + ' Lv' + t.level).join(', ')}
               </p>
               {codeStatus && <div style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '16px' }}>{codeStatus}</div>}
-
-              {(ringOptions.length > 1 || neckOptions.length > 1) && (
-                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '16px' }}>
-                  <FilterDropdown
-                    label="Ring" value={ringFilter} options={ringFilterOpts}
-                    open={openFilter === 'ring'} onOpen={() => setOpenFilter('ring')} onClose={() => setOpenFilter(null)}
-                    onSelect={(v) => { setRingFilter(v); setBuildCount(2); setOpenBuilds({}); }} />
-                  <FilterDropdown
-                    label="Necklace" value={neckFilter} options={neckFilterOpts}
-                    open={openFilter === 'neck'} onOpen={() => setOpenFilter('neck')} onClose={() => setOpenFilter(null)}
-                    onSelect={(v) => { setNeckFilter(v); setBuildCount(2); setOpenBuilds({}); }} />
-                </div>
-              )}
-
-              {(ringOptions.length > 1 || neckOptions.length > 1) && (
-                <p style={{ color: COLORS.textMuted, fontSize: '14px', marginBottom: '16px' }}>
-                  The calculator shows only the possible combination of gear + Necklaces and Rings to create your build.
-                </p>
-              )}
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 {visibleBuilds.length === 0 && (
@@ -728,9 +764,9 @@ function App() {
                         style={{ padding: '12px 20px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', flexDirection: 'column', gap: '8px', cursor: 'pointer', userSelect: 'none' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
                           <strong style={{ flex: '1 1 auto', minWidth: '0', color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
-                          <button onClick={(e) => { e.stopPropagation(); copyBuildCode(b); }} title="Copy this build as a game share code"
+                          <button onClick={(e) => { e.stopPropagation(); copyBuildCode(b, i); }} title="Copy this build as a game share code"
                             style={{ flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'transparent', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: COLORS.primary, fontSize: '14px', fontWeight: 'bold', padding: '8px 12px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
-                            <img src={CopyIcon} alt="" style={{ width: 16, height: 16 }} /> Copy code
+                            <img src={copiedIndex === i ? CheckIcon : CopyIcon} alt="" style={{ width: 16, height: 16 }} /> {copiedIndex === i ? 'Copied code' : 'Copy code'}
                           </button>
                           <img src={isOpen ? ChevronDown : ChevronRight} alt={isOpen ? 'Collapse build' : 'Expand build'} style={{ flex: '0 0 auto', width: 24, height: 24 }} />
                         </div>

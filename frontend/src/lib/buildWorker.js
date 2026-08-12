@@ -6,11 +6,11 @@
 import { generateBuild, generateMoreBuilds } from './engine';
 
 self.onmessage = (e) => {
-  const { type = 'generate', className, weapon, wine, targets, rarityPref, seenKeys, minCost, id } = e.data || {};
+  const { type = 'generate', className, weapon, wine, targets, rarityPref, forcedAccessories, seenKeys, minCost, id } = e.data || {};
   try {
     const result = type === 'more'
-      ? generateMoreBuilds(className, weapon, wine, targets, rarityPref, seenKeys, 5, minCost, 5000)
-      : generateBuild(className, weapon, wine, targets, rarityPref);
+      ? generateMoreBuilds(className, weapon, wine, targets, rarityPref, forcedAccessories, seenKeys, 5, minCost, 5000)
+      : generateBuild(className, weapon, wine, targets, rarityPref, forcedAccessories);
     self.postMessage({ id, ok: true, type, result });
   } catch (err) {
     self.postMessage({ id, ok: false, type, error: String((err && err.message) || err) });

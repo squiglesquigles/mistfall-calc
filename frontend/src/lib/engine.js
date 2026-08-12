@@ -128,12 +128,35 @@ function compatibleGems(gemCatalog, sock) {
   return gemCatalog.filter(g => (circle || g.shape === sock.shape) && g.tier <= sock.tier);
 }
 
+const RARITY_ORDER = ['Common', 'Rare', 'Epic', 'Legendary', 'Excellent', 'Holy'];
+
+// Accessory gear options (shared across classes), for the pre-generation
+// Ring / Necklace selectors. Returns unique { gear, rarity } pairs, sorted.
+function accessoryOptions() {
+  const out = { Ring: [], Necklace: [] };
+  for (const s of ACCESSORY_SLOTS) {
+    const seen = new Set();
+    for (const v of poolFor(DATA.gear, null, s)) {
+      const key = v.gear + '\u0000' + v.rarity;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out[s].push({ gear: v.gear, rarity: v.rarity });
+    }
+    out[s].sort((a, b) => {
+      const rd = RARITY_ORDER.indexOf(a.rarity) - RARITY_ORDER.indexOf(b.rarity);
+      return rd !== 0 ? rd : a.gear.localeCompare(b.gear);
+    });
+  }
+  return out;
+}
+
 function assists(need, a1, a2) {
   return (a1 && need[a1] > 0) || (a2 && need[a2] > 0);
 }
 
-function buildCore(className, weapon, wine, targets, rarityPref) {
+function buildCore(className, weapon, wine, targets, rarityPref, forcedAccessories) {
   rarityPref = rarityPref || null;
+  forcedAccessories = forcedAccessories || null;
   const { gear, gemCatalog } = loadData();
   const priceIndex = PRICE_INDEX;
 
@@ -144,7 +167,7 @@ function buildCore(className, weapon, wine, targets, rarityPref) {
     return { error: className + ' does not use weapon "' + weapon + '". Options: ' + weapons.join(', ') };
   }
 
-  const forcedAcc = (rarityPref && (rarityPref.Ring || rarityPref.Necklace)) ? ACCESSORY_SLOTS.filter(s => rarityPref[s]) : [];
+  const forcedAcc = ACCESSORY_SLOTS.filter(s => (rarityPref && rarityPref[s]) || (forcedAccessories && forcedAccessories[s]));
   const mandatorySlots = ARMOR_SLOTS.concat([weaponSlot]).concat(forcedAcc);
   const allSlots = ARMOR_SLOTS.concat([weaponSlot]).concat(ACCESSORY_SLOTS);
 
@@ -200,9 +223,18 @@ function buildCore(className, weapon, wine, targets, rarityPref) {
     }
   }
 
+  if (forcedAccessories) {
+    for (const s of ACCESSORY_SLOTS) {
+      const name = forcedAccessories[s];
+      if (name && !poolFor(gear, className, s).some(v => v.gear === name)) {
+        return { error: 'No "' + name + '" ' + s + ' found for ' + className + '.' };
+      }
+    }
+  }
+
   let best = null;
   for (const opt of options) {
-    const { base } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref);
+    const { base } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref, forcedAccessories);
     const res = solveOnce(base);
     if (!res || !res.feasible) continue;
     const gearGem = costOf(res, base);
@@ -211,16 +243,16 @@ function buildCore(className, weapon, wine, targets, rarityPref) {
   }
 
   if (!best) {
-    return { error: 'No ' + className + ' ' + weaponSlot + ' build satisfies the selected affix levels. Try lowering a level or choosing different affixes.' };
+    return { error: 'No ' + className + ' ' + weaponSlot + ' build satisfies the selected affix levels with the current gear and gems. Try lowering a level, choosing different affixes, or increasing the rarity of your gear.' };
   }
 
-  const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, best.opt, rarityPref);
+  const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, best.opt, rarityPref, forcedAccessories);
   return { need, combined, winnerBase, info, best, weaponSlot, priceIndex };
 }
 
-function generateBuild(className, weapon, wine, targets, rarityPref) {
+function generateBuild(className, weapon, wine, targets, rarityPref, forcedAccessories) {
   rarityPref = rarityPref || null;
-  const core = buildCore(className, weapon, wine, targets, rarityPref);
+  const core = buildCore(className, weapon, wine, targets, rarityPref, forcedAccessories);
   if (core.error) return { error: core.error };
   const { need, combined, winnerBase, info, best, weaponSlot, priceIndex } = core;
   const ranked = solveRanked(winnerBase, info, RANK_BUDGET);
@@ -286,9 +318,9 @@ function buildSetKey(slots) {
   })));
 }
 
-function generateMoreBuilds(className, weapon, wine, targets, rarityPref, seenKeys, count, minCost, budgetMs) {
+function generateMoreBuilds(className, weapon, wine, targets, rarityPref, forcedAccessories, seenKeys, count, minCost, budgetMs) {
   rarityPref = rarityPref || null;
-  const core = buildCore(className, weapon, wine, targets, rarityPref);
+  const core = buildCore(className, weapon, wine, targets, rarityPref, forcedAccessories);
   if (core.error) return { error: core.error };
   const { need, combined, winnerBase, info, best, weaponSlot, priceIndex } = core;
   const modelBase = JSON.parse(JSON.stringify(winnerBase));
@@ -327,13 +359,16 @@ function generateMoreBuilds(className, weapon, wine, targets, rarityPref, seenKe
   };
 }
 
-function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref) {
+function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref, forcedAccessories) {
   const info = {};
   const base = { optimize: 'cost', opType: 'min', constraints: {}, variables: {}, ints: {} };
 
   for (const s of allSlots) {
     const isMandatory = mandatorySlots.includes(s);
-    const variants = poolFor(gear, className, s).filter(v => !rarityPref || !rarityPref[s] || v.rarity === rarityPref[s]);
+    const variants = poolFor(gear, className, s).filter(v =>
+      (!rarityPref || !rarityPref[s] || v.rarity === rarityPref[s]) &&
+      (!forcedAccessories || !forcedAccessories[s] || v.gear === forcedAccessories[s])
+    );
     base.constraints['slot_' + s] = { min: isMandatory ? 1 : 0, max: 1 };
 
     variants.forEach((v, vi) => {
@@ -722,6 +757,7 @@ export const meta = buildMeta();
 export {
   generateBuild,
   generateMoreBuilds,
+  accessoryOptions,
   buildSetKey,
   buildMeta,
   reachableAffixes,
