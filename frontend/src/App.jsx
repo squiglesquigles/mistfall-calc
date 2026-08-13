@@ -22,6 +22,8 @@ import ChevronDown from './assets/icons/ChevronDown.svg';
 import ChevronRight from './assets/icons/ChevronRight.svg';
 import CopyIcon from './assets/icons/copy.svg';
 import CheckIcon from './assets/icons/check.svg';
+import AlertIcon from './assets/icons/alert.svg';
+import InfoSvg from './assets/icons/info.svg';
 
 // ----------------------------------------------------------------
 //  CONFIG — fill in your Twitch channel and Ko-fi username/page
@@ -64,7 +66,11 @@ const GEM_ICONS = {
 const SLOT_ICONS = {
   Head: HeadIcon, Chest: ChestIcon, Gloves: GlovesIcon, Pants: PantsIcon, Boots: BootsIcon,
   Ring: RingIcon, Necklace: NecklaceIcon,
-  Weapon: WeaponIcon, Mace: WeaponIcon, Catalyst: WeaponIcon
+  // All weapon slot types share the Weapon icon.
+  Weapon: WeaponIcon, Mace: WeaponIcon, Catalyst: WeaponIcon,
+  Bow: WeaponIcon, Staff: WeaponIcon, Hammer: WeaponIcon, Dagger: WeaponIcon,
+  Greatsword: WeaponIcon, 'Sword and Shield': WeaponIcon,
+  'Dual Blades': WeaponIcon, 'Polearm and Shield': WeaponIcon
 };
 
 function gemName(shape) { return GEM_NAMES[shape] || shape || '?'; }
@@ -165,7 +171,7 @@ function ClearAllFilters({ onClick, style }) {
 
 function App() {
   const [selectedClass, setSelectedClass] = useState(null);
-  const [weapon, setWeapon] = useState('Mace');
+  const [weapon, setWeapon] = useState(null);
   const [selected, setSelected] = useState({}); // affix -> level
   const [builds, setBuilds] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -263,12 +269,15 @@ function App() {
   // Clear target affixes + builds when class or weapon changes
   useEffect(() => { setSelected({}); setBuilds(null); setOpenBuilds({}); setRingFilter('all'); setNeckFilter('all'); setOpenFilter(null); setRarityPref({}); setForcedAcc({}); setExtra([]); setNoMore(false); setMoreBusy(false); }, [selectedClass, weapon]);
 
-  // Reset the weapon to the first option for the newly picked class.
+  // Reset the chosen weapon whenever a new class is picked (forces an explicit Step 2 choice).
+  useEffect(() => { setWeapon(null); }, [selectedClass]);
+
+  // Auto-select the (single) weapon for classes with only one option (Sorcerer,
+  // Blackarrow) so the user lands straight on Step 3. Runs after the reset above.
   useEffect(() => {
     if (!selectedClass) return;
-    const opts = meta.weaponsByClass[selectedClass.name] || [];
-    if (opts.length && !opts.includes(weapon)) setWeapon(opts[0]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const opts = (meta.weaponsByClass && meta.weaponsByClass[selectedClass.name]) || [];
+    if (opts.length === 1) setWeapon(opts[0]);
   }, [selectedClass]);
 
   const reachable = meta.reachable ? (meta.reachable[selectedClass ? selectedClass.name + '-' + weapon : ''] || []) : [];
@@ -512,6 +521,10 @@ function App() {
     );
   }
 
+  // Secondary weapon = the class's OTHER weapon type (not the one chosen in Step 2).
+  const secondaryWeapon = weaponOptions.length > 1 ? weaponOptions.find(w => w !== weapon) : null;
+  const secondaryActive = !!(secondaryWeapon && rarityPref[secondaryWeapon]);
+
   function slotLabel(p) {
     const built = p.built_in_affix ? ' (' + p.built_in_affix + ')' : '';
     const gems = (p.sockets || []).map((s, i) => {
@@ -525,6 +538,7 @@ function App() {
       );
     });
     const icon = slotIcon(p.slot);
+    const isSecondary = secondaryActive && p.slot === secondaryWeapon;
     return (
       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '8px' }}>
         <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
@@ -534,7 +548,14 @@ function App() {
             <span style={{ color: RARITY_COLORS[p.rarity] || COLORS.textMuted }}>[{p.rarity}]</span>{built}
           </span>
         </span>
-        {gems.length > 0 && <span style={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>{gems}</span>}
+        {isSecondary ? (
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '14px', color: COLORS.textMuted, marginTop: '2px' }}>
+            <img src={InfoSvg} alt="" style={{ width: 16, height: 16, flex: '0 0 auto' }} />
+            <span>Gems are not calculated for the secondary weapon</span>
+          </span>
+        ) : (
+          gems.length > 0 && <span style={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>{gems}</span>
+        )}
       </span>
     );
   }
@@ -599,7 +620,7 @@ function App() {
             </section>
           )}
 
-          {selectedClass && !cs && (
+          {selectedClass && !cs && weapon && (
             <section style={{ marginBottom: '36px' }}>
               <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '16px' }}>Step 3: Select Affixes &amp; Levels (max {MAX_AFFIX_BUDGET})</h2>
               <input type="text" placeholder="Search affixes..." value={search} onChange={e => setSearch(e.target.value)}
@@ -687,9 +708,9 @@ function App() {
               <div style={{ marginBottom: '16px' }}>
                 <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '12px' }}>Rarity preference (optional):</h2>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                  {['Head', 'Chest', 'Gloves', 'Pants', 'Boots', weapon, 'Ring', 'Necklace'].map(slot => (
+                  {['Head', 'Chest', 'Gloves', 'Pants', 'Boots'].concat(weaponOptions).concat(['Ring', 'Necklace']).map(slot => (
                     <label key={slot} style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '14px', color: COLORS.textMuted }}>
-                      {slot === weapon ? weaponLabel(weapon) : slot}
+                      {slot === 'Weapon' ? weaponLabel('Weapon') : slot}
                       <select value={rarityPref[slot] || ''} onChange={(e) => { const rv = e.target.value || null; setRarityPref(pv => ({ ...pv, [slot]: rv })); if (slot === 'Ring' || slot === 'Necklace') setForcedAcc(pv => ({ ...pv, [slot]: null })); }}
                         style={{ padding: '8px 12px', borderRadius: '8px', border: '1px solid ' + COLORS.border, backgroundColor: COLORS.bgAlt, color: COLORS.text, fontSize: '14px', cursor: 'pointer' }}>
                         <option value="">Any</option>
@@ -764,6 +785,11 @@ function App() {
                         style={{ padding: '12px 20px', backgroundColor: i === 0 ? '#2a2320' : COLORS.bgAlt, display: 'flex', flexDirection: 'column', gap: '8px', cursor: 'pointer', userSelect: 'none' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
                           <strong style={{ flex: '1 1 auto', minWidth: '0', color: i === 0 ? COLORS.primary : COLORS.text }}>{i === 0 ? '🎯 Cheapest Build' : 'Option ' + (i + 1)}</strong>
+                          <a href="https://youtu.be/5muPcO9QjuM" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+                            style={{ display: 'inline-flex', alignItems: 'flex-start', gap: '6px', fontSize: '14px', color: '#FF484B', textDecoration: 'none', lineHeight: 1.3, maxWidth: '320px' }}>
+                            <img src={AlertIcon} alt="" style={{ width: 16, height: 16, flex: '0 0 auto', marginTop: '2px' }} />
+                            <span style={{ flex: '1 1 auto', minWidth: '0' }}>If you get a in-game pop up saying "Equipment slot does not match gem" watch this <span style={{ textDecoration: 'underline', fontWeight: 'bold', color: '#3b82f6', cursor: 'pointer' }}>video</span>.</span>
+                          </a>
                           <button onClick={(e) => { e.stopPropagation(); copyBuildCode(b, i); }} title="Copy this build as a game share code"
                             style={{ flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'transparent', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: COLORS.primary, fontSize: '14px', fontWeight: 'bold', padding: '8px 12px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
                             <img src={copiedIndex === i ? CheckIcon : CopyIcon} alt="" style={{ width: 16, height: 16 }} /> {copiedIndex === i ? 'Copied code' : 'Copy code'}

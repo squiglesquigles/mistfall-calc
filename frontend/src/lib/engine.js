@@ -88,16 +88,16 @@ const RARITY_CAPACITY = { Common: 1, Rare: 2, Epic: 3, Legendary: 5, Holy: 6 };
 
 const WEAPONS_BY_CLASS = {
   Blackarrow: ['Weapon'],
-  Mercenary: ['Weapon'],
+  Mercenary: ['Sword and Shield', 'Hammer'],
   Seer: ['Mace', 'Catalyst'],
-  Shadowstrix: ['Weapon'],
+  Shadowstrix: ['Dagger', 'Dual Blades'],
   Sorcerer: ['Weapon'],
-  'Withered Knight': ['Weapon']
+  'Withered Knight': ['Greatsword', 'Polearm and Shield']
 };
 
 const ARMOR_SLOTS = ['Head', 'Chest', 'Gloves', 'Pants', 'Boots'];
 const ACCESSORY_SLOTS = ['Ring', 'Necklace'];
-const SLOT_ORDER = ['Head', 'Chest', 'Gloves', 'Pants', 'Boots', 'Ring', 'Necklace', 'Weapon', 'Mace', 'Catalyst'];
+const SLOT_ORDER = ['Head', 'Chest', 'Gloves', 'Pants', 'Boots', 'Ring', 'Necklace', 'Weapon', 'Mace', 'Catalyst', 'Sword and Shield', 'Hammer', 'Dagger', 'Dual Blades', 'Greatsword', 'Polearm and Shield'];
 
 const WINES = {
   'Wine 1': { name: 'Mortal Tonic', label: 'Lv 1: Mortal Tonic', cap: 2, stacking: false, maxStack: 1, cost: 0, desc: 'Level 1 Wine — 2 unique affixes (+1 level each)' },
@@ -168,8 +168,16 @@ function buildCore(className, weapon, wine, targets, rarityPref, forcedAccessori
   }
 
   const forcedAcc = ACCESSORY_SLOTS.filter(s => (rarityPref && rarityPref[s]) || (forcedAccessories && forcedAccessories[s]));
+  // Secondary weapon = the class's other weapon type; only included in the build
+  // when the user picks a rarity for it. Gems are NEVER solved for it (gear only).
+  const secondaryWeapon = weapons.length > 1 ? weapons.find(w => w !== weapon) : null;
+  const noGemSlots = (secondaryWeapon && rarityPref && rarityPref[secondaryWeapon]) ? new Set([secondaryWeapon]) : null;
   const mandatorySlots = ARMOR_SLOTS.concat([weaponSlot]).concat(forcedAcc);
   const allSlots = ARMOR_SLOTS.concat([weaponSlot]).concat(ACCESSORY_SLOTS);
+  if (noGemSlots) {
+    mandatorySlots.push(secondaryWeapon);
+    allSlots.push(secondaryWeapon);
+  }
 
   if (!targets || targets.length === 0) return { error: 'Select at least one affix.' };
 
@@ -234,7 +242,7 @@ function buildCore(className, weapon, wine, targets, rarityPref, forcedAccessori
 
   let best = null;
   for (const opt of options) {
-    const { base } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref, forcedAccessories);
+    const { base } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, noGemSlots, need, opt, rarityPref, forcedAccessories);
     const res = solveOnce(base);
     if (!res || !res.feasible) continue;
     const gearGem = costOf(res, base);
@@ -246,7 +254,7 @@ function buildCore(className, weapon, wine, targets, rarityPref, forcedAccessori
     return { error: 'No ' + className + ' ' + weaponSlot + ' build satisfies the selected affix levels with the current gear and gems. Try lowering a level, choosing different affixes, or increasing the rarity of your gear.' };
   }
 
-  const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, best.opt, rarityPref, forcedAccessories);
+  const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, noGemSlots, need, best.opt, rarityPref, forcedAccessories);
   return { need, combined, winnerBase, info, best, weaponSlot, priceIndex };
 }
 
@@ -359,7 +367,7 @@ function generateMoreBuilds(className, weapon, wine, targets, rarityPref, forced
   };
 }
 
-function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, need, opt, rarityPref, forcedAccessories) {
+function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, noGemSlots, need, opt, rarityPref, forcedAccessories) {
   const info = {};
   const base = { optimize: 'cost', opType: 'min', constraints: {}, variables: {}, ints: {} };
 
@@ -385,6 +393,8 @@ function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandato
     });
 
     variants.forEach((v, vi) => {
+      // Secondary weapon slots: include the gear but never solve/apply gems.
+      if (noGemSlots && noGemSlots.has(s)) return;
       v.sockets.forEach((sock, si) => {
         const scName = 'sc_' + s + '_' + vi + '_' + si;
         base.constraints[scName] = { max: 0 };
