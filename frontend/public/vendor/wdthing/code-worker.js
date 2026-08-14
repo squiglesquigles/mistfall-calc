@@ -21,7 +21,7 @@ const ready = (async () => {
 
 // Mappings derived by cross-referencing the game catalogue.
 const SLOT_TYPE = { Head: 'Helmet', Chest: 'Clothes', Gloves: 'Gauntlets', Pants: 'Pants', Boots: 'Boots', Weapon: 'Weapon', Ring: 'Ring', Necklace: 'Necklace' };
-const WEAPON_SLOTS = new Set(['Weapon', 'Mace', 'Catalyst']);
+const WEAPON_SLOTS = new Set(['Weapon', 'Mace', 'Catalyst', 'Sword and Shield', 'Hammer', 'Dagger', 'Dual Blades', 'Greatsword', 'Polearm and Shield']);
 const SHAPE_NUM = { Rectangle: 1, Triangle: 2, Square: 3, Octagon: 4, Circle: 5 };
 const GRADE_RARITY = { 1: 'Gray', 2: 'White', 3: 'Green', 4: 'Blue', 5: 'Purple', 6: 'Gold', 7: 'Gold' };
 const RARITY_GRADE = { Common: 3, Rare: 4, Epic: 5, Legendary: 6, Holy: 7 };
