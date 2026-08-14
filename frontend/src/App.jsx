@@ -915,7 +915,7 @@ function App() {
 
       <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '20px 24px', color: COLORS.textMuted, fontSize: '16px', textAlign: 'center' }}>
         Mistfall Hunter Build Calculator — a free fan tool by{' '}
-        <a href="https://github.com/squiglesquigles/mistfall-calc" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Squigle</a>.
+        <a href="https://linktr.ee/squigleV2" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Squigle</a>.
         Not affiliated with Bellring Games. · Helpful?{' '}
         {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
         {' '}·{' '}
