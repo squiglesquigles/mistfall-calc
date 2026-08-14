@@ -10,7 +10,11 @@ const pending = new Map();
 
 function getWorker() {
   if (!worker) {
-    worker = new Worker(import.meta.env.BASE_URL + 'vendor/wdthing/code-worker.js');
+    // Cache-bust the worker script: Web Workers are cached aggressively and a hard
+    // refresh often doesn't clear them. Bump SB_VER whenever vendor/wdthing/code-worker.js
+    // changes so every browser pulls the fresh exporter.
+    const SB_VER = 3;
+    worker = new Worker(import.meta.env.BASE_URL + 'vendor/wdthing/code-worker.js?v=' + SB_VER);
     worker.onmessage = (e) => {
       const { id, ok, error, code, pieces, summary, type } = e.data || {};
       const p = pending.get(id);
