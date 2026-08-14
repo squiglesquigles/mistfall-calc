@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { classes, affixes, meta, buildSetKey, accessoryOptions } from './lib/engine';
+import { classes, affixes, meta, buildSetKey, accessoryOptions, WINES } from './lib/engine';
 import { exportBuildCode } from './lib/buildCode';
 import { AFFIX_ICONS } from './lib/affixIcons';
 
@@ -186,6 +186,7 @@ function App() {
   const [openFilter, setOpenFilter] = useState(null);    // which accessory dropdown is open: 'ring' | 'neck' | null
   const [rarityPref, setRarityPref] = useState({});          // optional per-slot rarity filter (slot -> rarity)
   const [forcedAcc, setForcedAcc] = useState({});            // pre-generation specific Ring/Necklace selection (slot -> gear name)
+  const [wineKey, setWineKey] = useState(null);              // selected wine ('Wine 1'..'Wine 4') or null = auto-cheapest
   const [extra, setExtra] = useState([]);                      // builds generated on-demand by Show more
   const [moreBusy, setMoreBusy] = useState(false);             // a 'more' search is in flight
   const [noMore, setNoMore] = useState(false);                 // engine reports no further builds
@@ -369,7 +370,7 @@ function App() {
       type: 'more',
       className: selectedClass.name,
       weapon,
-      wine: null,
+      wine: wineKey ? { name: wineKey } : null,
       targets: Object.entries(selected).map(([affix, level]) => ({ affix, level })),
       rarityPref,
       forcedAccessories: forcedAcc,
@@ -409,7 +410,7 @@ function App() {
     workerRef.current.postMessage({
       className: selectedClass.name,
       weapon,
-      wine: null,
+      wine: wineKey ? { name: wineKey } : null,
       targets: Object.entries(selected).map(([affix, level]) => ({ affix, level })),
       rarityPref,
       forcedAccessories: forcedAcc
@@ -741,6 +742,25 @@ function App() {
                   );
                 })}
                 <ClearAllFilters onClick={() => { setForcedAcc({}); setRarityPref(pv => { const n = { ...pv }; delete n.Ring; delete n.Necklace; return n; }); }} style={{ alignSelf: 'flex-end', marginBottom: '10px' }} />
+              </div>
+              <div style={{ marginBottom: '16px' }}>
+                <h2 style={{ color: COLORS.primary, fontSize: '20px', marginBottom: '12px' }}>Wine selection (optional)</h2>
+                <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                  {Object.entries(WINES).map(([key, w]) => {
+                    const active = wineKey === key;
+                    return (
+                      <button key={key} onClick={() => setWineKey(prev => prev === key ? null : key)} aria-pressed={active}
+                        title={w.desc}
+                        style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 14px', borderRadius: '8px',
+                          border: '1px solid ' + (active ? COLORS.primary : COLORS.border), backgroundColor: active ? '#2a2320' : COLORS.bgAlt,
+                          color: COLORS.text, fontSize: '14px', cursor: 'pointer', fontWeight: active ? 600 : 400 }}>
+                        <span>🍷 {w.label}</span>
+                        <span style={{ fontSize: '12px', color: active ? COLORS.primary : COLORS.textMuted }}>{w.cost === 0 ? 'free' : w.cost + 'g'}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+                <p style={{ color: COLORS.textMuted, fontSize: '13px', marginTop: '8px' }}>Select a wine to cap the affix boost and add its cost to the build. Leave unset to auto-pick the cheapest.</p>
               </div>
               <button onClick={generateBuilds} disabled={loading}
                 style={{ background: COLORS.primary, color: '#000', padding: '12px 24px', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', border: 'none', cursor: 'pointer', opacity: loading ? 0.6 : 1 }}>
