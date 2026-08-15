@@ -255,14 +255,14 @@ function buildCore(className, weapon, wine, targets, rarityPref, forcedAccessori
   }
 
   const { base: winnerBase, info } = buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandatorySlots, allSlots, noGemSlots, need, best.opt, rarityPref, forcedAccessories);
-  return { need, combined, winnerBase, info, best, weaponSlot, priceIndex };
+  return { need, combined, winnerBase, info, best, weaponSlot, priceIndex, noGemSlots };
 }
 
 function generateBuild(className, weapon, wine, targets, rarityPref, forcedAccessories) {
   rarityPref = rarityPref || null;
   const core = buildCore(className, weapon, wine, targets, rarityPref, forcedAccessories);
   if (core.error) return { error: core.error };
-  const { need, combined, winnerBase, info, best, weaponSlot, priceIndex } = core;
+  const { need, combined, winnerBase, info, best, weaponSlot, priceIndex, noGemSlots } = core;
   const ranked = solveRanked(winnerBase, info, RANK_BUDGET);
   // Add legendary/holy swap-out alternatives (stock-friendly variety), merged in,
   // deduped by gear set, and re-sorted by cost.
@@ -295,6 +295,23 @@ function generateBuild(className, weapon, wine, targets, rarityPref, forcedAcces
     cost: sol.cost + wineCost,
     capacityWarnings: sol.capacityWarnings
   }));
+
+  // Secondary weapon is a pure added item: strip its built-in affix and drop any
+  // capacity warning for it so it does not look like it contributes affixes.
+  if (noGemSlots) {
+    for (const b of builds) {
+      for (const sl of b.slots) {
+        if (noGemSlots.has(sl.slot)) sl.built_in_affix = null;
+      }
+      if (b.capacityWarnings) {
+        b.capacityWarnings = b.capacityWarnings.filter(w => {
+          const colon = w.indexOf(':');
+          const slotName = colon !== -1 ? w.slice(0, colon).trim() : w;
+          return !noGemSlots.has(slotName);
+        });
+      }
+    }
+  }
 
   return {
     className,
@@ -330,7 +347,7 @@ function generateMoreBuilds(className, weapon, wine, targets, rarityPref, forced
   rarityPref = rarityPref || null;
   const core = buildCore(className, weapon, wine, targets, rarityPref, forcedAccessories);
   if (core.error) return { error: core.error };
-  const { need, combined, winnerBase, info, best, weaponSlot, priceIndex } = core;
+  const { need, combined, winnerBase, info, best, weaponSlot, priceIndex, noGemSlots } = core;
   const modelBase = JSON.parse(JSON.stringify(winnerBase));
   if (minCost) {
     const floorVal = Math.max(1, minCost - (best.opt.cost || 0));
@@ -355,6 +372,23 @@ function generateMoreBuilds(className, weapon, wine, targets, rarityPref, forced
     cost: sol.cost + wineCost,
     capacityWarnings: sol.capacityWarnings
   }));
+
+  // Secondary weapon is a pure added item: strip its built-in affix and drop any
+  // capacity warning for it so it does not look like it contributes affixes.
+  if (noGemSlots) {
+    for (const b of builds) {
+      for (const sl of b.slots) {
+        if (noGemSlots.has(sl.slot)) sl.built_in_affix = null;
+      }
+      if (b.capacityWarnings) {
+        b.capacityWarnings = b.capacityWarnings.filter(w => {
+          const colon = w.indexOf(':');
+          const slotName = colon !== -1 ? w.slice(0, colon).trim() : w;
+          return !noGemSlots.has(slotName);
+        });
+      }
+    }
+  }
   return {
     className,
     weapon: weaponSlot,
@@ -384,7 +418,9 @@ function buildModel(gear, gemCatalog, priceIndex, className, weaponSlot, mandato
       const cost = gearCost(priceIndex, v.gear, v.slot);
       const varObj = { cost };
       varObj['slot_' + s] = 1;
-      if (v.built_in_affix && need[v.built_in_affix] > 0) {
+      // Secondary weapon slots (noGemSlots): gear is added to the build, but its
+      // built-in affix and sockets must NOT contribute to the target affixes.
+      if (!(noGemSlots && noGemSlots.has(s)) && v.built_in_affix && need[v.built_in_affix] > 0) {
         varObj['afx_' + v.built_in_affix] = (varObj['afx_' + v.built_in_affix] || 0) + 1;
       }
       base.variables[id] = varObj;

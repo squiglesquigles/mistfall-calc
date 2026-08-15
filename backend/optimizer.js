@@ -59,16 +59,16 @@ const RARITY_CAPACITY = { Common: 1, Rare: 2, Epic: 3, Legendary: 5, Holy: 6 };
 
 const WEAPONS_BY_CLASS = {
   Blackarrow: ['Weapon'],
-  Mercenary: ['Weapon'],
+  Mercenary: ['Sword and Shield', 'Hammer'],
   Seer: ['Mace', 'Catalyst'],
-  Shadowstrix: ['Weapon'],
+  Shadowstrix: ['Dagger', 'Dual Blades'],
   Sorcerer: ['Weapon'],
-  'Withered Knight': ['Weapon']
+  'Withered Knight': ['Greatsword', 'Polearm and Shield']
 };
 
 const ARMOR_SLOTS = ['Head', 'Chest', 'Gloves', 'Pants', 'Boots'];
 const ACCESSORY_SLOTS = ['Ring', 'Necklace'];
-const SLOT_ORDER = ['Head', 'Chest', 'Gloves', 'Pants', 'Boots', 'Ring', 'Necklace', 'Weapon', 'Mace', 'Catalyst'];
+const SLOT_ORDER = ['Head', 'Chest', 'Gloves', 'Pants', 'Boots', 'Ring', 'Necklace', 'Weapon', 'Mace', 'Catalyst', 'Sword and Shield', 'Hammer', 'Dagger', 'Dual Blades', 'Greatsword', 'Polearm and Shield'];
 
 // Wine System (global buffs) — Level 1..4, with craft/avg costs and display names.
 const WINES = {

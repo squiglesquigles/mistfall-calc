@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mistfall Shadowstrix Build Guide - Green, Blue, Purple and Legendary Sets</title>
+<meta name="description" content="The four Shadowstrix builds - Green (starter), Blue, Purple, and Legendary sets - with the affixes and loadout for each. Coming soon for the cheapest Dagger / Dual Blades gear." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.mistfallcalc.com/builds/shadowstrix/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Mistfall Hunter Build Calculator" />
+<meta property="og:title" content="Mistfall Shadowstrix Build Guide - Green, Blue, Purple and Legendary Sets" />
+<meta property="og:description" content="The four Shadowstrix builds - Green (starter), Blue, Purple, and Legendary sets - with the affixes and loadout for each. Coming soon for the cheapest Dagger / Dual Blades gear." />
+<meta property="og:url" content="https://www.mistfallcalc.com/builds/shadowstrix/" />
+<meta property="og:image" content="https://www.mistfallcalc.com/og-image.png" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Mistfall build calculator",
+   "item": "https://www.mistfallcalc.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Shadowstrix build guide",
+   "item": "https://www.mistfallcalc.com/builds/shadowstrix/"
+  }
+ ]
+}
+</script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0c0d11; color:#e5e7eb; font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif; line-height:1.65; }
+a { color:#c9a54a; }
+.wrap { max-width:1080px; margin:0 auto; padding:0 20px 24px; }
+.topnav { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:20px 0; border-bottom:1px solid #2a2b36; margin-bottom:28px; }
+.topnav .brand { font-weight:800; font-size:18px; color:#c9a54a; text-decoration:none; }
+.topnav nav { display:flex; gap:18px; flex-wrap:wrap; }
+.topnav nav a { color:#b9c0cc; text-decoration:none; font-size:14px; }
+.topnav nav a:hover, .topnav nav a.on { color:#f3f4f6; }
+header.guide { margin-bottom:24px; }
+header.guide h1 { color:#c9a54a; font-size:30px; font-weight:800; }
+header.guide .tag { color:#b9c0cc; margin-top:6px; font-size:16px; }
+.crumb { color:#6b7280; font-size:13px; margin-top:10px; }
+.crumb a { color:#c9a54a; text-decoration:none; }
+.card { background:#14151c; border:1px solid #2a2b36; border-radius:12px; padding:20px 22px; margin:16px 0; }
+.card h2 { color:#c9a54a; font-size:20px; margin-bottom:10px; }
+.card p, .card li { color:#b9c0cc; font-size:15px; }
+.card p+p { margin-top:10px; }
+.proscons { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media (max-width:720px) { .proscons { grid-template-columns:1fr; } }
+.pros h3 { color:#4ade80; font-size:15px; margin-bottom:8px; }
+.cons h3 { color:#f87171; font-size:15px; margin-bottom:8px; }
+.pros ul, .cons ul { list-style:none; }
+.pros li, .cons li { padding:4px 0 4px 18px; position:relative; color:#b9c0cc; font-size:15px; }
+.pros li:before { content:'+'; position:absolute; left:2px; color:#4ade80; font-weight:700; }
+.cons li:before { content:'-'; position:absolute; left:2px; color:#f87171; font-weight:700; }
+.paths { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media (max-width:720px) { .paths { grid-template-columns:1fr; } }
+.path { background:#161722; border:1px solid #2a2b36; border-radius:10px; padding:16px; }
+.path h3 { color:#f3f4f6; font-size:16px; margin-bottom:4px; }
+.path .pdesc { color:#8b93a3; font-size:13px; margin-bottom:10px; }
+.path ul { list-style:none; }
+.path li { padding:6px 0; border-top:1px solid #23242e; font-size:14px; }
+.path li b { color:#f3f4f6; }
+.path li span { color:#9aa1ad; }
+.buildgrid .stat { color:#b9c0cc; font-size:15px; }
+.cta { display:inline-block; background:#c9a54a; color:#0c0d11; font-weight:700; padding:11px 18px; border-radius:8px; text-decoration:none; margin:6px 8px 0 0; }
+.cta.alt { background:transparent; border:1px solid #c9a54a; color:#c9a54a; }
+.foot { border-top:1px solid #2a2b36; margin-top:28px; padding:24px 0 0; }
+.fcols { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px; }
+@media (max-width:860px) { .fcols { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px) { .fcols { grid-template-columns:1fr; } }
+.fcol h4 { color:#c9a54a; font-size:13px; text-transform:uppercase; letter-spacing:.06em; margin-bottom:10px; }
+.fcol ul { list-style:none; }
+.fcol li { margin:6px 0; }
+.fcol a { color:#8b93a3; text-decoration:none; font-size:14px; }
+.fcol a:hover { color:#c9a54a; }
+.fcred { border-top:1px solid rgba(255,255,255,0.2); margin-top:20px; padding-top:14px; text-align:center; color:#6b7280; font-size:12px; }
+.fcred a { color:#c9a54a; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="topnav">
+      <a class="brand" href="/">Mistfall Build Calculator</a>
+      <nav><a href="/">Calculator</a><a href="/guides/mercenary/">Class guides</a><a class="on" href="/builds/mercenary/">Build guides</a><a href="/about/">About</a><a href="/feedback/">Feedback</a></nav>
+    </div>
+    <header class="guide">
+      <div class="crumb"><a href="/">Home</a> / <a href="/builds/shadowstrix/">Shadowstrix builds</a></div>
+      <h1>Mistfall Shadowstrix Build Guide</h1>
+      <p class="tag">Four builds - Dagger / Dual Blades - placeholder affix loadouts you can fill in.</p>
+    </header>
+    <section class="card"><h2>About these builds</h2>
+      <p>Each Shadowstrix build below targets a budget tier: Green for starts, Blue for a solid mid build, Purple once you save up, and Legendary for the final min-maxed loadout. The loadouts and affix lists are coming soon; use the Shadowstrix guide above for playstyle and the calculator to optimise each set in the meantime.</p>
+    </section>
+    
+    <section class="card" style="border-left:4px solid #4ade80;">
+      <h2><span style="color:#4ade80">⬤</span> Green set</h2>
+      <p>The cheap starter set. Common and rare gear with the core affixes to get the class functional.</p>
+      <p><b>Affixes:</b> <span style="color:#6b7280;">Coming soon - loadout and affix details for the Green Shadowstrix set will appear here.</span></p>
+      <p style="margin:0;"><span class="stat">Rarity: Green - Weapon: Dagger / Dual Blades</span></p>
+    </section>
+
+    <section class="card" style="border-left:4px solid #3b82f6;">
+      <h2><span style="color:#3b82f6">⬤</span> Blue set</h2>
+      <p>The mid-budget set. Rare and epic gear that unlocks the class signature combo.</p>
+      <p><b>Affixes:</b> <span style="color:#6b7280;">Coming soon - loadout and affix details for the Blue Shadowstrix set will appear here.</span></p>
+      <p style="margin:0;"><span class="stat">Rarity: Blue - Weapon: Dagger / Dual Blades</span></p>
+    </section>
+
+    <section class="card" style="border-left:4px solid #a855f7;">
+      <h2><span style="color:#a855f7">⬤</span> Purple set</h2>
+      <p>The high-budget set. Epic gear that pushes rank and solo performance.</p>
+      <p><b>Affixes:</b> <span style="color:#6b7280;">Coming soon - loadout and affix details for the Purple Shadowstrix set will appear here.</span></p>
+      <p style="margin:0;"><span class="stat">Rarity: Purple - Weapon: Dagger / Dual Blades</span></p>
+    </section>
+
+    <section class="card" style="border-left:4px solid #f59e0b;">
+      <h2><span style="color:#f59e0b">⬤</span> Legendary set</h2>
+      <p>The endgame min-maxed set. Every slot and gem tuned for the best value you can spend.</p>
+      <p><b>Affixes:</b> <span style="color:#6b7280;">Coming soon - loadout and affix details for the Legendary Shadowstrix set will appear here.</span></p>
+      <p style="margin:0;"><span class="stat">Rarity: Legendary - Weapon: Dagger / Dual Blades</span></p>
+    </section>
+    <section class="card"><h2>Ready to price a build?</h2>
+      <p>Pull your own affix targets and get a cheapest loadout in seconds.</p>
+      <a class="cta" href="/?class=shadowstrix">Open the Shadowstrix build calculator</a>
+      <a class="cta alt" href="/guides/shadowstrix/">Shadowstrix class guide</a>
+    </section>
+  
+    <footer class="card" style="padding:20px 22px;">
+      <div class="fcols">
+        <div class="fcol"><h4>Class guides</h4><ul>
+<li><a href="/guides/mercenary/">Mercenary guide</a></li>
+<li><a href="/guides/sorcerer/">Sorcerer guide</a></li>
+<li><a href="/guides/seer/">Seer guide</a></li>
+<li><a href="/guides/shadowstrix/">Shadowstrix guide</a></li>
+<li><a href="/guides/blackarrow/">Blackarrow guide</a></li>
+<li><a href="/guides/withered-knight/">Withered Knight guide</a></li></ul></div>
+        <div class="fcol"><h4>Build guides</h4><ul>
+<li><a href="/builds/mercenary/">Mercenary builds</a></li>
+<li><a href="/builds/sorcerer/">Sorcerer builds</a></li>
+<li><a href="/builds/seer/">Seer builds</a></li>
+<li><a href="/builds/shadowstrix/">Shadowstrix builds</a></li>
+<li><a href="/builds/blackarrow/">Blackarrow builds</a></li>
+<li><a href="/builds/withered-knight/">Withered Knight builds</a></li></ul></div>
+        <div class="fcol"><h4>Site</h4><ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/feedback/">Feedback</a></li>
+          <li><a href="/privacy-policy/">Privacy policy</a></li>
+          <li><a href="/terms-of-use/">Terms of use</a></li>
+        </ul></div>
+        <div class="fcol"><h4>Community</h4><ul>
+          <li><a href="https://ko-fi.com/squigle" rel="noopener" target="_blank">Ko-fi</a></li>
+          <li><a href="https://discord.gg/bXuR4Eh2DV" rel="noopener" target="_blank">Discord</a></li>
+          <li><a href="https://twitch.tv/squigle8" rel="noopener" target="_blank">Twitch</a></li>
+          <li><a href="https://linktr.ee/squigleV2" rel="noopener" target="_blank">Linktree</a></li>
+        </ul></div>
+      </div>
+      <div class="fcred"><a href="/">Back to the main calculator</a> &middot; Mistfall Calc by Squigle - mistfallcalc.com - a free fan tool, not affiliated with Bellring Games.</div>
+    </footer>
+</div>
+</body>
+</html>

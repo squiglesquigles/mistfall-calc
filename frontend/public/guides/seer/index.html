@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mistfall Seer Guide - Playstyle, Strengths and Abilities</title>
+<meta name="description" content="How to play the Mistfall Seer: role, playstyle, abilities, pros and cons for Catalyst / Mace. Plus a guide to the cheapest Seer gear and gem loadouts." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.mistfallcalc.com/guides/seer/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Mistfall Hunter Build Calculator" />
+<meta property="og:title" content="Mistfall Seer Guide - Playstyle, Strengths and Abilities" />
+<meta property="og:description" content="How to play the Mistfall Seer: role, playstyle, abilities, pros and cons for Catalyst / Mace. Plus a guide to the cheapest Seer gear and gem loadouts." />
+<meta property="og:url" content="https://www.mistfallcalc.com/guides/seer/" />
+<meta property="og:image" content="https://www.mistfallcalc.com/og-image.png" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Mistfall build calculator",
+   "item": "https://www.mistfallcalc.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Seer guide",
+   "item": "https://www.mistfallcalc.com/guides/seer/"
+  }
+ ]
+}
+</script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0c0d11; color:#e5e7eb; font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif; line-height:1.65; }
+a { color:#c9a54a; }
+.wrap { max-width:1080px; margin:0 auto; padding:0 20px 24px; }
+.topnav { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:20px 0; border-bottom:1px solid #2a2b36; margin-bottom:28px; }
+.topnav .brand { font-weight:800; font-size:18px; color:#c9a54a; text-decoration:none; }
+.topnav nav { display:flex; gap:18px; flex-wrap:wrap; }
+.topnav nav a { color:#b9c0cc; text-decoration:none; font-size:14px; }
+.topnav nav a:hover, .topnav nav a.on { color:#f3f4f6; }
+header.guide { margin-bottom:24px; }
+header.guide h1 { color:#c9a54a; font-size:30px; font-weight:800; }
+header.guide .tag { color:#b9c0cc; margin-top:6px; font-size:16px; }
+.crumb { color:#6b7280; font-size:13px; margin-top:10px; }
+.crumb a { color:#c9a54a; text-decoration:none; }
+.card { background:#14151c; border:1px solid #2a2b36; border-radius:12px; padding:20px 22px; margin:16px 0; }
+.card h2 { color:#c9a54a; font-size:20px; margin-bottom:10px; }
+.card p, .card li { color:#b9c0cc; font-size:15px; }
+.card p+p { margin-top:10px; }
+.proscons { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media (max-width:720px) { .proscons { grid-template-columns:1fr; } }
+.pros h3 { color:#4ade80; font-size:15px; margin-bottom:8px; }
+.cons h3 { color:#f87171; font-size:15px; margin-bottom:8px; }
+.pros ul, .cons ul { list-style:none; }
+.pros li, .cons li { padding:4px 0 4px 18px; position:relative; color:#b9c0cc; font-size:15px; }
+.pros li:before { content:'+'; position:absolute; left:2px; color:#4ade80; font-weight:700; }
+.cons li:before { content:'-'; position:absolute; left:2px; color:#f87171; font-weight:700; }
+.paths { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media (max-width:720px) { .paths { grid-template-columns:1fr; } }
+.path { background:#161722; border:1px solid #2a2b36; border-radius:10px; padding:16px; }
+.path h3 { color:#f3f4f6; font-size:16px; margin-bottom:4px; }
+.path .pdesc { color:#8b93a3; font-size:13px; margin-bottom:10px; }
+.path ul { list-style:none; }
+.path li { padding:6px 0; border-top:1px solid #23242e; font-size:14px; }
+.path li b { color:#f3f4f6; }
+.path li span { color:#9aa1ad; }
+.buildgrid .stat { color:#b9c0cc; font-size:15px; }
+.cta { display:inline-block; background:#c9a54a; color:#0c0d11; font-weight:700; padding:11px 18px; border-radius:8px; text-decoration:none; margin:6px 8px 0 0; }
+.cta.alt { background:transparent; border:1px solid #c9a54a; color:#c9a54a; }
+.foot { border-top:1px solid #2a2b36; margin-top:28px; padding:24px 0 0; }
+.fcols { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px; }
+@media (max-width:860px) { .fcols { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px) { .fcols { grid-template-columns:1fr; } }
+.fcol h4 { color:#c9a54a; font-size:13px; text-transform:uppercase; letter-spacing:.06em; margin-bottom:10px; }
+.fcol ul { list-style:none; }
+.fcol li { margin:6px 0; }
+.fcol a { color:#8b93a3; text-decoration:none; font-size:14px; }
+.fcol a:hover { color:#c9a54a; }
+.fcred { border-top:1px solid rgba(255,255,255,0.2); margin-top:20px; padding-top:14px; text-align:center; color:#6b7280; font-size:12px; }
+.fcred a { color:#c9a54a; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="topnav">
+      <a class="brand" href="/">Mistfall Build Calculator</a>
+      <nav><a href="/">Calculator</a><a class="on" href="/guides/mercenary/">Class guides</a><a href="/builds/mercenary/">Build guides</a><a href="/about/">About</a><a href="/feedback/">Feedback</a></nav>
+    </div>
+    <header class="guide">
+      <div class="crumb"><a href="/">Mistfall build calculator</a> / <a href="/guides/seer/">Seer guide</a></div>
+      <h1>Mistfall Seer Guide</h1>
+      <p class="tag">Pocket cleric who heals, shields, and controls the battlefield. Support - Catalyst / Mace</p>
+    </header>
+
+    <section class="card"><h2>Overview</h2><p>The Seer draws strength from faith in the return of the gods, using prayers and divine arts to heal, protect, and support allies. It is the closest Mistfall Hunter class to a cleric, and offers two very different build paths: the Reverent and the Blasphemer.</p><p>Every Seer turn the battlefield into a safe zone for teammates: runes and shields keep allies alive while curse effects and crowd control buy time for the rest of the team.</p></section>
+
+    <section class="card"><h2>Strengths and Weaknesses</h2>
+      <div class="proscons">
+        <div class="pros"><h3>Strengths</h3><ul><li>Best healing and shielding support in the game</li><li>Strong battlefield control (runes, knockbacks, stuns)</li><li>Two distinct paths (Reverent support / Blasphemer duelist)</li><li>Great value in trios, where a pocket healer shines</li></ul></div>
+        <div class="cons"><h3>Weaknesses</h3><ul><li>Low raw damage - pure supports must rely on allies</li><li>Healing and protection have limited uses per run</li><li>Blasphemer path is mechanical and position-heavy</li><li>Squishy and vulnerable while casting</li></ul></div>
+      </div>
+    </section>
+
+    <section class="card"><h2>Playstyle and Abilities</h2><div class="paths"><div class="path"><h3>Reverent</h3><p class="pdesc">The support path: set rune pillars, shield teammates, and keep the party alive.</p><ul><li><b>Psionic Orb</b> - <span>Light attack that feeds Psionic Energy for runes</span></li><li><b>Rune Summon</b> - <span>Deploys a buildable rune pillar at a target spot</span></li><li><b>Healing Art / Healing Rune</b> - <span>Recovers health for all allies in range</span></li><li><b>Shelter Rune</b> - <span>Shields allies and the lowest-HP ally especially</span></li><li><b>Binding Rune</b> - <span>Immobilizes enemies in range to protect allies</span></li><li><b>Wind Surge</b> - <span>Cyclone that knocks melee enemies back</span></li></ul></div>
+<div class="path"><h3>Blasphemer</h3><p class="pdesc">The aggressive path: curses, mobility, and huge dueling potential.</p><ul><li><b>Shapeshift</b> - <span>Engage and disengage tool that jumps the backline</span></li><li><b>Thorn Sigil</b> - <span>Immobilizes and slows enemies around you</span></li><li><b>Rune: Stun / Rune: Sweep</b> - <span>High-damage CC follow-up after thorn hit</span></li><li><b>Unleash Zeal</b> - <span>Buffs attack and defence, perfect for duels</span></li></ul></div></div></section>
+
+    <section class="card"><h2>How to Build</h2>
+      <p><b>Skills:</b> Reverent: Healing Art + Wind Surge, with Shelter and Binding runes that fit the team. Blasphemer: Shapeshift, Thorn Sigil, and a Stun or Sweep rune.</p>
+      <p><b>Talents:</b> Support builds focus on skill casts; Blasphemer builds focus on Unleash Zeal uptime.</p>
+      <p><b>Affixes:</b> Support Seers want skill-related and defence affixes; duelist Seers stack magic damage and control affixes.</p>
+      <p><b>Wine:</b> Wine can top up the support affixes without needing expensive gear rolls.</p>
+    </section>
+
+    <section class="card"><h2>Tips and Tricks</h2><ul><li>Place rune pillars in the middle of the fight - positioning beats instant value.</li><li>Pre-cast Shelter before a fight starts for the enhanced shield.</li><li>Healing has limited uses: say it to the team and retreat to heal when low.</li><li>Hold your stuns for peel; a well-timed Binding Rune saves a fight.</li></ul></section>
+
+    <section class="card"><h2>Take it to the calculator</h2>
+      <p>Turn this guide into the cheapest possible gear and gem loadout.</p>
+      <a class="cta" href="/?class=seer">Open the Seer build calculator</a>
+      <a class="cta alt" href="/builds/seer/">Seer build guides</a>
+      <div style="margin-top:14px;"><a class="cta alt" href="/guides/mercenary/">Mercenary guide</a><a class="cta alt" href="/guides/sorcerer/">Sorcerer guide</a><a class="cta alt" href="/guides/shadowstrix/">Shadowstrix guide</a><a class="cta alt" href="/guides/blackarrow/">Blackarrow guide</a><a class="cta alt" href="/guides/withered-knight/">Withered Knight guide</a></div>
+    </section>
+  
+    <footer class="card" style="padding:20px 22px;">
+      <div class="fcols">
+        <div class="fcol"><h4>Class guides</h4><ul>
+<li><a href="/guides/mercenary/">Mercenary guide</a></li>
+<li><a href="/guides/sorcerer/">Sorcerer guide</a></li>
+<li><a href="/guides/seer/">Seer guide</a></li>
+<li><a href="/guides/shadowstrix/">Shadowstrix guide</a></li>
+<li><a href="/guides/blackarrow/">Blackarrow guide</a></li>
+<li><a href="/guides/withered-knight/">Withered Knight guide</a></li></ul></div>
+        <div class="fcol"><h4>Build guides</h4><ul>
+<li><a href="/builds/mercenary/">Mercenary builds</a></li>
+<li><a href="/builds/sorcerer/">Sorcerer builds</a></li>
+<li><a href="/builds/seer/">Seer builds</a></li>
+<li><a href="/builds/shadowstrix/">Shadowstrix builds</a></li>
+<li><a href="/builds/blackarrow/">Blackarrow builds</a></li>
+<li><a href="/builds/withered-knight/">Withered Knight builds</a></li></ul></div>
+        <div class="fcol"><h4>Site</h4><ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/feedback/">Feedback</a></li>
+          <li><a href="/privacy-policy/">Privacy policy</a></li>
+          <li><a href="/terms-of-use/">Terms of use</a></li>
+        </ul></div>
+        <div class="fcol"><h4>Community</h4><ul>
+          <li><a href="https://ko-fi.com/squigle" rel="noopener" target="_blank">Ko-fi</a></li>
+          <li><a href="https://discord.gg/bXuR4Eh2DV" rel="noopener" target="_blank">Discord</a></li>
+          <li><a href="https://twitch.tv/squigle8" rel="noopener" target="_blank">Twitch</a></li>
+          <li><a href="https://linktr.ee/squigleV2" rel="noopener" target="_blank">Linktree</a></li>
+        </ul></div>
+      </div>
+      <div class="fcred"><a href="/">Back to the main calculator</a> &middot; Mistfall Calc by Squigle - mistfallcalc.com - a free fan tool, not affiliated with Bellring Games.</div>
+    </footer>
+</div>
+</body>
+</html>

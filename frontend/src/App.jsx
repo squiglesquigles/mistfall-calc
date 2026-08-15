@@ -169,6 +169,55 @@ function ClearAllFilters({ onClick, style }) {
   );
 }
 
+
+function SeoContent() {
+  const link = (c) => (
+    <a key={c.slug} href={`/${c.slug}-build-calculator/`} style={{ color: COLORS.primary, textDecoration: 'none' }}>{c.name}</a>
+  );
+  return (
+    <section style={{ width: '100%', maxWidth: '960px', margin: '0 auto', padding: '28px 20px' }}>
+      <h2 style={{ color: COLORS.primary, fontSize: '20px', fontWeight: 700, margin: '28px 0 12px' }}>About the Mistfall Hunter Build Calculator</h2>
+      <p style={{ color: COLORS.textMuted, fontSize: '16px', lineHeight: 1.6, marginBottom: '12px' }}>
+        The <strong style={{ color: COLORS.text }}>Mistfall build calculator</strong> — also known as the Mistfall calc — is a free
+        fan tool by <strong style={{ color: COLORS.text }}>Squigle</strong> that finds the
+        <strong style={{ color: COLORS.text }}> cheapest gear, gem and socket loadout</strong> for your Mistfall Hunter
+        character. Pick one of the six classes, choose a weapon and the affixes you want, and the calc optimizes
+        every slot against average market prices so you spend gold where it matters instead of guessing.
+      </p>
+      <p style={{ color: COLORS.textMuted, fontSize: '16px', lineHeight: 1.6, marginBottom: '12px' }}>
+        There is a class guide and build guide per class:
+        {classes.map(c => (
+          <span key={c.slug}>
+            <a href={`/guides/${c.slug}/`} style={{ color: COLORS.primary, textDecoration: 'none' }}>{c.name} guide</a>
+            {' · '}
+            <a href={`/builds/${c.slug}/`} style={{ color: COLORS.primary, textDecoration: 'none' }}>builds</a>
+            {' · '}
+            {link(c)}
+            {'  '}
+          </span>
+        ))}
+      </p>
+
+      <h2 style={{ color: COLORS.primary, fontSize: '20px', fontWeight: 700, margin: '28px 0 12px' }}>Frequently Asked Questions</h2>
+      {[
+        ['What is the Mistfall build calculator?', 'It\'’s a free fan-made calculator for Mistfall Hunter. You pick one of the six classes, choose a weapon and the affixes you want, and it finds the cheapest gear, gem and socket loadout that fits your budget.'],
+        ['How does the cheapest Mistfall Hunter build calculator work?', 'Select your class and weapon, then add affix levels up to a combined budget of 40. The optimization engine that runs in your browser lists the cheapest builds, with recommended gear, rarity, sockets and gems priced against average market prices.'],
+        ['Which Mistfall Hunter classes does the calculator support?', 'Right now it supports all six classes — Mercenary, Sorcerer, Blackarrow, Shadowstrix, Seer and Withered Knight.'],
+        ['Why can I not see all Necklaces and Rings?', 'The calculator shows only the possible combinations of gear plus Necklaces and Rings that can create your build. If you have found a build that includes a specific ring or necklace, please leave some feedback and we will update accordingly.'],
+        ['Is the Mistfall Hunter calc free?', 'Yes — no sign-up, no ads, and it runs entirely in your browser. It’s an unofficial fan tool, not affiliated with Bellring Games.']
+      ].map(([q, a]) => (
+        <div key={q} style={{ marginBottom: '8px' }}>
+          <div style={{ color: COLORS.text, fontWeight: 700, margin: '20px 0 8px' }}>{q}</div>
+          <p style={{ color: COLORS.textMuted, fontSize: '16px', lineHeight: 1.6, marginBottom: '12px' }}>{a}</p>
+        </div>
+      ))}
+      <p style={{ marginTop: '32px', paddingTop: '16px', borderTop: '1px solid ' + COLORS.border, color: '#6b7280', fontSize: '12px' }}>
+        Mistfall Calc by Squigle · mistfallcalc.com — a free Mistfall Hunter build calculator, not affiliated with Ballring Games.
+      </p>
+    </section>
+  );
+}
+
 function App() {
   const [selectedClass, setSelectedClass] = useState(null);
   const [weapon, setWeapon] = useState(null);
@@ -207,7 +256,9 @@ function App() {
       option: i === 0 ? 'Cheapest Build' : 'Option ' + (i + 1),
       slot: p.slot, gear: p.gear, rarity: p.rarity, builtIn: p.built_in_affix,
       sockets: p.sockets || [], gems: p.gems || [],
-      affixes: builds.targetAffixes || [], cost: b.cost
+      affixes: builds.targetAffixes || [], cost: b.cost,
+      combined: builds.combinedLevel, rarityPref, forcedAcc, wine: wineKey,
+      ring: ringFilter, neck: neckFilter
     });
     setFType('Wrong gear'); setFNote(''); setFStatus(null);
   };
@@ -216,12 +267,23 @@ function App() {
     setFeedbackCtx({
       className: builds ? builds.className : null, weapon: builds ? builds.weapon : null,
       option: null, slot: 'General', gear: null, rarity: null, builtIn: null,
-      sockets: [], gems: [], affixes: builds ? builds.targetAffixes : [], cost: null
+      sockets: [], gems: [], affixes: builds ? builds.targetAffixes : [], cost: null,
+      combined: builds ? builds.combinedLevel : null, rarityPref, forcedAcc, wine: wineKey,
+      ring: ringFilter, neck: neckFilter
     });
     setFType('Other'); setFNote(''); setFStatus(null);
   };
 
   const closeFeedback = () => setFeedbackCtx(null);
+
+  const fmtSel = (obj) => obj && Object.keys(obj).length
+    ? Object.entries(obj).map(([k, v]) => k + ': ' + v).join(', ') : '-';
+  const fmtFilters = (r, n) => {
+    const parts = [];
+    if (r && r !== 'all') parts.push('Ring: ' + r);
+    if (n && n !== 'all') parts.push('Necklace: ' + n);
+    return parts.length ? parts.join(', ') : '-';
+  };
 
   async function submitFeedback(e) {
     e.preventDefault();
@@ -245,6 +307,11 @@ function App() {
         { name: 'Built-in affix', value: c.builtIn || '—', inline: true },
         { name: 'Sockets / Gems', value: (gemsTxt || '—').slice(0, 1024) },
         { name: 'Target affixes', value: ((c.affixes || []).map(a => a.affix + ' Lv' + a.level).join(', ') || '—').slice(0, 1024) },
+        { name: 'Combined affix level', value: (c.combined != null ? c.combined + '/' + MAX_AFFIX_BUDGET : '-'), inline: true },
+        { name: 'Rarity preference', value: fmtSel(c.rarityPref).slice(0, 1024), inline: true },
+        { name: 'Ring / Necklace', value: fmtSel(c.forcedAcc).slice(0, 512), inline: true },
+        { name: 'Wine', value: c.wine ? (WINES[c.wine] ? WINES[c.wine].label : String(c.wine)) : 'Any (cheapest)', inline: true },
+        { name: 'Post-build filters', value: fmtFilters(c.ring, c.neck), inline: true },
         { name: 'Recommended cost', value: (c.cost != null ? c.cost + 'g' : '—'), inline: true },
         { name: 'Issue type', value: fType, inline: true },
         { name: 'Note from user', value: (fNote || '—').slice(0, 1024) }
@@ -505,6 +572,13 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Deep link support: the static /feedback/ page links in as /?feedback=1 to open
+  // the general feedback modal.
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get('feedback') === '1') openGenericFeedback();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   function gemLabel(slot, gem) {
     if (!gem) return null;
     const afx = [gem.affix1, gem.affix2].filter(Boolean).join(' + ');
@@ -568,17 +642,17 @@ function App() {
   const kofiHref = SITE.kofi && SITE.kofi !== 'YOUR_KOFI_USERNAME' ? `https://ko-fi.com/${SITE.kofi}` : null;
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: COLORS.bg, color: COLORS.text }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: COLORS.bg, color: COLORS.text }}>
       <style>{`@keyframes mc-spin { to { transform: rotate(360deg); } }
 .mc-spinner { display: inline-block; width: 20px; height: 20px; border: 3px solid #2a2b36; border-top-color: #c9a54a; border-radius: 50%; animation: mc-spin 0.8s linear infinite; }`}</style>
       <header style={{ borderBottom: '1px solid ' + COLORS.border, padding: '20px 28px', backgroundColor: COLORS.bgAlt }}>
-        <h1 style={{ color: COLORS.primary, fontSize: '24px', fontWeight: 'bold' }}>Mistfall Hunter Build Calculator</h1>
+        <a href="/" style={{ textDecoration: 'none' }}><h1 style={{ color: COLORS.primary, fontSize: '24px', fontWeight: 'bold' }}>Mistfall Hunter Build Calculator</h1></a>
         <p style={{ color: COLORS.textMuted, fontSize: '16px', marginTop: '8px' }}>
           Pick a class, choose a weapon, and select affix levels (max {MAX_AFFIX_BUDGET} combined) to find a gear + gem loadout.
         </p>
       </header>
 
-      <div style={{ maxWidth: '1320px', margin: '0 auto', padding: '28px', display: 'flex', gap: '28px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+      <div style={{ flex: '1 0 auto', width: '100%', maxWidth: '1320px', margin: '0 auto', padding: '28px', display: 'flex', gap: '28px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {/* MAIN CALCULATOR */}
         <main style={{ flex: '1 1 620px', minWidth: '0' }}>
           {error && <div style={{ backgroundColor: '#7f1d1d', padding: '12px', borderRadius: '8px', marginBottom: '16px', color: '#fecaca' }}>{error}</div>}
@@ -913,25 +987,48 @@ function App() {
         </aside>
       </div>
 
-      <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '20px 24px', color: COLORS.textMuted, fontSize: '16px', textAlign: 'center' }}>
-        <div style={{ marginBottom: '12px', display: 'flex', flexWrap: 'wrap', gap: '8px 16px', justifyContent: 'center', fontSize: '15px' }}>
-          <span style={{ color: COLORS.primary, fontWeight: 600 }}>Build calculators:</span>
-          <a href="/" style={{ color: COLORS.primary }}>All classes</a>
-          {classes.map(c => (
-            <a key={c.slug} href={`/${c.slug}-build-calculator/`} style={{ color: COLORS.primary }}>{c.name}</a>
-          ))}
+<SeoContent />
+
+      <footer style={{ borderTop: '1px solid ' + COLORS.border, marginTop: 'auto', padding: '28px 24px', backgroundColor: COLORS.bgAlt, color: COLORS.textMuted, fontSize: '16px' }}>
+        <div style={{ maxWidth: '1080px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '24px 20px' }}>
+          <div>
+            <strong style={{ color: COLORS.primary, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Class guides</strong>
+            <ul style={{ listStyle: 'none', marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              {classes.map(c => <li key={'g' + c.slug}><a href={`/guides/${c.slug}/`} style={{ color: COLORS.textMuted, textDecoration: 'none' }}>{c.name}</a></li>)}
+            </ul>
+          </div>
+          <div>
+            <strong style={{ color: COLORS.primary, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Build guides</strong>
+            <ul style={{ listStyle: 'none', marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              {classes.map(c => <li key={'b' + c.slug}><a href={`/builds/${c.slug}/`} style={{ color: COLORS.textMuted, textDecoration: 'none' }}>{c.name}</a></li>)}
+            </ul>
+          </div>
+          <div>
+            <strong style={{ color: COLORS.primary, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Site</strong>
+            <ul style={{ listStyle: 'none', marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              <li><a href="/about/" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>About</a></li>
+              <li><a href="/feedback/" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>Feedback</a></li>
+              <li><a href="/privacy-policy/" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>Privacy policy</a></li>
+              <li><a href="/terms-of-use/" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>Terms of use</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong style={{ color: COLORS.primary, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Community</strong>
+            <ul style={{ listStyle: 'none', marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              {kofiHref && <li><a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>Support on Ko-fi</a></li>}
+              <li><a href={SITE.discordInvite} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>Discord</a></li>
+              {twitchSrc && <li><a href={"https://twitch.tv/" + SITE.twitchChannel} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>Twitch</a></li>}
+              <li><a href="https://linktr.ee/squigleV2" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.textMuted, textDecoration: 'none' }}>Linktree</a></li>
+            </ul>
+          </div>
         </div>
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '12px', marginTop: '8px' }}>
-          Mistfall Hunter Build Calculator — a free fan tool by{' '}
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.2)', marginTop: '24px', paddingTop: '14px', textAlign: 'center', fontSize: '12px', color: COLORS.textMuted }}>
+          <a href="/" style={{ color: COLORS.primary, textDecoration: 'none' }}>Back to the main calculator</a> · Mistfall Hunter Build Calculator - a free fan tool by{' '}
           <a href="https://linktr.ee/squigleV2" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Squigle</a>.
-          Not affiliated with Bellring Games. · Helpful?{' '}
-          {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
-          {' '}·{' '}
-          <a href="#" onClick={(e) => { e.preventDefault(); openGenericFeedback(); }} style={{ color: COLORS.primary }}>Feedback</a>
-          {' '}·{' '}
-          <a href={SITE.discordInvite} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Join the Discord</a>
+          Not affiliated with Bellring Games.
         </div>
       </footer>
+
 
       {feedbackCtx && (
         <div onClick={closeFeedback} style={{ position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: '20px' }}>
