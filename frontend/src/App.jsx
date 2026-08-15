@@ -914,14 +914,23 @@ function App() {
       </div>
 
       <footer style={{ borderTop: '1px solid ' + COLORS.border, padding: '20px 24px', color: COLORS.textMuted, fontSize: '16px', textAlign: 'center' }}>
-        Mistfall Hunter Build Calculator — a free fan tool by{' '}
-        <a href="https://linktr.ee/squigleV2" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Squigle</a>.
-        Not affiliated with Bellring Games. · Helpful?{' '}
-        {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
-        {' '}·{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); openGenericFeedback(); }} style={{ color: COLORS.primary }}>Feedback</a>
-        {' '}·{' '}
-        <a href={SITE.discordInvite} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Join the Discord</a>
+        <div style={{ marginBottom: '12px', display: 'flex', flexWrap: 'wrap', gap: '8px 16px', justifyContent: 'center', fontSize: '15px' }}>
+          <span style={{ color: COLORS.primary, fontWeight: 600 }}>Build calculators:</span>
+          <a href="/" style={{ color: COLORS.primary }}>All classes</a>
+          {classes.map(c => (
+            <a key={c.slug} href={`/${c.slug}-build-calculator/`} style={{ color: COLORS.primary }}>{c.name}</a>
+          ))}
+        </div>
+        <div>
+          Mistfall Hunter Build Calculator — a free fan tool by{' '}
+          <a href="https://linktr.ee/squigleV2" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Squigle</a>.
+          Not affiliated with Bellring Games. · Helpful?{' '}
+          {kofiHref && <a href={kofiHref} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Support on Ko-fi</a>}
+          {' '}·{' '}
+          <a href="#" onClick={(e) => { e.preventDefault(); openGenericFeedback(); }} style={{ color: COLORS.primary }}>Feedback</a>
+          {' '}·{' '}
+          <a href={SITE.discordInvite} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Join the Discord</a>
+        </div>
       </footer>
 
       {feedbackCtx && (
