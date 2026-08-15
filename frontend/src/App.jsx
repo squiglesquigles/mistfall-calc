@@ -921,7 +921,7 @@ function App() {
             <a key={c.slug} href={`/${c.slug}-build-calculator/`} style={{ color: COLORS.primary }}>{c.name}</a>
           ))}
         </div>
-        <div>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '12px', marginTop: '8px' }}>
           Mistfall Hunter Build Calculator — a free fan tool by{' '}
           <a href="https://linktr.ee/squigleV2" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.primary }}>Squigle</a>.
           Not affiliated with Bellring Games. · Helpful?{' '}
